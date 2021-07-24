@@ -43,8 +43,8 @@ Click WA logo to Join Support Group 👇
 <div align="center">
 
   ### Simple Method
-  8
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@terror-boy/WhatsAsena-QR-1)
+  
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@phaticusthiccy/WhatsAsena-QR)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/terror-boy/WhiteDevil)
      </div>
