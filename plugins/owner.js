@@ -19,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-        if (message.jid === '15369524516-1612300121@g.us') {
+        if (message.jid === '919544593237-1613282758@g.us') {
 
             return;
         }
@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,'WhiteDevil Bot created by *KARTHIK Terror-boy*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n KARTHIK Terror boy', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.PLK + 'WhiteDevil Bot created by *KARTHIK Terror-boy', MessageType.text);
         }
     }));
 }
@@ -37,7 +37,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-        if (message.jid === '54218542512-1612300121@g.us') {
+        if (message.jid === '919544593237-1613282758@g.us') {
 
             return;
         }
@@ -46,7 +46,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid,'WhiteDevil Bot created by *KARTHIK Terror-boy*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n KARTHIK Terror boy', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.PLK + 'WhiteDevil Bot created by *KARTHIK Terror-boy', MessageType.text);
         }
     }));
 }
