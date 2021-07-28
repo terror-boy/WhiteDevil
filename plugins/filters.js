@@ -177,7 +177,7 @@ const array = ['team K R 5.0','Team K R 5.0',]
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-   await message.client.sendMessage(message.jid, fs.readFileSync('./video/' + a + '.webp'), MessageType.video, { mimetype: Mimetype.mp4, quoted: message.data, ptt: false})
+   await message.client.sendMessage(message.jid, fs.readFileSync('./video/' + a + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, quoted: message.data, ptt: false})
 }
 });
 }
