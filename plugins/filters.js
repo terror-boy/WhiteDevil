@@ -1,7 +1,7 @@
 /* Copyright (C) 2020 TERROR BOY.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
+WhiteDevil - TERROR BOY
 */
 const fs = require('fs')
 const Asena = require('../events');
