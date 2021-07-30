@@ -188,7 +188,7 @@ filtreler.map(
     async (filter) => {
         pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
         if (pattern.test(message.message)) {
-            await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
+            await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.mp4, {quoted: message.data});
         }
     }
 );
