@@ -30,6 +30,11 @@
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
             "value": "true"
+         },
+        "AUTO_VIDEO": {
+            "description": "If you likes video you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"   
         },
         "ANTİ_LİNK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
