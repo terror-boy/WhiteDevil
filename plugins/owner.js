@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,'WhiteDevil Bot created by *KARTHIK Terror-boy*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + 'WhiteDevil Bot created by *KARTHIK Terror-boy', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.TERRORBOY + 'WhiteDevil Bot created by *KARTHIK Terror-boy*', MessageType.text);
         }
     }));
 }
@@ -42,11 +42,11 @@ else if (Config.WORKTYPE == 'public') {
             return;
         }
 
-        if (Config.PLK == 'default') {
+        if (Config.TERRORBOY == 'default') {
             await message.client.sendMessage(message.jid,'WhiteDevil Bot created by *KARTHIK Terror-boy*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + 'WhiteDevil Bot created by *KARTHIK Terror-boy', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.TERRORBOY + 'WhiteDevil Bot created by *KARTHIK Terror-boy*', MessageType.text);
         }
     }));
 }
