@@ -167,7 +167,118 @@
             "description": "Pass This Step! - Bu Bölümü Geçin!",
             "required": false,
             "value": "true"
+        },
+        "AUTO_REMOVE_FAKE": {
+            "description": "Remove fake number if welcome msg enabled.",
+            "required": false,
+            "value": "false"
+        },
+        "EXT": {
+            "description": "Enter xteam api",
+            "required": false,
+            "value": "false"
+        },
+        "CLR_SESSION": {
+            "description": "Enter true to delete old session.",
+            "required": false,
+            "value": "false"
+        },
+        "NO_ONLINE": {
+            "description": "set true to hide online.",
+            "required": false,
+            "value": "true"
+        },
+        "WELCOME": {
+            "description": "links separeted by ,",
+            "required": false,
+            "value": "false"
+        },
+        "GOODBYE": {
+            "description": "links separeted by ,",
+            "required": false,
+            "value": "false"
+        },
+        "BANBYE": {
+            "description": "links separeted by ,",
+            "required": false,
+            "value": "false"
+        },
+        "WELCOME_JID": {
+            "description": "jid,jid,jid...",
+            "required": false,
+            "value": "false"
+        },
+        "BANBYE_JID": {
+            "description": "jid,jid,jid...",
+            "required": false,
+            "value": "false"
+        },
+        "GOODBYE_JID": {
+            "description": "jid,jid,jid...",
+            "required": false,
+            "value": "false"
+        },
+        "MENTION_MSG": {
+            "description": "Send a reply to who tag you.",
+            "required": false,
+            "value": "true"
+        },
+        "MENTION_TYPE": {
+            "description": "Mention msg type example : video,audio,text,image,sticker",
+            "required": false,
+            "value": "text"
+        },
+        "MENTION_URL": {
+            "description": "Mention msg link(text if text msg else url)",
+            "required": false,
+            "value": "Hi am here.(This is a auto reply)"
+        },
+        "AUTO_MUTE": {
+            "description": "Enable Group auto mute/unmute feature.",
+            "required": false,
+            "value": "false"
+        },
+        "AUTO_MUTE_JID": {
+            "description": "Enter jid for AUTO_MUTE seprated with ,",
+            "required": false,
+            "value": "false"
+        },
+        "START_MINUTE": {
+            "description": "Enter start min for mute seprated with ,",
+            "required": false,
+            "value": "false"
+        },
+        "START_HOUR": {
+            "description": "Enter start hr for mute seprated with ,",
+            "required": false,
+            "value": "false"
+        },
+        "STOP_HOUR": {
+            "description": "Enter stop hr for unmute seprated with ,",
+            "required": false,
+            "value": "false"
+        },
+        "STOP_MINUTE": {
+            "description": "Enter stop min for unmute seprated with ,",
+            "required": false,
+            "value": "false"
+        },
+        "START_MSG": {
+            "description": "Enter mute msg seprated with ,",
+            "required": false,
+            "value": "false"
+        },
+        "STOP_MSG": {
+            "description": "Enter unmute msg seprated with ,",
+            "required": false,
+            "value": "false"
+        },
+        "MENTION_MSG_CAPTION": {
+            "description": "Mention msg caption",
+            "required": false,
+            "value": "hi"
         }
+        
     },
     "addons": [{
       "plan": "heroku-postgresql"
