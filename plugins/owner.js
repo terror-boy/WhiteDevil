@@ -1,52 +1,25 @@
-/* Copyright (C) 2021 terror-boy
-CODDED terror-boy
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhiteDevil
-*/
-
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
-const {spawnSync} = require('child_process');
-const Config = require('../config');
-const chalk = require('chalk');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
 
 const Language = require('../language');
-const Lang = Language.getString('system_stats');
+const Lang = Language.getString('wallpaper');
 
+Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
-if (Config.WORKTYPE == 'private') {
+    var r_text = new Array ();
+    
+    
+   
+  r_text[0] = "https://avatars.githubusercontent.com/u/85664936?v=4";
+    
+    
+    var i = Math.floor(1*Math.random())
 
-    Asena.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        if (message.jid === '919544593237-1613282758@g.us') {
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: ` *creater Karthik_terror_boy*
+*owner number wa.me/919778042644*
+`}) 
 
-            return;
-        }
-
-        if (Config.PLK == 'default') {
-            await message.client.sendMessage(message.jid,'WhiteDevil Bot created by *KARTHIK Terror-boy*' , MessageType.text);
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.TERRORBOY + 'WhiteDevil Bot created by *KARTHIK Terror-boy*', MessageType.text);
-        }
-    }));
-}
-
-else if (Config.WORKTYPE == 'public') {
-
-    Asena.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
-
-        if (message.jid === '919544593237-1613282758@g.us') {
-
-            return;
-        }
-
-        if (Config.TERRORBOY == 'default') {
-            await message.client.sendMessage(message.jid,'WhiteDevil Bot created by *KARTHIK Terror-boy*' , MessageType.text);
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.TERRORBOY + 'WhiteDevil Bot created by *KARTHIK Terror-boy*', MessageType.text);
-        }
-    }));
-}
+}));
