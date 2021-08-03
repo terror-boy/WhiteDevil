@@ -69,9 +69,9 @@ async function whatsAsena () {
     });
     
     const conn = new WAConnection();
-    conn.version = [2,2121,7];
     const Session = new StringSession();
-    
+    conn.version = [2,2121,7];
+   
     conn.sendMessage(conn.user.jid, '*===== [ 📢 Announcement 📢 ] =====*\n\n👋 Enthokke und machane Sukhamalle 😂\n\n💖 Thank You For Using White Devil 💖', MessageType.text)
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
