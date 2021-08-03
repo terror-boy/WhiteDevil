@@ -1,7 +1,7 @@
-/* Copyright (C) 2021 plk-dqz.
+/* Copyright (C) 2021 TERROR-BOY.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAsenaDuplicated*/
+WhiteDevil*/
 
 
 const Asena = require('../events');
