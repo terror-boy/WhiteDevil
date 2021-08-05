@@ -21,12 +21,22 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ_ᴛᴇʀʀᴏʀ_ʙᴏʏ*
 
  *owner number wa.me/919778042644*
+ 
 
- *github link       _https://github.com/terror-boy/WhiteDevil_*
+ *ABOUT ME          _https://github.com/terror-boy_*
+ 
+ 
+ 
+ *Github link       _https://github.com/terror-boy/WhiteDevil_*
+ 
+ 
+ 
 
- *audio commads    _https://github.com/terror-boy/WhiteDevil/tree/master/uploads_*
+ *Audio commads    _https://github.com/terror-boy/WhiteDevil/tree/master/uploads_*
+ 
+ 
 
- *sticker commads  _https://github.com/terror-boy/WhiteDevil/tree/master/stickers_*
+ *Sticker commads  _https://github.com/terror-boy/WhiteDevil/tree/master/stickers_*
 `}) 
 
 })); 
