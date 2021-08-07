@@ -23,7 +23,7 @@ ${util.format(conn.user.phone)}\`\`\`
     conn.sendFile(m.chat, pp, 'pp.jpg', aliven, m, false)
   }
 }
-handler.help = ['alive']
+handler.help = ['test']
 handler.tags = ['tools']
-handler.command = /^alive$/i
+handler.command = /^test$/i
 module.exports = handler
