@@ -20,10 +20,10 @@ let handler = async (m, { conn }) => {
     🔌*ᴄʜᴀʀɢɪɴɢ* (ʜᴏsᴛ ɪɴғᴏ) \`\`\`${conn.battery.live ? '🔌 Charging...' : '⚡ Discharging'}` : 'Unknown'}
 ${util.format(conn.user.phone)}\`\`\`
     `.trim()
-    conn.sendFile(m.chat, pp, 'pp.jpg', aliven, m, false)
+    conn.sendFile(m.chat, pp, 'pp.jpg', listn, m, false)
   }
 }
-handler.help = ['test']
+handler.help = ['list']
 handler.tags = ['tools']
-handler.command = /^test$/i
+handler.command = /^list$/i
 module.exports = handler
