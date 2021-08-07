@@ -458,6 +458,10 @@
             "HIDDEN": "Hidden",
             "NOT_FOUND": "*Media Not Found!*"
         },
+        "qrgenerator": {
+             "TEXT": "You must enter text!",
+            "QR_DESC": "Converts the given text into a qr code image."
+        },
         "github": {
             "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github phaticusthiccy",
             "REPLY": "```You Need To Type Any Username!```",
