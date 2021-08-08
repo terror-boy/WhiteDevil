@@ -37,11 +37,11 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         l_dsc = 'chilla theri vilichaal spot kick. -bot owner command'
         alr_on = 'Antilink is already open!'
         alr_off = 'Antilink is currently closed!'
-        THERI_on = '*eni chilla theri vilcha kick akkum*'
-        THERI_off = '*eni enth theri vennelum vili*'
+        THERI_on = '*eni link ittal. Kick akkum*'
+        THERI_off = '*eni enth link vennelum itto*'
     }
    
-    Asena.addCommand({pattern: 'theri ?(.*)', fromMe: true, desc: l_dsc, usage: '.theri no / yes' }, (async (message, match) => {
+    Asena.addCommand({pattern: 'link ?(.*)', fromMe: true, desc: l_dsc, usage: '.link no / yes' }, (async (message, match) => {
         if (match[1] == 'yes') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
