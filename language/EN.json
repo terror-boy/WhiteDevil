@@ -483,6 +483,16 @@
             "HİRE": "Can s/he Hirable?:",
             "URL": "Profile URL:",
             "UPDATE": "Last Update:"
+            "BOT_DESC": "Chat with WhiteDevil.\n Use .molu <message>",
+            "BOT": ":",
+            "JOKE_DESC": "Get a random joke.",
+            "DEVICE": "get the details of given mobile phone",     
+            "JOKE": "Joke:",
+            "PUNCHLINE": "Punchline:",
+            "EVINS_DESC": "Get an evil insult.",
+            "EVINS": "...",
+            "NEWEP": "confused about updates..? use to know about updates ",
+            
         },
         "tiktok": {
             "TİKTOK": "Downloads videos from Tiktok.",
