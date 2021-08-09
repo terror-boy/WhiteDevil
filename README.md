@@ -89,7 +89,8 @@ Absolutely, Asena executives do not accept responsibility.
 By establishing the Asena, you are deemed to have accepted these responsibilities.
 ```
 
-## Developers
+## **Developers & Supporters**
+          
   <div align="center">
     
   [![Karthik_terror-boy](https://github.com/terror-boy.png?size=200)](https://github.com/terror-boy) | [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=200)](https://github.com/farhan-dqz) |  [![saidali](https://github.com/saidalisaid2.png?size=200)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=200)](https://github.com/afnanplk) 
@@ -105,3 +106,9 @@ This project is protected by `GNU General Public Licence v3.0` license.
 
 ### Disclaimer
 `WhatsApp` name, its variations and the logo are registered trademarks of Facebook. We have nothing to do with the registered trademark
+  
+  
+  
+  
+  
+  
