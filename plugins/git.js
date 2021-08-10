@@ -32,8 +32,13 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
  
  
 
- *Audio commads    _https://github.com/terror-boy/WhiteDevil/tree/master/uploads_*
+ *Audio commads-1    _https://github.com/terror-boy/WhiteDevil/tree/master/uploads_*
  
+ 
+ 
+  *Audio commads-2    _https://github.com/terror-boy/WhiteDevil/tree/master/upload_*
+  
+  
  
 
  *Sticker commads  _https://github.com/terror-boy/WhiteDevil/tree/master/stickers_*
