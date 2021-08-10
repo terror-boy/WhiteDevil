@@ -153,5 +153,5 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
             if (us) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
-     
-}));
+       }
+));
