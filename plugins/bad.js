@@ -65,6 +65,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         let regex8 = new RegExp('umban')
         let regex9 = new RegExp('oombi')
         let regex10 = new RegExp('Myr')
+        let regex11 = new RegExp('https:')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
@@ -144,6 +145,13 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
             if (us) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
-        }      
+        }
+         else if (regex11.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
     }
 }));
