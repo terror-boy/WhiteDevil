@@ -74,6 +74,14 @@ Asena.addCommand({pattern: 'music', fromMe: false, desc: Lang.WP}, (async (messa
 
 
 
+*🎧 Command:* _music9_
+*🎶 Description:* _play music9_
+
+
+
+
+
+
 
 *_CODED BY MASTER KARTHIK-TERROR-BOY_*
 `}) 
