@@ -1,15 +1,15 @@
 
 <div align="center">
-  <img border-radius: 15px src="https://avatars.githubusercontent.com/u/85664936?v=4" width="300" height="300"/>
+  <img border-radius: 15px src="https://avatars.githubusercontent.com/WAHID-BOT" width="300" height="300"/>
   <p align="center">
-<a href="#"><img title="WhiteDevil" src="https://img.shields.io/badge/WhiteDevil-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="Bo5co" src="https://img.shields.io/badge/Bo5co -green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
   <p align="center">
-<a href="https://github.com/terror-boy"><img title="Author" src="https://img.shields.io/badge/Author-Karthik_terror-boy/WhiteDevil?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/WAHID-BOT"><img title="Author" src="https://img.shields.io/badge /Author-wahid-tkz/Bo5co?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a> to make it public
+Project created by <a href="https://github.com/WAHID-BOT">wahid-tkz</a> to make it public
     <br>
        | © |
         Reserved |
@@ -19,15 +19,15 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
 ----
 
   <p align="center">
-  <a href="httsp://github.com/terror-boy/WhiteDevil">
-    <img src="https://img.shields.io/github/repo-size/terror-boy/WhiteDevil?color=green&label=Repo%20total%20size&style=plastic">
+  <a href="httsp://github.com/WAHID-BOT/Bo5co">
+    <img src="https://img.shields.io/github/repo-size/wahid-tkz/Bo5co?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
-<a href="https://github.com/terror-boy/followers"><img title="Followers" src="https://img.shields.io/github/followers/terror-boy?color=blue&style=flat-square"></a>
-<a href="https://github.com/terror-boy/WhiteDevil/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/terror-boy/WhiteDevil?color=blue&style=flat-square"></a>
-<a href="https://github.com/terror-boy/WhiteDevil/network/members"><img title="Forks" src="https://img.shields.io/github/forks/terror-boy/WhiteDevil?color=blue&style=flat-square"></a>
-<a href="https://github.com/terror-boy/WhiteDevil/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/terror-boy/WhiteDevil?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/WAHID-BOT/followers"><img title="Followers" src="https://img.shields.io/github/followers/WAHID-BOT?color=blue&style=flat-square"></a>
+<a href="https://github.com/WAHID-BOT/Bo5co/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/WAHID-BOT/Bo5co?color=blue&style=flat-square"></a>
+<a href="https://github.com/WAHID-BOT/Bo5co/network/members"><img title="Forks" src="https://img.shields.io/github/forks/WAHID-BOT/Bo5co?color=blue&style=flat-square"></a>
+<a href="https://github.com/WAHID-BOT/Bo5co/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/WAHID-/Bo5co?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
-</p>
+
 
 ## 📢 Guide
 Click WA logo to Join Support Group 👇👇
