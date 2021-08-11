@@ -11,17 +11,17 @@ Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.WP}, (async (messa
     
     
    
-  r_text[0] = "https://avatars.githubusercontent.com/u/85664936?v=4";
+  r_text[0] = "https://i.imgur.com/kEgkWBe.jpeg";
     
     
     var i = Math.floor(1*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: ` *ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ_ᴛᴇʀʀᴏʀ_ʙᴏʏ*
-*owner number wa.me/919778042644*
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: ` *ʙᴏꜱᴄᴏ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡᴀʜɪᴅ ᴛᴋᴢ*
+*owner number wa.me/919746965745*
 
- *ABOUT ME          _https://github.com/terror-boy_*
+ *ABOUT ME          _https://github.com/WAHID-BOT_*
 `}) 
 
 }));
