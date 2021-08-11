@@ -9,9 +9,9 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 
 const Language = require('../language');
-const Lang = Language.getString('wallpaper');
+const Lang = Language.getString('music');
 
-Asena.addCommand({pattern: 'music', fromMe: false, desc: Lang.WP}, (async (message, match) => {
+Asena.addCommand({pattern: 'music', fromMe: false, desc: Lang.MC}, (async (message, match) => {
 
     var r_text = new Array ();
     
