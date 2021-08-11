@@ -25,7 +25,8 @@ Asena.addCommand({pattern: 'music', fromMe: false, desc: Lang.MC}, (async (messa
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*MUSIC COMMANDS*
-    _(THIS COMMANDS DOESNOT NEED HANDLERS)_
+   
+_(THIS COMMANDS DOES NOT NEED HANDLERS)_
     
     
 *🎧 Command:* _music1_
@@ -78,6 +79,17 @@ Asena.addCommand({pattern: 'music', fromMe: false, desc: Lang.MC}, (async (messa
 *🎶 Description:* _play music9_
 
 
+
+
+
+*🎧 Command:* _music10_
+*🎶 Description:* _play music10_
+
+
+
+
+*🎧 Command:* _music11_
+*🎶 Description:* _play music11_
 
 
 
