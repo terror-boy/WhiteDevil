@@ -1,6 +1,6 @@
-/* Copyright (C) 2020 TERROR-BOY.
+/* Copyright (C) 2020 BO5CO.
 
-WhiteDevil - TERROR-BOY
+W4HID - BO5CO
 */
 
 const { Sequelize } = require('sequelize');
