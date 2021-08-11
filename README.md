@@ -27,16 +27,17 @@ Project created by <a href="https://github.com/WAHID-BOT">wahid-tkz</a> to make 
 <a href="https://github.com/WAHID-BOT/Bo5co/network/members"><img title="Forks" src="https://img.shields.io/github/forks/WAHID-BOT/Bo5co?color=blue&style=flat-square"></a>
 <a href="https://github.com/WAHID-BOT/Bo5co/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/WAHID-/Bo5co?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
+</p>
 
 
 ## 📢 Guide
 Click WA logo to Join Support Group 👇👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/KDT4Q5F4zq99ubruR5T9k1)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/DBDqAuz2CBYBcV03Wz0c3C)
   <div align="center">
        
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=terror-boy&repo=WhiteDevil&theme=nightowl)](https://github.com/terror-boy/WhiteDevil)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=terror-boy&repo=Bo5co&theme=nightowl)](https://github.com/WAHID-BOT/Bo5co)
   </div>
     
 ## Setup
@@ -46,7 +47,7 @@ Click WA logo to Join Support Group 👇👇
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@phaticusthiccy/WhatsAsena-QR)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/terror-boy/WhiteDevil)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/WAHID-BOT/Bo5co)
      </div>
 <br>
 <br >
@@ -85,9 +86,9 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
           
   <div align="center">
     
-  [![Karthik_terror-boy](https://github.com/terror-boy.png?size=200)](https://github.com/terror-boy) | [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=200)](https://github.com/farhan-dqz) |  [![saidali](https://github.com/saidalisaid2.png?size=200)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=200)](https://github.com/afnanplk) 
+  [![Wahid-Tkz](https://github.com/WAHID-BOT.png?size=200)](https://github.com/WAHID-BOT) | [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=200)](https://github.com/farhan-dqz) |  [![saidali](https://github.com/saidalisaid2.png?size=200)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=200)](https://github.com/afnanplk) 
 ----|----|----|----
-[Karthik_terror-boy](https://github.com/terror-boy)  | [farhan-dqz](https://github.com/farhan-dqz)  | [saidali](https://github.com/saidalisaid2) | [afnanplk](https://github.com/afnanplk)
+[Wahid-Tkz](https://github.com/WAHID-BOT)  | [farhan-dqz](https://github.com/farhan-dqz)  | [saidali](https://github.com/saidalisaid2) | [afnanplk](https://github.com/afnanplk)
 Base, Bug Fixes, Modules | Base, Bug Fixes, Modules | Base, Bug Fixes, Modules | Base, Bug Fixes, Modules 
   </div>
     
