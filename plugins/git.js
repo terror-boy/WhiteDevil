@@ -11,37 +11,33 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
     
     
    
-  r_text[0] = "https://avatars.githubusercontent.com/u/85664936?v=4";
+  r_text[0] = "https://i.imgur.com/kEgkWBe.jpeg";
     
     
     var i = Math.floor(1*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ_ᴛᴇʀʀᴏʀ_ʙᴏʏ*
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*ʙᴏꜱᴄᴏ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡᴀʜɪᴅ ᴛᴋᴢ*
 
- *owner number wa.me/919778042644*
+ *owner number wa.me/919746965745*
  
 
- *ABOUT ME          _https://github.com/terror-boy_*
- 
- 
- 
- *Github link       _https://github.com/terror-boy/WhiteDevil_*
+ *ABOUT ME          _https://github.com/WAHID-BOT_*
  
  
  
 
- *Audio commads-1    _https://github.com/terror-boy/WhiteDevil/tree/master/uploads_*
+ *Audio commads-1    _https://github.com/WAHID-BOT/Bo5co/tree/master/uploads_*
  
  
  
-  *Audio commads-2    _https://github.com/terror-boy/WhiteDevil/tree/master/upload_*
+  *Audio commads-2    _https://github.com/WAHID-BOT/Bo5co/tree/master/upload_*
   
   
  
 
- *Sticker commads  _https://github.com/terror-boy/WhiteDevil/tree/master/stickers_*
+ *Sticker commads  _https://github.com/WAHID-BOT/Bo5co/tree/master/stickers_*
 `}) 
 
 })); 
