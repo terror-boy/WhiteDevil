@@ -95,6 +95,14 @@ _(THIS COMMANDS DOES NOT NEED HANDLERS)_
 
 
 
+*🎧 Command:* _music12_
+*🎶 Description:* _play music12_
+
+
+
+
+
+
 *_CODED BY MASTER KARTHIK-TERROR-BOY_*
 `}) 
 
