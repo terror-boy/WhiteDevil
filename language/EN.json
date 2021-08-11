@@ -2,7 +2,7 @@
     "__ASENAJSON__": true,
     "LANGUAGE": "English",
     "LANGCODE": "en",
-    "AUTHOR": "Terror-boy/Karthik",
+    "AUTHOR": "W4HID /BO5CO",
     "STRINGS": {
         "_asena": {
             "COMMAND": "Command",
@@ -75,10 +75,10 @@
             "MUST_TEXT": "```Please reply to any message```"
         },
         "heroku": {
-            "RESTART_DESC": "Restart WhiteDevil",
-            "RESTART_MSG": "```Restarting WhiteDevil...```",
-            "SHUTDOWN_DESC": "Shutdown WhiteDevil",
-            "SHUTDOWN_MSG": "```Shutting down ⛔ WhiteDevil```",
+            "RESTART_DESC": "Restart Bo5co",
+            "RESTART_MSG": "```Restarting Bo5co...```",
+            "SHUTDOWN_DESC": "Shutdown Bo5co",
+            "SHUTDOWN_MSG": "```Shutting down ⛔ Bo5co```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
@@ -235,9 +235,9 @@
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "Updating..🧞‍♂️",
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
-            "UPDATED": "*✅ WhiteDevil Updated!*",
-            "UPDATED_LOCAL": "*✅WhiteDevil Updated!*",
-            "AFTER_UPDATE": "*WhiteDevil Restarting !*",
+            "UPDATED": "*✅ Bo5co Updated!*",
+            "UPDATED_LOCAL": "*✅Bo5co Updated!*",
+            "AFTER_UPDATE": "*Bo5co Restarting !*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
