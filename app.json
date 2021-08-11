@@ -1,9 +1,9 @@
 {
-    "name": "WhiteDevil",
-    "description": "WhiteDevil- Whatsapp UserBot",
-    "logo": "https://i.imgur.com/kB30S41.png",
+    "name": "Bo5co",
+    "description": "Bo5co- Whatsapp UserBot",
+    "logo": "https://i.imgur.com/kEgkWBe.jpeg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/terror-boy/WhiteDevil",
+    "repository": "https://github.com/WAHID-BOT/Bo5co",
     "website":   "https://t.me/phaticusthiccy",
     "success_url": "https://t.me/AsenaSupport",
     "stack": "container",
@@ -19,7 +19,7 @@
         "LANGUAGE": {
             "description": "Bot language. Azerice => az, English => en, Türkçe => tr, Malayalam => ml, Hindi => HI, Indonesia => ID, Español => ES, Portuguese => pt, Russian => ru",
             "required": true,
-            "value": "en"
+            "value": "ml"
         },
         "BGM_FILTER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
