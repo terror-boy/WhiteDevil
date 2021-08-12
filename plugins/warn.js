@@ -14,8 +14,7 @@ Asena.addCommand({pattern: 'warn', fromMe: false, desc: Lang.WN}, (async (messag
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⚠️Warning ⚠️
 2 warnings remaining
-User : (message.jid, '@' + message.reply_message.jid.split('@')[0] + '```,MessageType.text, { quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
-  ⁩ 
+User : (message.jid, '@' + message.reply_message.jid.split('@')[0] + '```,{mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
 `}) 
 
 }));
