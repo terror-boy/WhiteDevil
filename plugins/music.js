@@ -101,9 +101,71 @@ _(THIS COMMANDS DOES NOT NEED HANDLERS)_
 
 
 
+*🎧 Command:* _music13_
+*🎶 Description:* _play music13_
+
+
+
+
+
+*🎧 Command:* _music14_
+*🎶 Description:* _play music14_
+
+
+
+
+
+*🎧 Command:* _music15_
+*🎶 Description:* _play music15_
+
+
+
+
+
+*🎧 Command:* _music16_
+*🎶 Description:* _play music16_
+
+
+
+
+
+*🎧 Command:* _music17_
+*🎶 Description:* _play music17_
+
+
+
+
+
+*🎧 Command:* _music18_
+*🎶 Description:* _play music18_
+
+
+
+
+
+
+*🎧 Command:* _music19_
+*🎶 Description:* _play music19_
+
+
+
+
+
+*🎧 Command:* _music20_
+*🎶 Description:* _play music20_
+
+
+
+
+
 
 
 *_CODED BY MASTER KARTHIK-TERROR-BOY_*
 `}) 
 
-})); 
+}));
+
+/* DON'T COPY THIS CODE BEFORE
+ ASKING ME BECAUSE YOU NEED TO
+ADD ONE MORE THING IN THIS
+*/
