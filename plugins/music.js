@@ -6,7 +6,7 @@ WhiteDevil - TERROR BOY
 DON'T COPY THIS CODE BEFORE
  ASKING ME BECAUSE YOU NEED TO
 ADD ONE MORE THING IN THIS.
-       -TERROR-BOY
+        -TERROR-BOY
 */
 
 const Asena = require('../events');
