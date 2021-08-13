@@ -4,6 +4,14 @@ you may not use this file except in compliance with the License.
 WhiteDevil - TERROR BOY
 */
 
+
+/* DON'T COPY THIS CODE BEFORE
+ ASKING ME BECAUSE YOU NEED TO
+ADD ONE MORE THING IN THIS.
+      -TERROR-BOY
+*/
+
+
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
@@ -24,149 +32,213 @@ Asena.addCommand({pattern: 'music', fromMe: false, desc: Lang.MC}, (async (messa
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*MUSIC COMMANDS*
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*🎧MUSIC COMMANDS🎧👇*
    
 _(THIS COMMANDS DOES NOT NEED HANDLERS)_
     
+_(blank description means songs need to add)_
     
-*🎧 Command:* _music1_
-*🎶 Description:* _play music1_
+        
+*🎧 Command:* _m1_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴏᴋᴇʏ ᴏᴋᴀ ʟᴏᴋᴀᴍ*
 
-*🎧 Command:* _music2_
-*🎶 Description:* _play music2_
+       
+*🎧 Command:* _m2_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴏʀᴜ ᴅɪɴᴀᴍ*
+    
+    
+*🎧 Command:* _m3_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ: sʜɪᴠᴀ ᴛʜᴀᴅᴀᴠᴀᴍ*
+    
+    
+*🎧 Command:* _m4_
 
-*🎧 Command:* _music3_
-*🎶 Description:* _play music3_
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴛʜᴀᴛᴛᴜᴍ ᴍᴜᴛᴛᴜᴍ ᴛʜᴀʟʟᴀᴍ*
+    
+    
+*🎧 Command:* _m5_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ʏᴀᴀʀᴀɪʏᴜᴍ ɪᴠʟᴏ ᴀᴢʜᴀɢᴀ*
+    
+    
+*🎧 Command:* _m6_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴀᴍʀɪ sɪ*
 
+    
+    
+*🎧 Command:* _m7_
 
-*🎧 Command:* _music4_
-*🎶 Description:* _play music4_
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴋᴀɴᴄʜɪᴍᴍɪʏᴏ ᴄᴏᴠᴇʀ sᴏɴɢ*
+    
+    
+*🎧 Command:* _m8_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴍᴀɴɪᴋᴇ ᴍᴀɢᴇ ʜɪᴛʜᴇ (ᴍᴀʟᴀʏᴀʟᴀᴍ & ᴛᴀᴍɪʟ ᴠᴇʀsɪᴏɴ)*
 
+    
+    
+*🎧 Command:* _m9_
 
-*🎧 Command:* _music5_
-*🎶 Description:* _play music5_
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴍᴀᴢʜᴀᴛʜᴜʟʟɪᴋᴀʟ (ᴍᴀʟᴇ ᴠᴇʀsɪᴏɴ)*
 
+    
+    
+*🎧 Command:* _m10_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴘʀɪʏᴀᴍ ᴍᴜsɪᴄ*
+    
+    
+*🎧 Command:* _m11_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴇᴇ ᴋᴀᴛʜᴀʏᴏ*
 
-*🎧 Command:* _music6_
-*🎶 Description:* _play music6_
+    
+    
+*🎧 Command:* _m12_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴇᴋᴀᴀɴᴛʜᴀ ᴛʜᴀᴀʀᴀᴍᴇ*
 
+    
+    
+*🎧 Command:* _m13_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ɴᴇᴇʀᴏʟᴀᴍ ᴍᴇʟᴇ ᴍᴏᴏᴅᴜᴍ*
+    
+    
+*🎧 Command:* _m14_
 
-*🎧 Command:* _music7_
-*🎶 Description:* _play music7_
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:sʏᴇ ʀᴀᴀ ᴛɪᴛʟᴇ sᴏɴɢ*
 
+    
+    
+*🎧 Command:* _m15_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴋᴜʀᴜᴍʙᴀᴛʜɪ ᴄʜᴜɴᴅᴀʀɪ ɴᴇᴇ*
 
+    
+    
+*🎧 Command:* _m16_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴋᴜʀᴜᴍʙɪ ᴋᴜʀᴜᴍʙɪ*
 
-*🎧 Command:* _music8_
-*🎶 Description:* _play music8_
+    
+    
+*🎧 Command:* _m17_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴅɪʟ ᴋᴏ ᴋᴀʀʀᴀʀ ᴀᴀʏᴀ ʀᴇᴘʀɪsᴇ - ɴᴇʜᴀ ᴋᴀᴋᴋᴀʀ*
 
+    
+    
+*🎧 Command:* _m18_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m19_
 
-*🎧 Command:* _music9_
-*🎶 Description:* _play music9_
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m20_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m21_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
-*🎧 Command:* _music10_
-*🎶 Description:* _play music10_
+    
+    
+*🎧 Command:* _m22_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m23_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
-*🎧 Command:* _music11_
-*🎶 Description:* _play music11_
+    
+    
+*🎧 Command:* _m24_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m25_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m26_
 
-*🎧 Command:* _music12_
-*🎶 Description:* _play music12_
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m27_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m28_
 
-*🎧 Command:* _music13_
-*🎶 Description:* _play music13_
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m29_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m30_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
-*🎧 Command:* _music14_
-*🎶 Description:* _play music14_
+    
+    
+*🎧 Command:* _m31_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
+    
+    
+*🎧 Command:* _m32_
 
+*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
 
 
-*🎧 Command:* _music15_
-*🎶 Description:* _play music15_
 
 
-
-
-
-*🎧 Command:* _music16_
-*🎶 Description:* _play music16_
-
-
-
-
-
-*🎧 Command:* _music17_
-*🎶 Description:* _play music17_
-
-
-
-
-
-*🎧 Command:* _music18_
-*🎶 Description:* _play music18_
-
-
-
-
-
-
-*🎧 Command:* _music19_
-*🎶 Description:* _play music19_
-
-
-
-
-
-*🎧 Command:* _music20_
-*🎶 Description:* _play music20_
-
-
-
-
-
-
-
-*_CODED BY MASTER KARTHIK-TERROR-BOY_*
+*_𝘾𝙊𝘿𝙀𝘿 𝘽𝙔 𝙈𝘼𝙎𝙏𝙀𝙍 𝙆𝘼𝙍𝙏𝙃𝙄𝙆-𝙏𝙀𝙍𝙍𝙊𝙍-𝘽𝙊𝙔_*
 `}) 
 
 }));
 
-/* DON'T COPY THIS CODE BEFORE
- ASKING ME BECAUSE YOU NEED TO
-ADD ONE MORE THING IN THIS.
-      -TERROR-BOY
+
+
+
+
+
+
+
+
+
+
+
+/* font generator: https://coolsymbol.com/cool-fancy-text-generator.html
 */
