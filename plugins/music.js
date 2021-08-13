@@ -8,6 +8,9 @@ WhiteDevil - TERROR BOY
 /* DON'T COPY THIS CODE BEFORE
  ASKING ME BECAUSE YOU NEED TO
 ADD ONE MORE THING IN THIS.
+
+font generator: https://coolsymbol.com/cool-fancy-text-generator.html
+
       -TERROR-BOY
 */
 
@@ -36,9 +39,8 @@ Asena.addCommand({pattern: 'music', fromMe: false, desc: Lang.MC}, (async (messa
    
 _(THIS COMMANDS DOES NOT NEED HANDLERS)_
     
-_(blank description means songs need to add)_
-    
-        
+
+         
 *🎧 Command:* _m1_
 
 *🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴏᴋᴇʏ ᴏᴋᴀ ʟᴏᴋᴀᴍ*
@@ -139,106 +141,9 @@ _(blank description means songs need to add)_
 
     
     
-*🎧 Command:* _m19_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m20_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m21_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m22_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m23_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m24_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m25_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m26_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m27_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m28_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m29_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m30_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m31_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
-*🎧 Command:* _m32_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-
 
 
 *_𝘾𝙊𝘿𝙀𝘿 𝘽𝙔 𝙈𝘼𝙎𝙏𝙀𝙍 𝙆𝘼𝙍𝙏𝙃𝙄𝙆-𝙏𝙀𝙍𝙍𝙊𝙍-𝘽𝙊𝙔_*
 `}) 
 
 }));
-
-
-
-
-
-
-
-
-
-
-
-
-/* font generator: https://coolsymbol.com/cool-fancy-text-generator.html
-*/
