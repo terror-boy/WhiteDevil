@@ -2,18 +2,12 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 WhiteDevil - TERROR BOY
-*/
 
-
-/* DON'T COPY THIS CODE BEFORE
+DON'T COPY THIS CODE BEFORE
  ASKING ME BECAUSE YOU NEED TO
 ADD ONE MORE THING IN THIS.
-
-font generator: https://coolsymbol.com/cool-fancy-text-generator.html
-
-      -TERROR-BOY
+       -TERROR-BOY
 */
-
 
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
@@ -134,15 +128,9 @@ _(THIS COMMANDS DOES NOT NEED HANDLERS)_
 *🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:ᴅɪʟ ᴋᴏ ᴋᴀʀʀᴀʀ ᴀᴀʏᴀ ʀᴇᴘʀɪsᴇ - ɴᴇʜᴀ ᴋᴀᴋᴋᴀʀ*
 
     
-    
-*🎧 Command:* _m18_
-
-*🎶 Description:* *ᴛᴏ ᴘʟᴀʏ sᴏɴɢ:*
-
-    
-    
 
 
+ 
 *_𝘾𝙊𝘿𝙀𝘿 𝘽𝙔 𝙈𝘼𝙎𝙏𝙀𝙍 𝙆𝘼𝙍𝙏𝙃𝙄𝙆-𝙏𝙀𝙍𝙍𝙊𝙍-𝘽𝙊𝙔_*
 `}) 
 
