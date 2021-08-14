@@ -139,6 +139,9 @@
             "NEED_REPLY": "*Reply to a photo!*",
             "DOWNLOADING": "```Downloading media & making meme...```"
          },
+        "ok": {
+            "OK": "test."
+         },
         "music": {
             "MC": "To play musics."
          },
