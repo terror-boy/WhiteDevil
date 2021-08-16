@@ -16,7 +16,7 @@ const Config = require('../config');
             
           
         
-            var i = Math.floor(4*Math.order())
+            var i = Math.floor(4*Math.random())
         
             await message.client.sendMessage(
                 message.jid,(r_text[i]), MessageType.text);
