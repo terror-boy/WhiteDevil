@@ -9,7 +9,7 @@
             "DESC": "Description",
             "EXAMPLE": "Example",
             "NOT_FOUND": "*I couldnt find a command like this*",
-            "WARN": "Warn"
+            
         },
         "_plugin": {
             "INSTALL_DESC": "Install external plugins.",
@@ -141,6 +141,9 @@
          },
         "music": {
             "MC": "To play musics."
+          },
+        "over": {
+            "OVER_DESC": "To remove."
          },
         "gitlink": {
             "GL": "To show dgithub details."
