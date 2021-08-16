@@ -6,7 +6,7 @@ const Config = require('../config');
 
 
  if (Config.WORKTYPE == 'public') {
-        asena.addCommand({pattern: 'warn', fromMe: true, deleteCommand: true, desc: WN,}, (async (message, match) => {
+        asena.addCommand({pattern: 'warn', fromMe: true, deleteCommand: false, desc: WN,}, (async (message, match) => {
         
             var r_text = new Array ();
         
