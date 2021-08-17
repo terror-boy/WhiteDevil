@@ -26,5 +26,6 @@ Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: false, desc: "Shows movie inf
 	msg += 'Production : ' + json.Production + '\n\n';
 	msg += 'imdbRating : ' + json.imdbRating + '\n\n';
 	msg += 'imdbVotes  : ' + json.imdbVotes + '```';
+	msg += 'link       : ' + json.link + '\n\n*https://t.me/malayalam_rocker_s*';
 	await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 }));
