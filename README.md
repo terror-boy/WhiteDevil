@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img border-radius: 15px src="https://avatars.githubusercontent.com/u/85664936?v=4" width="300" height="300"/>
+  <img border-radius: 15px src="https://avatars.githubusercontent.com/u/85664936?v=4" width="1080" height="1080"/>
   <p align="center">
 <a href="#"><img title="WhiteDevil" src="https://img.shields.io/badge/WhiteDevil-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
