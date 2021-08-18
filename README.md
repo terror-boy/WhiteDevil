@@ -44,9 +44,17 @@ Click WA logo to Join Support Group 👇👇
 
   ### Simple Method
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@terror-boy/WhiteDevil)
+
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/terror-boy/WhiteDevil)
+  
+  
+ 
+  
+  
+  
+  
+ [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@terror-boy/WhiteDevil)
      </div>
 <br>
 <br >
