@@ -65,6 +65,16 @@
             "SECOND": "സെക്കൻഡ്",
             "AGO": " മുമ്പ്```"
         },
+        "info": {
+            "INFO_DESC": "Show chat details",
+            "GRP_NAME": "*ℹ️ Group name :*",
+            "GRP_JID": "*💬 Group JID :*",
+            "GRP_OWN": "*⚜️ Group owner :*",
+            "GRP_COD": "*🆔 Group invite link :*",
+            "GRP_DES": "*🗨️ Group description :*",
+            "PRO_JID": "*💬 User JID :*",
+            "PRO_DES": "*🗨️ Description :*"
+        },
         "evaluators": {
             "TERM_DESC": "പ്രോഗ്രാം സർവറിൽ ഓടിക്കാം.",
             "GIVE_ME_CODE": "*പ്രോഗ്രാം തിരിക !*"
