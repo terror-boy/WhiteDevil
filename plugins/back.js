@@ -16,7 +16,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 const BK = ('It is just for fun');
 
-const code = ('*_📢ANNOUNCEMENT📢_* \n\n\n *WHITEDEVIL IS AVAILABLE NOW*')
+const code = ('```📢ANNOUNCEMENT📢``` \n\n\n *WHITEDEVIL IS AVAILABLE NOW*')
 Asena.addCommand({pattern: 'back', fromMe: true, deleteCommand: true, desc: BK,}, (async (message, match) => {
 
 
