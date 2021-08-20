@@ -19,8 +19,8 @@ Asena.addCommand({pattern: 'list', fromMe: false, desc: Lang.WP}, (async (messag
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━━━━✨️Ameer Suhail✨️━━━━━⛦
-𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 Karthik_terror-boy 𝐛𝐨𝐭.
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━━━━✨️WhiteDevil✨️━━━━━⛦
+𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 Karthik_terror-boy's 𝐛𝐨𝐭.
             *WhiteDevil*
 ■□■□■□■□■□■□■□■□■□■□
 ♕ *𝙈𝙚𝙙𝙞𝙖 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨* ♕
@@ -59,7 +59,7 @@ Asena.addCommand({pattern: 'list', fromMe: false, desc: Lang.WP}, (async (messag
 🍙𝙐𝙨𝙚➜ Finds the text written on the image.
 ➡️𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -wallpaper
 🍙𝙐𝙨𝙚➜ It sends you random wallpaper.
-■□■□■□■□■□Pikachu■□■□■□■□■□
+■□■□■□■□■□WhiteDevil■□■□■□■□■□
 ♟ *𝙁𝙪𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨* ♟
 ➡️𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -joke 
 🍙𝙐𝙨𝙚➜ It sends a random joke.
@@ -90,7 +90,7 @@ Asena.addCommand({pattern: 'list', fromMe: false, desc: Lang.WP}, (async (messag
 ➡️𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜  -anime <text>
 🍙𝙐𝙨𝙚➜  Gives you info about anime.
 ⚠️anime whitedevil
-■□■□■□■□■Pikachu□■□■□■□■□■□
+■□■□■□■□■WhiteDevil□■□■□■□■□■□
 ♝ *𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨* ♝
 ➡️𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -sticker 
 🍙𝙐𝙨𝙚➜ Converts img/gif into a sticker.
