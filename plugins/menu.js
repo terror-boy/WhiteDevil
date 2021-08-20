@@ -19,7 +19,7 @@ Asena.addCommand({pattern: 'menu', fromMe: false, desc: Lang.WP}, (async (messag
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━━━━✨️Karthik_terror-boy✨️━━━━━⛦
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━━━━✨️WhiteDevil✨️━━━━━⛦
 𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 Karthik_terror-boy's 𝐛𝐨𝐭.
             *WhiteDevil*
 ■□■□■□■□■□■□■□■□■□■□
