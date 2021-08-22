@@ -31,7 +31,7 @@ Asena.addCommand({pattern: 'close', fromMe: true, deleteCommand: false, desc: CL
           message.jid,code, MessageType.text);
 
               await message.client.sendMessage(
-      message.jid,TST, MessageType.text);
+                message.jid,TST, MessageType.text);
      
                   await message.client.sendMessage(
                              message.jid,FINAL, MessageType.text);
