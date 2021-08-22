@@ -15,6 +15,7 @@ const OP = ('This command for OPEN the  Group at MORNING');
 const code = ('!unmute')
 const FINAL = "```The group  has open 🔓!```"
 const TMUTE = "Trying to open the group"
+const TST = "!tagall !gm"
 const SCXR = "Running script...."
 Asena.addCommand({pattern: 'open', fromMe: true, deleteCommand: false, desc: OP,}, (async (message, match) => {
 
@@ -29,7 +30,10 @@ Asena.addCommand({pattern: 'open', fromMe: true, deleteCommand: false, desc: OP,
         await message.client.sendMessage(
           message.jid,code, MessageType.text);
 
-                          await message.client.sendMessage(
+            await message.client.sendMessage(
+               message.jid,TST, MessageType.text);
+     
+                 await message.client.sendMessage(
                              message.jid,FINAL, MessageType.text);
 
 
