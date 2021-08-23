@@ -18,7 +18,7 @@ Asena.addCommand({pattern: 'bots', fromMe: false, desc: Lang.BS}, (async (messag
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*bot lists* \n\n\n
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*BOT + Config.TB + \n\n\n
 \n *https://github.com/terror-boy/WhiteDevil/* -owned by Karthik_terror-boy \n
 \n *https://github.com/nexusNw/filo/* -owned by nexusNw \n
 \n *https://github.com/cyberchekuthan/Amalser_v1/* -owned by Amalser \n
