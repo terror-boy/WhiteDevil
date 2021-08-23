@@ -3,13 +3,13 @@
     "description": "WhiteDevil- Whatsapp UserBot",
     "logo": "https://i.imgur.com/kB30S41.png",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/terror-boy/WhiteDevil",
-    "website":   "https://t.me/phaticusthiccy",
-    "success_url": "https://t.me/AsenaSupport",
+    "repository": "https://www.github.com/terror-boy/WhiteDevil",
+    "website":   "https://www.github.com/terror-boy/WhiteDevil",
+    "success_url": "https://www.github.com/terror-boy",
     "stack": "container",
     "env": {
-        "ASENA_SESSION": {
-            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Asena Session.",
+        "WHITEDEVIL_SESSION": {
+            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours WhiteDevil Session.",
             "required": true
         },
         "SUDO": {
