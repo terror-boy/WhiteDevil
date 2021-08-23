@@ -50,7 +50,7 @@ module.exports = {
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
     OVERMSG: process.env.OVER_MESSAGE === undefined ? 'default' : process.env.OVER_MESSAGE,
     KTB: process.env.TAG_HEADER === undefined ? 'WhiteDevil' : process.env.TAG_HEADER,
-    TB: process.env.TAG_HEADER === undefined ? 'LISTS*' : process.env.TAG_HEADER,
+    TB: process.env.TAG_HEADER === undefined ? '' : process.env.TAG_HEADER,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
