@@ -3,9 +3,9 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 
 const Language = require('../language');
-const Lang = Language.getString('bot links');
+const Lang = Language.getString('wallpaper');
 
-Asena.addCommand({pattern: 'bots', fromMe: false, desc: Lang.BS}, (async (message, match) => {
+Asena.addCommand({pattern: 'bots', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
     var r_text = new Array ();
     
