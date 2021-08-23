@@ -54,7 +54,7 @@ Click WA logo to Join Support Group 👇👇
   
   
   
- [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@terror-boy/WhiteDevil)
+ [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@terror-boy/WhiteDevil?v=1)
      </div>
 <br>
 <br >
