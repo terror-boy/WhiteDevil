@@ -99,6 +99,9 @@
             "WR": "*Please use the modules that exists!*",
             "DEGİS_DESC": "Changes the text of modules like alive, afk etc.."       
         },
+        "bots": {
+            "BS": "bot links"
+        },
         "filters": {
             "FILTER_DESC": "It adds a filter. If someone writes your filter, it send the answer. If you just write .filter, it show's your filter list.",
             "NO_FILTER": "*❌ There are no filters in this chat!*",
