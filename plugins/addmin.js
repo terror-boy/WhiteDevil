@@ -5,7 +5,7 @@ you may not use this file except in compliance with the License.
 
 WhiteDevil- terror-boy
 
-codded by afnanplk
+    codded by afnanplk
 */
 
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
