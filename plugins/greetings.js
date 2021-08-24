@@ -13,9 +13,6 @@ const Config = require('../config');
 
 
 const Language = require('../language');
-
-
-const Language = require('../language');
 const Lang = Language.getString('greetings');
 
 if (Config.WORKTYPE == 'private') {
