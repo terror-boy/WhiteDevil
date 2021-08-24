@@ -13,7 +13,6 @@ const Config = require('../config');
 
 
 const Language = require('../language');
-const Config = require('../config');
 
 
 const Language = require('../language');
