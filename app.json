@@ -79,6 +79,17 @@
             "description": "Düzenlenebilir Mute Mesajı. Customizable Mute Message! Use => default, to change back.",
             "required": false,
             "value": "default"
+       },
+         "THERI_LIST": {
+            "description": "bad word ban...  add the bad words you dont allow in your grp (THERI_KICK must be true to run this feature , and dont change the 1st word ) example: plk-dqz,f**k,d**k",
+            "description": "bad word ban...  add the bad words you dont allow in your grp (THERI_KICK must be true to run this feature) example: plk-dqz,f**k,d**k",
+            "required": true,
+            "value": "false"
+        },
+        "TAG_HEADER": {
+            "description": "Heading when taging all",
+            "required": false,
+            "value": "hear me friends"
         },
         "BLOCK_CHAT": {
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
@@ -101,7 +112,7 @@
             "value": "default"
         },
         "WORK_TYPE": {
-            "description": "WhatsAsena Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "WhiteDevil Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
             "required": true,
             "value": "public"
         },
