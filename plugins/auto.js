@@ -7,12 +7,12 @@ Asena.addCommand({pattern: 'alive', fromMe: false,dontAddCommandList: true}, (as
 
     var r_text = new Array ();    
 r_text[0] = "\n *Eda eda, mandankonappi..*  *Nee enne kooduthal mandan aakkatheda* \n";
-r_text[1] = "Whitedevil tholpikkaan ningalkavilla. Jeevitathil Whitedevil tholpichittundu… palarum… palavattom…😥😥 aarellum aaa sed bgm onn iduo...";
-r_text[2] = "Whitedevil says i love you 😘";
-r_text[3] = "Whitedevilinte yudhangal Company Kanan Povunnatheyuloo";
-r_text[4] = "hi, how are you";
-r_text[5] = "ennikk korch rest theroo...🥵🥵";
-r_text[6] = "Whitedevil - eva - simsim \ningane ethra ethra paerugal aan alle enikk..😂🤣";
+r_text[1] = "*Whitedevil tholpikkaan നിങ്ങൾക്കാവില്ല.* *Jeevitathil Whitedevil* *tholpichittundu…* *palarum…* *palavattom…😥😥* *aarellum aaa sed bgm onn iduo...*";
+r_text[2] = "*Whitedevil says i love you 😘*";
+r_text[3] = "*Whitedevilinte yudhangal Company Kanan Povunnatheyuloo*";
+r_text[4] = "*hi, how are you*";
+r_text[5] = "*ennikk korch rest theroo...🥵🥵*";
+r_text[6] = "*Whitedevil* - *eva* - *simsim* \n *ingane ethra ethra paerugal aan alle enikk..😂🤣*";
 r_text[7] = "താനാരാണെന്ന് തനിക്ക് അറിയാന്‍ മേലങ്കില്‍താന്‍ എന്നോട്‌ ചോദിക്ക്.. താനാരണെന്ന്...തനിക്ക് ഞാന്‍ പറഞ്ഞു തരാംതാനാരാണെന്ന്...എന്നിട്ട്‌ഞാനാരാണെന്ന് എനിക്കാറിയാമൊന്നുതാനെന്നോട്‌ ചോദിക്ക്..അപ്പോ തനിക്ക് ഞാന്‍ പറഞ്ഞു തരാംതാനാരാണെന്നും ..ഞാനാരാണെന്നും - കുതിരവട്ടം പപ്പു, മണിച്ചിത്രതാഴ് ";
 r_text[8] = "\n enne vilicho...?🧐 \n";
 r_text[9] = "ente per Whitedevil ,ninte per donkey, backi ellarum monkey😼😼";
@@ -20,12 +20,12 @@ r_text[10] = "nee vilicha enikk villi kelkathe irrikkaan pattuo";
 r_text[11] = "do you know who is my creator..? its none other than karthik";
 r_text[12] = "രണ്ട് ബക്കറ്റ് നിറയെ വെള്ളമുണ്ട്. അതിൽ ഒരു ബക്കറ്റിനു ദ്വാരമുള്ളതാണ്. എന്നാൽ ദ്വാരമുള്ള ബക്കറ്റിൽ നിന്നും വെള്ളം പോകുന്നില്ല. കാരണം എന്താണ്? para ninak vivaram indo nokkatte";
 r_text[13] = ".song adich thangalude fav song name para Whitedevil ath download aakki theraam";
-r_text[14] = "ഹിന്ദിക്കാർ പോക്കറ്റിലും മലയാളികൾ അടുപ്പിലും വെക്കുന്ന സാധനം എന്ത്..?  ennallum ath enthaayikkum...🤔🤔";
-r_text[15] = "hi.. ningal ente fan aano..?";
-r_text[16] = "ivide aaro ente per villichallo.. nee aano..?";
-r_text[17] = "\n hey mishter ningalude per entha..?";
-r_text[18] = "enikk njan und karthikser uyir";
-r_text[19] = "\n eda sathyam para nee ente fan alle..\n ";
+r_text[14] = "*ഹിന്ദിക്കാർ പോക്കറ്റിലും മലയാളികൾ അടുപ്പിലും വെക്കുന്ന സാധനം എന്ത്..?*  *ennallum ath enthaayikkum...🤔🤔*";
+r_text[15] = "*hi.. ningal ente fan aano..?*";
+r_text[16] = "*ivide aaro ente per villichallo..* *nee aano..?*";
+r_text[17] = "\n *hey mishter ningalude per entha..?*";
+r_text[18] = "*enikk njan und karthikser uyir*";
+r_text[19] = "\n *eda sathyam para nee ente fan alle..* \n ";
 r_text[20] = "The coefficient's of linear expansions is the position of Haemoglobin in the atmosphere. But Why? Full Many gem of purests serene lay underneath the unfathomed ocean's unblossomeds ! But why? But why";
 r_text[21] = "*Keralam pazhaya keralamellennariyam… pakshe Whitedevil pazhaya Whitedevil thanneya...😎* \n\n";
 r_text[22] = "Kaanaan oru look illanney ullu… bhayankara budhiya\n\n ninnak allatto enik Whitedevil";
