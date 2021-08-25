@@ -75,7 +75,8 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          let regex12 = new RegExp('RULES')
          let regex13 = new RegExp('INFO')
          let regex14 = new RegExp('Hi')
-         let regex15 = new RegExp('hi')
+         let regex15 = new RegExp('Da')
+         let regex16 = new RegExp('Pm')
          if (regex1.test(message.message)) {              
              await message.client.sendMessage(message.jid,'to get all commands type .help', MessageType.text, {quoted: message.data })
          } 
@@ -121,6 +122,10 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          }
 
          else if (regex15.test(message.message)) {
-            await message.client.sendMessage(message.jid,'┌ *「 ABOUT 」* \n\n\n *HELLO I AM WHITEDEVIL USED FOR ENTERTAINMENT PURPOSE AS YOU ARE MY USERS YOU SHOULD MAINTAIN YOUR DIGNITY*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'┌ *「 എന്താടോ😉」* \n *ഞാൻ ഇവിടെ ഉണ്ട്...😉*', MessageType.text, {quoted: message.data })
+         }
+        
+         else if (regex16.test(message.message)) {
+            await message.client.sendMessage(message.jid,'┌ *「 അത് എന്ത് ചോദ്യം 😉」* \n *വരുന്നത് ഓക്കെ കൊള്ളാം spam ആക്കരുത്...😉*', MessageType.text, {quoted: message.data })
          }
  }));
