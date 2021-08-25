@@ -72,7 +72,10 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          let regex9 = new RegExp('Di')
          let regex10 = new RegExp('bye')
          let regex11 = new RegExp('OWNER')
-         let regex12 = new RegExp('INFO')
+         let regex12 = new RegExp('RULES')
+         let regex13 = new RegExp('INFO')
+         let regex14 = new RegExp('Hi')
+         let regex15 = new RegExp('hi')
          if (regex1.test(message.message)) {              
              await message.client.sendMessage(message.jid,'to get all commands type .help', MessageType.text, {quoted: message.data })
          } 
@@ -108,5 +111,16 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          }   
          else if (regex12.test(message.message)) {
             await message.client.sendMessage(message.jid,'┌ *「 RULES 」* \n│ 🛂 ഉടമയുടെ മേൽനോട്ടം\n │ ✅ ദയവായി അനുസരിക്കുക >_< \n │  \n │ നിയന്ത്രണങ്ങൾ എപ്പോൾ വേണമെങ്കിലും ആകാം സൗകര്യർത്ഥ മാറ്റി \n └──── \n\n 1. കമാൻഡ് ചെയ്യുമ്പോൾ ദയവായി സ്പാം ചെയ്യരുത് \n 2. ബോട്ട് നമ്പറിലേക്ക് വിർടെക്സ്, ബഗ്, ബോംബ് തുടങ്ങിയവ അയയ്ക്കരുത് \n 3. ഉടമയെ അപമാനിക്കുന്നത് അവർ നേരിട്ട് എടുക്കും \n 4. ബോട്ട് കമാൻഡിൽ ഉപയോക്താവ് ചെയ്യുന്നതിന് ബോട്ട്/ഉടമ ഉത്തരവാദിയല്ല \n 5. ബോട്ട് നമ്പറുകളിലേക്ക് വിളിക്കാൻ അനുവാദം ഇല്ല \n 6. EXP/പരിധി/ലെവൽ ചതികൾ നിരോധിച്ചിരിക്കുന്നു \n 7. ബോട്ട് പ്രതികരിക്കുന്നില്ലെങ്കിൽ, അതിനർത്ഥം അത് ഓഫ് എന്നാണ് \n 8. ഏതെങ്കിലും ബഗുകൾ *! റിപ്പോർട്ട് *വഴി റിപ്പോർട്ട് ചെയ്യുക \n\n\n *「 CONSEQUENCES 」* \n 1. നിങ്ങൾ റൂൾ നമ്പർ 5 (കോളിംഗ്) ലംഘിക്കുകയാണെങ്കിൽ നിങ്ങളെ തടയും \n 2. നിങ്ങൾ നിയമങ്ങൾ 1, 2,  \n 3 ലംഘിക്കുകയാണെങ്കിൽ, നിങ്ങൾക്ക് ബോട്ടുകളിൽ നിന്ന് നിരോധിക്കാവുന്നതാണ് \n 4. നിങ്ങൾ റൂൾ നമ്പർ 3 (അപമാനിക്കൽ) ലംഘിക്കുകയാണെങ്കിൽ, നിങ്ങൾക്ക് ബോട്ട് ഉപയോഗിക്കാവുന്നതാണ്', MessageType.text, {quoted: message.data })
+         }
+         else if (regex13.test(message.message)) {
+            await message.client.sendMessage(message.jid,'┌ *「 ABOUT 」* \n\n\n *HELLO I AM WHITEDEVIL USED FOR ENTERTAINMENT PURPOSE AS YOU ARE MY USERS YOU SHOULD MAINTAIN YOUR DIGNITY*', MessageType.text, {quoted: message.data })
+         }
+
+         else if (regex14.test(message.message)) {
+            await message.client.sendMessage(message.jid,'┌ *「 ABOUT 」* \n\n\n *HELLO I AM WHITEDEVIL USED FOR ENTERTAINMENT PURPOSE AS YOU ARE MY USERS YOU SHOULD MAINTAIN YOUR DIGNITY*', MessageType.text, {quoted: message.data })
+         }
+
+         else if (regex15.test(message.message)) {
+            await message.client.sendMessage(message.jid,'┌ *「 ABOUT 」* \n\n\n *HELLO I AM WHITEDEVIL USED FOR ENTERTAINMENT PURPOSE AS YOU ARE MY USERS YOU SHOULD MAINTAIN YOUR DIGNITY*', MessageType.text, {quoted: message.data })
          }
  }));
