@@ -123,7 +123,7 @@ Asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteComman
                     fins = ceviri.text
                 }
             } else { fins = response.data.cnt }
-            await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { quoted: message.data})
+            await message.client.sendMessage(message.jid,fins, MessageType.text, { quoted: message.data})
         })
     }
 }));
