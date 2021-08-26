@@ -140,7 +140,7 @@ if(pattern.test(message.message)){
             }
         }
     );
-}));
+});
 }
     if (Config.PLKBGM == 'two') {    
     Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {   
