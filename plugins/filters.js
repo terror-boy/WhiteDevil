@@ -216,7 +216,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./video/mention.m
 await message.client.sendMessage(message.jid, fs.readFileSync('./video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['mention','Rocky bhai','rocky bhai']
+const array = ['Rocky bhai','Whitedevil','rocky bhai']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
