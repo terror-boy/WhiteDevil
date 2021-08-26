@@ -78,7 +78,7 @@
         "MUTE_MESSAGE": {
             "description": "Düzenlenebilir Mute Mesajı. Customizable Mute Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "**𝙒𝙃𝙄𝙏𝙀 𝘿𝙀𝙑𝙄𝙇 𝘽𝙊𝙏 _HAD CHANGE THIS GROUP TO ALLOW ONLY ADMINS CAN SEND MESSAGE_* _HAD CHANGE THIS GROUP TO ALLOW ONLY ADMINS CAN SEND MESSAGE_*"
        },
          "THERI_LIST": {
             "description": "bad word ban...  add the bad words you dont allow in your grp (THERI_KICK must be true to run this feature , and dont change the 1st word ) example: plk-dqz,f**k,d**k",
@@ -89,7 +89,7 @@
         "TAG_HEADER": {
             "description": "Heading when taging all",
             "required": false,
-            "value": "hear me friends"
+            "value": "*𝙒𝙃𝙄𝙏𝙀 𝘿𝙀𝙑𝙄𝙇 𝘽𝙊𝙏*"
         },
         "BLOCK_CHAT": {
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
@@ -99,17 +99,17 @@
         "UNMUTE_MESSAGE": {
             "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "*𝙒𝙃𝙄𝙏𝙀 𝘿𝙀𝙑𝙄𝙇 𝘽𝙊𝙏 _HAD CHANGE THIS GROUP TO ALLOW ALL CAN SEND MESSAGE TO THIS GROUP_*"
         },
         "BLOCK_MESSAGE": {
             "description": "Düzenlenebilir Block Mesajı. Customizable Block Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "```You Are Added To The Blacklist For 1-DAY```"
         },
         "UNBLOCK_MESSAGE": {
             "description": "Düzenlenebilir Unblock Mesajı. Customizable Unblock Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "```You Are Removed From The Blacklist```"
         },
         "WORK_TYPE": {
             "description": "WhiteDevil Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
@@ -132,12 +132,12 @@
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands```"
+            "value": "\n *HELLO, I'M WHITE DEVIL BOT USED FOR ENTERTAINMENT PURPOSE* \n\n ```നീ ഏതാ..... ഒന്ന് പോടെയ് അവൻ ജീവൻ ഉണ്ടോ ചോയ്ച്ച് വന്നിരിക്കുന്നു😤...I'm Different Bot U Know```*Ok, ഇനി ചോദിക്കരുത്* \n *[!help]*  *[!menu]* *[!list]*  *ടൈപ്പ് ചെയ്താൽ മതി commands അറിയാൻ*"
         },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "```𝔾𝕠𝕠𝕕 𝕓𝕚𝕖 👋🏻👋🏻``` \n *നിനക്ക് നല്ലതേ  വരുള്ളൂ🙏🏻🙏🏻*"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
@@ -168,7 +168,7 @@
         "AFK_MESSAGE": {
             "description": "Customizable AFK Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "*_എന്റെ ബോസ്സ് ഇപ്പൊൾ ഓൺലൈനിൽ ഇല്ല._* \n\n *കാരണം*: ```ON WORK(ഇപ്പോൾ പണിയിലാ)😉```"
         },
         "GAN_IMAGE": {
             "description": "Gan Style eklentisi için resim bağlantısı yazın. Type image link for Gan Style plugin.",
