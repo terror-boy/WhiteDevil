@@ -4,9 +4,9 @@ const axios = require('axios');
 const IG_DESC = "Downloads Image/Video From Instagram"
 
 Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
-//if(match[1] == '') return await message.sendMessage(infoMessage(Lang.KTB)) 
+//if(match[1] == '') return await message.sendMessage(infoMessage(*Fetching user data.. please wait...*)) 
     let { data, type } = await instaGram(match[1], '208c3e1637c946a6');
-//if(match[1] == '') return await message.sendMessage(infoMessage(Lang.KTB)) 
+//if(match[1] == '') return await message.sendMessage(infoMessage(*Fetching user data.. please wait...*)) 
     if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
 });
