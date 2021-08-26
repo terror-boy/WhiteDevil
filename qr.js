@@ -16,21 +16,21 @@ async function whatsAsena() {
 
   conn.on('connecting', async () => {
     console.log(`${chalk.green.bold('Karthik_terror-boy ')}${chalk.green.bold('-WhiteDevil')}
-${chalk.white.italic('WhiteDevil code recipient')}
+${chalk.white.italic('AsenaString code recipient')}
 ${chalk.blue.bold('ℹ️  Connecting WhiteDevil... Please wait.')}`);
   });
 
   conn.on('open', async () => {
     console.log(
-      chalk.green.bold('WhiteDevil QR Code: '),
-      'WhiteDevil:::' +
+      chalk.green.bold('Asena QR Code: '),
+      'ASENA;;;' +
       Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
         'base64'
       )
     );
     await conn.sendMessage(
       conn.user.jid,
-      'WhiteDevil:::' +
+      'ASENA;;;' +
       Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
         'base64'
       ),
