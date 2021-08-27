@@ -236,36 +236,3 @@ if(pattern.test(message.message)){
         }
     );
 }));
-}
-Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {   
-        if(Config.BGMFILTER){
-        let banned = jid.find( Jid => Jid === message.jid);
-        if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./gif/mention.gif'), MessageType.video, { mimetype: Mimetype.gifVideo, quoted : message.data, ptt: true})
-        }
-        if (!!message.mention && message.mention[0] == Config.AFNN) {
-await message.client.sendMessage(message.jid, fs.readFileSync('./gif/mention.gif'), MessageType.video, { mimetype: Mimetype.gifVideo, quoted : message.data, ptt: true})
-        }
-        var uri = encodeURI(match[1])
-const array = ['Messi','Bhasi']
-array.map( async (a) => {
-let pattern = new RegExp(`\\b${a}\\b`, 'g');
-if(pattern.test(message.message)){
-       await message.client.sendMessage(message.jid, fs.readFileSync('./video/' + a + '.gif'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted: message.data, ptt: true})
-}
-});
-    }
-
-    var filtreler = await FilterDb.getFilter(message.jid);
-    if (!filtreler) return; 
-    filtreler.map(
-        async (filter) => {
-            pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
-            if (pattern.test(message.message)) {
-                await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.gif, {quoted: message.data});
-            }
-        }
-    );
-}));
-
