@@ -210,17 +210,17 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
         if (!!message.mention && message.mention[0] == '919778042644@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('terror-boy/media/video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.AFNN) {
-await message.client.sendMessage(message.jid, fs.readFileSync('./video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('terror-boy/media/video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
 const array = ['Rocky bhai','Whitedevil','rocky bhai']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-       await message.client.sendMessage(message.jid, fs.readFileSync('./video/' + a + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted: message.data, ptt: true})
+       await message.client.sendMessage(message.jid, fs.readFileSync('terror-boy/media/video/' + a + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted: message.data, ptt: true})
 }
 });
     }
