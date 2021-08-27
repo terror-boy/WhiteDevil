@@ -32,16 +32,20 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
  
  
 
- *Audio commads-1    _https://github.com/terror-boy/media/tree/master/uploads_*
+ *Audio commads-1    _https://github.com/terror-boy/White/tree/master/uploads_*
  
  
  
-  *Audio commads-2    _https://github.com/terror-boy/media/tree/master/upload_*
+  *Audio commads-2    _https://github.com/terror-boy/White/tree/master/upload_*
   
   
  
 
- *Sticker commads  _https://github.com/terror-boy/media/tree/master/stickers_*
+ *Sticker commads  _https://github.com/terror-boy/White/tree/master/stickers_*
+
+
+
+*Video Commands   _https://github.com/terror-boy/White/tree/master/video_*
 `}) 
 
 })); 
