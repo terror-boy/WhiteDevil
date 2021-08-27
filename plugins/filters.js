@@ -212,10 +212,6 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
         }
-        if (!!message.mention && message.mention[0] == Config.AFNN) {
-await message.client.sendMessage(message.jid, fs.readFileSync('./video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true}
-        }
-        var uri = encodeURI(match[1])
 const array = ['Rocky bhai','Whitedevil','rocky bhai','Arakkal abu','Messi','Bhasi']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
