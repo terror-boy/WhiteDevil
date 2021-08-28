@@ -77,8 +77,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          let regex14 = new RegExp('Hi')
          let regex15 = new RegExp('Da')
          let regex16 = new RegExp('Pm')
-         let regex17 = new RegExp('!reset warn')
-         if (regex1.test(message.message)) {              
+          if (regex1.test(message.message)) {              
              await message.client.sendMessage(message.jid,'to get all commands type .help', MessageType.text, {quoted: message.data })
          } 
          else if (regex2.test(message.message)) {
