@@ -247,7 +247,7 @@
             "REPORT": "Sends reports to group admins.",
             "USER": "=== ```Report``` ===\n\n*User:* ",
             "REASON": "\n*Reason:* ",
-            "REPLY": "*Please Respond to User's Message to Report!*"
+            "REPLY": "*Please Respond to User's Message to Report!*",
             "WREPORT": "Sends warning reports to group admins.",
             "WUSER": " ```⚠️ Warning ⚠️``` \n\n ```1 warnings remaining``` \n\n *User:* ",
             "WREASON": "\n*Reason of warn:* ",
@@ -513,7 +513,7 @@
             "HİRE_TRUE": "Hirable ☑️",
             "HİRE": "Can s/he Hirable?:",
             "URL": "Profile URL:",
-            "UPDATE": "Last Update:"
+            "UPDATE": "Last Update:",
             "BOT_DESC": "Chat with WhiteDevil.\n Use .molu <message>",
             "BOT": ":",
             "JOKE_DESC": "Get a random joke.",
@@ -522,7 +522,7 @@
             "PUNCHLINE": "Punchline:",
             "EVINS_DESC": "Get an evil insult.",
             "EVINS": "...",
-            "NEWEP": "confused about updates..? use to know about updates ",
+            "NEWEP": "confused about updates..? use to know about updates "
             
         },
         "tiktok": {
