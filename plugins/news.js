@@ -129,7 +129,4 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
             await message.client.sendMessage(message.jid,'┌ *「 അത് എന്ത് ചോദ്യം 😉」* \n *വരുന്നത് ഓക്കെ കൊള്ളാം spam ആക്കരുത്...😉*', MessageType.text, {quoted: message.data })
          }
         
-         else if (regex17.test(message.message)) {
-            await message.client.sendMessage(message.jid,'```No of warnings : 0```', MessageType.text, {quoted: message.data })
-         }
  }));
