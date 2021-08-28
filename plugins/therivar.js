@@ -38,8 +38,8 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         l_dsc = 'chilla theri vilichaal spot kick. -bot owner command'
         alr_on = 'Antilink is already open!'
         alr_off = 'Antilink is currently closed!'
-        THERI_on = '*eni link ittal. Kick akkum*'
-        THERI_off = '*eni enth link vennelum itto*'
+        THERI_on = '*ᴡʜɪᴛᴇᴅᴇᴠɪʟ* \n\n *𝐄𝐧𝐧𝐢 𝐥𝐢𝐧𝐤𝐮𝐦 𝐭𝐡𝐞𝐫𝐢𝐲𝐮𝐦 𝐢𝐭𝐭𝐚𝐥 𝐬𝐩𝐨𝐭𝐭𝐢𝐥 𝐫𝐞𝐦𝐨𝐯𝐞 𝐜𝐡𝐞𝐲𝐢𝐲𝐮𝐦*'
+        THERI_off = '*ᴡʜɪᴛᴇᴅᴇᴠɪʟ* \n\n *𝐄𝐧𝐢 𝐞𝐧𝐭𝐡 𝐥𝐢𝐧𝐤𝐮𝐦 𝐭𝐡𝐞𝐫𝐢𝐲𝐮𝐦 𝐯𝐞𝐧𝐧𝐞𝐥𝐮𝐦 𝐢𝐭𝐭𝐨*'
     }
    
     Asena.addCommand({pattern: 'link ?(.*)', fromMe: true, desc: l_dsc, usage: '.link no / yes' }, (async (message, match) => {
