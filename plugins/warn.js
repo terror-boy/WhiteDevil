@@ -1,18 +1,5 @@
-/* Copyright (C) 2021 TERROR BOY
-.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in
-compliance with the License.
-
-WhiteDevil - TERROR BOY
-*/
-
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
-const Config = require('../config');
-
-const Language = require('../language');
-const Lang = Language.getString('tagall');
 
 if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'warn ?(.*)', fromMe: true, desc: Lang.WREPORT}, (async (message, match) => {
