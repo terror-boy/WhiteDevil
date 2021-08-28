@@ -249,7 +249,7 @@
             "REASON": "\n*Reason:* ",
             "REPLY": "*Please Respond to User's Message to Report!*"
             "WREPORT": "Sends warning reports to group admins.",
-            "WUSER": " ```⚠️ Warning ⚠️``` \n\n ```3 warnings remaining``` \n\n *User:* ",
+            "WUSER": " ```⚠️ Warning ⚠️``` \n\n ```1 warnings remaining``` \n\n *User:* ",
             "WREASON": "\n*Reason of warn:* ",
             "WREPLY": "*Please Respond to User's Message to Warning!*"
         },
