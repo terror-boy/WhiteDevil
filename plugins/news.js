@@ -61,12 +61,12 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
 
              return;
          }
-         let regex1 = new RegExp('Bro')
+         let regex1 = new RegExp('Ok')
          let regex2 = new RegExp('name')
          let regex3 = new RegExp('bot')
          let regex4 = new RegExp('Whitedevil')
          let regex5 = new RegExp('Karthik')
-         let regex6 = new RegExp('git')
+         let regex6 = new RegExp('ok')
          let regex7 = new RegExp('Who are you')
          let regex8 = new RegExp('send')
          let regex9 = new RegExp('Di')
@@ -78,7 +78,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          let regex15 = new RegExp('Da')
          let regex16 = new RegExp('Pm')
           if (regex1.test(message.message)) {              
-             await message.client.sendMessage(message.jid,'to get all commands type .help', MessageType.text, {quoted: message.data })
+             await message.client.sendMessage(message.jid,'\n *「 ENNA OK😍😍 」*', MessageType.text, {quoted: message.data })
          } 
          else if (regex2.test(message.message)) {
             await message.client.sendMessage(message.jid,'my name is Whitedevil' , MessageType.text, {quoted: message.data })
@@ -93,7 +93,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
            await message.client.sendMessage(message.jid,'i know him he is my creator', MessageType.text, {quoted: message.data })
          }
           else if (regex6.test(message.message)) {
-            await message.client.sendMessage(message.jid,'\n`Whitedevil ❣️` \n*github.com/terror-boy/WhiteDevil*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n *「 ENNA OK😍😍 」*', MessageType.text, {quoted: message.data })
          }
           else if (regex7.test(message.message)) {
             await message.client.sendMessage(message.jid,'```I am Whitedevil.```', MessageType.text, {quoted: message.data })
