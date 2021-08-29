@@ -16,7 +16,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v7.3.6',
+    VERSION: 'V7 First Release',
     CHANNEL: 'https://t.me/remasterplugin',
     SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
@@ -25,9 +25,11 @@ module.exports = {
     BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
-    LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
+    LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     OWNER: process.env.OWNER_NAME === undefined ? 'TERROR BOY' : process.env.OWNER_NAME,
+    OWNERNUM: process.env.OWNER_NUMBER === undefined ? '9778042644' : process.env.OWNER_NUMBER,
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
+    ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://imgur.com/kB30S41.png' : process.env.ALIVE_LOGO,
     TERRORBOY: process.env.TAG_REPLY === undefined ? '919072790587@s.whatsapp.net' : process.env.TAG_REPLY,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
@@ -60,6 +62,9 @@ module.exports = {
     YAK: process.env.YAK === undefined ? '919778042644,0' : process.env.YAK,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
+    DEVELOPER: 'TERROR BOY',
+    AUTHOR: 'TERROR BOY',
+    GIT: 'https://github.com/terror-boy/WhiteDevil.git',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
@@ -73,7 +78,4 @@ module.exports = {
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
-    SUPPORT: "905524317852-1612300121",
-    SUPPORT2: "905511384572-1617736751",
-    SUPPORT3: "905511384572-1621015274"
 };
