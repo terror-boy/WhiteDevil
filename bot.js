@@ -247,18 +247,14 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                         try {
                             await command.function(whats, match);
                         } catch (error) {
-                            if (config.LANG == 'EN' || config.LANG == 'ML') {
-                                await conn.sendMessage(conn.user.jid, '-- BUG REPORT [WHITEDEVIL] --' + 
-                                    '\n*Whitedevil an error has occurred!*'+
-                                    '\n_This error log may contain your number or the number of a counterparty. Please be careful with it!_' +
-                                    '\n_You can write to our Telegram group for help._' +
-                                    '\n_This message should have gone to your number (saved messages)._\n\n' +
-                                    'Occurred Error: ' + error + '\n\n'
-                                    , MessageType.text);
+                            if (config.LANG == 'EN') {
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: '*『 ERROR 』*\n\n*Whitedevil an error has occurred!*\n_Report this error to the developer! [ TERROR BOY ]._\n\n*Error:* ```' + error + '```\n\n' });
+                                
+                            } else if (config.LANG == 'ML') {
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: '*『 ERROR 』*\n\n*Whitedevil error സംഭവിച്ചു!*\n_ഈ error  ഡെവലപ്പറെ അറിയിക്കുക! [ TERROR BOY ]._\n\n*error:* ```' + error + '```\n\n' });
+                                
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~♥️🕊️______~ 𝕎𝕙𝕚𝕥𝕖𝔻𝕖𝕧𝕚𝕝 ~_____🕊️♥️~*' +
-                                    '\n\n*🧞‍♂️ ' + error + '*\n'
-                                    , MessageType.text);
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: '*『 KESALAHAN 』*\n\n*Whitedevil telah terjadi kesalahan!*\n_Laporkan kesalahan ini ke pengembang [ TERROR BOY ]._\n\n*Kesalahan:* ```' + error + '```\n\n' });
                             }
                         }
                     }
