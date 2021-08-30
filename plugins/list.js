@@ -163,7 +163,7 @@ if (Config.LANG == 'ID') language = 'Indonasian', MSG = '*◄━━━━━━�
         }
     }));
 
-    WhatsAlexa.addCommand({pattern: 'help ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'help ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '919778042644-1628404265@g.us') {
 
