@@ -271,8 +271,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                     }
                 }
             }
-        )
-    });
+        });
+    
 
     try {
         await conn.connect();
