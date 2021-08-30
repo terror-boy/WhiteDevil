@@ -405,6 +405,10 @@
             "UV_DESC": "Converts audio to sound recording.",
             "UV_REPLY": "*You Must Reply to the Audio File!*",
             "UV_PROC": "```Converting to Sound Recording..```"
+            "SPDF_DESC": "Converts a Site into PDF",
+            "SPDF_LINK": "*You Must Enter a URL*",
+            "SPDF_PROC": "```Converting Site into PDF```",
+            
         },
         "ffmpeg": {
             "FF_DESC": "Applies the desired ffmpeg filter to the video.\n⌨️ Example: .ffmpeg fade=in:0:30",
