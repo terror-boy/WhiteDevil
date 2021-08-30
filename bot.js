@@ -286,8 +286,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
             } catch {
                 return;
             }
-         }
-      }
-   })
+        }
+    }
+}
 
 whatsAsena();
