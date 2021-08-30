@@ -8,7 +8,7 @@ let Asena = require('../events');
 let Config = require('../config');
 let {MessageType} = require('@adiwajshing/baileys');
 let Language = require('../language');
-let Lang = Language.getString('list');
+let Lang = Language.getString('_asena');
 let td = Config.WORKTYPE == 'public' ? false : true
 
 var language = ''
