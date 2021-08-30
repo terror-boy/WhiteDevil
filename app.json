@@ -51,8 +51,28 @@
             "required": true,
             "value": "^[.!;]"
         },
-        "FULL_EVA": {
-            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
+       "Z_WHITE_AI": {
+            "description": "turn on chat back auto reply WHITE (use true to on and fale to off)",
+            "required": true,
+        "value": "true"
+        },
+        "Z_BOT_NAME": {
+            "description": "give a name you disire to give your bot (for auto reply white to identify)",
+            "required": false,
+            "value": "WHITEDEVIL"
+        },
+        "Z_DEP_NAME": {
+            "description": "bot deployer name make it short  (for auto reply white to identify)",
+            "required": false,
+            "value": "ktb"
+        },
+        "Z_BOT_REPLY": {
+            "description": "enter the repply message you want when deployer name is typed by users  (for auto reply white to identify)",
+            "required": false,
+            "value": "i know him he is my creator"
+        },
+        "ALL_LINK_BAN": {
+            "description": "Link Blocking System.- this one blocks all link",
             "required": true,
             "value": "false"
         },
