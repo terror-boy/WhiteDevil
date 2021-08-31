@@ -407,7 +407,7 @@
             "UV_PROC": "```Converting to Sound Recording..```",
             "SPDF_DESC": "Converts a Site into PDF",
             "SPDF_LINK": "*You Must Enter a URL*",
-            "SPDF_PROC": "```Converting Site into PDF```",
+            "SPDF_PROC": "```Converting Site into PDF```"
             
         },
         "ffmpeg": {
