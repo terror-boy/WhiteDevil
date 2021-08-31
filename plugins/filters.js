@@ -207,7 +207,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
         if (!!message.mention && message.mention[0] == '919778042644@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./video/mention.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./video/Whitedevil.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
         }
 const array = ['Rocky bhai','Whitedevil','rocky bhai','Arakkal abu','Messi','Bhasi','Bussid']
 array.map( async (a) => {
