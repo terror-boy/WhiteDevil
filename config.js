@@ -58,6 +58,7 @@ module.exports = {
     KTB: process.env.TAG_HEADER === undefined ? 'WhiteDevil' : process.env.TAG_HEADER,
     TB: process.env.TAG_HEADER === undefined ? '' : process.env.TAG_HEADER,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     YAK: process.env.YAK === undefined ? '919778042644,0' : process.env.YAK,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
