@@ -179,13 +179,13 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
     if (!!message.mention && message.mention[0] == '919778042644@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
+await message.client.sendMessage(message.jid, fs.readFileSync('White/stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
 const array = ['Hi','Bye','Muthe','Police','Teach','Thech','White devil','Z','aayo','alla','anthas','ayin','aysheri','bie','bye','chathu','cheyalle','chunk','committed','mama','marichu','mention','mood','muthe','myre','njan','number','ok','oombi','ooo','pedicho','pidi','poweresh','sad','saved','sed','shaad','shut','teach','test','thech','think','thund','umma','uyir','vannu','vibe','z','dead','JulieMwol','Like','pever','sry','night','indo','uff','eh','poyi','scene','killadi','nee alle','sheri','vada','poocha','morning','pm','thund','remove','Sed','araa','Da','madthu','Hlo','air','Bomb','Julie','myr','fan','charge',]
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-   await message.client.sendMessage(message.jid, fs.readFileSync('./stickers/' + a + '.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
+   await message.client.sendMessage(message.jid, fs.readFileSync('White/stickers/' + a + '.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
 }
 });
 }
@@ -207,13 +207,13 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
         if (!!message.mention && message.mention[0] == '919778042644@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./video/Whitedevil.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('White/video/Whitedevil.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
         }
 const array = ['Rocky bhai','Whitedevil','rocky bhai','Arakkal abu','Messi','Bhasi','Bussid']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-       await message.client.sendMessage(message.jid, fs.readFileSync('./video/' + a + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted: message.data, ptt: true})
+       await message.client.sendMessage(message.jid, fs.readFileSync('White/video/' + a + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted: message.data, ptt: true})
 }
 });
     }
