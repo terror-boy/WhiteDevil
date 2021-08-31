@@ -3,8 +3,8 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
-const need = "type some word after command\n🗡🗡"
-const tdc = '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*
+const need = "enthegilum oru word adikku"
+const tdc = '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'
 
 if (Config.WORKTYPE == 'private') {
 
