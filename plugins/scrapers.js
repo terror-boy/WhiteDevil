@@ -1385,7 +1385,7 @@ if (config.WORKTYPE == 'private') {
             } catch (err) {
                 await message.reply(`Error : \n${err.message}`, MessageType.text)
             }
-        } 
+       } 
         else {
             return await message.client.sendMessage(
                 message.jid,
