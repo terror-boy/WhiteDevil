@@ -945,7 +945,7 @@ if (config.WORKTYPE == 'private') {
                 MessageType.text
             );
         }
-    });
+    };
 
 }));
   if (config.WORKTYPE == 'public') {
