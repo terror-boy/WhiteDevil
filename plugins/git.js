@@ -1,10 +1,3 @@
-/***************************************************************************/
-/*                                                                         */
-/*  This obfuscated code was created by Javascript Obfuscator Free Version.*/
-/*  Javascript Obfuscator Free Version can be downloaded here              */
-/*  http://javascriptobfuscator.com                                        */
-/*                                                                         */
-/***************************************************************************/
 const Asena=require('\x2E\x2E\x2F\x65\x76\x65\x6E\x74\x73');//0
 const {MessageType,MessageOptions,Mimetype}=require('\x40\x61\x64\x69\x77\x61\x6A\x73\x68\x69\x6E\x67\x2F\x62\x61\x69\x6C\x65\x79\x73');//1
 const axios=require('\x61\x78\x69\x6F\x73');//2
