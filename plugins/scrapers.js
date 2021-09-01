@@ -597,7 +597,7 @@ if (config.WORKTYPE == 'private') {
                         data: fs.readFileSync(title + '.jpg'),
                         description: arama[0].description
             });
-    }));
+    });
 
 
  Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.ISONG_DESC}, (async (message, match) => { 
