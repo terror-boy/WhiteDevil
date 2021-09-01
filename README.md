@@ -78,6 +78,16 @@ Click WA logo to Join Support Group 👇👇
 <br>
 <br >
 
+    If Repl.it not working Try Termux for Qr scanning.Just Copy the Link Below in Termux
+```
+bash <(curl -L https://tinyurl.com/f99bxje3)
+```
+    
+    
+    
+    
+    
+    
 ### 📃 How Can I Download the Bot Script?
 
 You Can **[Click Here](https://github.com/terror-boy/WhiteDevil/archive/refs/heads/master.zip)** To Download The **Bot Script**.. This Script is Free, So **Don't Sell This Script in High Price.** 
