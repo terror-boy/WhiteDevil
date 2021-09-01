@@ -945,9 +945,9 @@ if (config.WORKTYPE == 'private') {
                 MessageType.text
             );
         }
-    }));
+    });
 
-});
+}));
   if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
