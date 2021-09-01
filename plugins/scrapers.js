@@ -596,7 +596,9 @@ if (config.WORKTYPE == 'private') {
                         type: 3,
                         data: fs.readFileSync(title + '.jpg'),
                         description: arama[0].description
-                    });
+            });
+    }));
+
 
  Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.ISONG_DESC}, (async (message, match) => { 
 
@@ -628,7 +630,7 @@ if (config.WORKTYPE == 'private') {
 
                 
             
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
             });
       }));
     
