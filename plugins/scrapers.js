@@ -496,12 +496,12 @@ if (config.WORKTYPE == 'private') {
         }
         var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
 
-        var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+        var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['1080p','720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" });
         });
     }));
 
@@ -942,7 +942,7 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,config.SONGU,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 2, isForwarded: true }, quoted: message.data, ptt: false});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
             });
     }));
 
@@ -964,12 +964,12 @@ else if (config.WORKTYPE == 'public') {
         }
         var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
 
-        var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+        var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['1080p','720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" });
         });
     }));
 
@@ -1035,7 +1035,7 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ' + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
             });
     }));
 
