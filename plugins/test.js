@@ -1,7 +1,7 @@
 const Asena = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 
-Asena.addCommand({pattern: 'enhack ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'hack ?(.*)', fromMe: true}, (async (message, match) => {
 
     if (message.reply_message === false) {
 
@@ -11,12 +11,12 @@ Asena.addCommand({pattern: 'enhack ?(.*)', fromMe: true}, (async (message, match
 
         var r_text = new Array ();
 
-        r_text[0] = "*Starting Process For Chosen User!* \n\n```Python Version:``` 3.5\n```UserBot:``` Asena-Beta\n```WEB API:``` True ";
-        r_text[1] = " \n*Target Selected! Processes Starting..* \n\n```Python Version:``` 3.5\n```UserBot:``` Asena-Beta\n```WEB API:``` True ";
-        r_text[2] = " \n*User Detected!* \n\n```Python Version:``` 3.6\n```Target User:``` Mobile\n```Bot:``` False ";
-        r_text[3] = " \n*User Detected!.* \n\n```Python Version:``` 2.8\n```Target User:``` Null\n```Bot:``` False ";
-        r_text[4] = " \n*User Found!.* \n\n```Python Version:``` 3.9\n```Target User:``` Mobile\n```WEB API:``` False-Inactive ";
-        r_text[5] = " \n*Account Found!!* \n\n```Python Version:``` 2.6\n```Target User:``` Null\n```API TYPE:``` Whatsapp-Mobile/WEB ";
+        r_text[0] = "*Starting Process For Chosen User!* \n\n```Java Version:``` 3.5\n```UserBot:``` Asena\n```WEB API:``` True ";
+        r_text[1] = " \n*Target Selected! Processes Starting..* \n\n```Java Version:``` 3.5\n```UserBot:``` Asena\n```WEB API:``` True ";
+        r_text[2] = " \n*User Detected!* \n\n```Java Version:``` 3.6\n```Target User:``` Mobile\n```Bot:``` False ";
+        r_text[3] = " \n*User Detected!.* \n\n```Java Version:``` 2.8\n```Target User:``` Null\n```Bot:``` False ";
+        r_text[4] = " \n*User Found!.* \n\n```Java Version:``` 3.9\n```Target User:``` Mobile\n```WEB API:``` False-Inactive ";
+        r_text[5] = " \n*Account Found!!* \n\n```Java Version:``` 2.6\n```Target User:``` Null\n```API TYPE:``` Whatsapp-Mobile/WEB ";
         r_text[6] = " \n*Asena, Gathered Information For Your Chosen Account!* \n\n```Asena Version:``` 0.8.1-Beta\n```String Type:``` New-Anonymously\n```Repo:``` DeepWeb-Universal ";
         r_text[7] = " \n*Gathering Information...* \n\n```UserBot Version:``` 0.9\n```Bot:``` False\n```Confirmed:``` False ";
         r_text[8] = " \n*Gathering Information...* \n\n```UserBot Version:``` 0.9\n```Bot:``` False-Null\n```Confirmed:``` False ";
@@ -442,6 +442,6 @@ r_text5[5] = "99%";
 
 Asena.addCommand({pattern: 'porthack', fromMe: true}, (async (message, match) => {
 
-    await message.sendMessage('*Codded by Rohtash Beniwal* \n💻Usage: 🇬🇧 *.enhack <reply>*\nℹ️Desc: 🇬🇧 This way you can prank your friends with port hacks.\n\n🆕 _Supports Filter!_');
+    await message.sendMessage('*Codded by terror boy* \n💻Usage: 🇬🇧 *.hack <reply>*\nℹ️Desc: 🇬🇧 This way you can prank your friends with port hacks.\n\n🆕 _Supports Filter!_');
 
 }));
