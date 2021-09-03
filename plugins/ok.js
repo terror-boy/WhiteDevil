@@ -1,6 +1,5 @@
 const Asena = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
-const { banner } = require("../Misc");
 
 Asena.addCommand({ pattern: 'topdf', fromMe: true, desc: "Convert to pdf.", owner: false }, (async (message, match) => {
     if (!message.reply_message) return await message.sendMessage('*Reply to a message*!');
