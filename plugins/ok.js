@@ -1,4 +1,3 @@
-const toPDF = require("custom-soffice-to-pdf")
 const Asena = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const { banner } = require("../Misc");
