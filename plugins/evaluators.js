@@ -46,8 +46,8 @@ antlch()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '*Bağlantı Aşkarlandı!*'
 if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
-if (Config.LANG == 'EN') ldc = '*LINK NOT ALLOWED HERE!*'
-if (Config.LANG == 'ML') ldc = '*ലിങ്ക് കണ്ടെത്തി!*'
+if (Config.LANG == 'EN') ldc = '➶➶➶➶➶ 𝙒𝙃𝙄𝙏𝙀𝘿𝙀𝙑𝙄𝙇 ➷➷➷➷➷ \n\n\n *·÷±‡±𝐌𝐎𝐍𝐄 𝐈𝐓𝐇 𝐈𝐕𝐈𝐃𝐄 𝐕𝐄𝐍𝐃𝐀.𝐆𝐎𝐎𝐃 𝐁𝐘𝐄🖐🏻🖐±‡±÷·* \n\n *—(••÷[ മോനേ ഇത് ഇവിടെ വേണ്ട.𝔾𝕆𝕆𝔻 𝔹𝕐𝔼🖐🏻🖐🏻 ]÷••)—*'
+if (Config.LANG == 'ML') ldc = '➶➶➶➶➶ 𝙒𝙃𝙄𝙏𝙀𝘿𝙀𝙑𝙄𝙇 ➷➷➷➷➷ \n\n\n *·÷±‡±𝐌𝐎𝐍𝐄 𝐈𝐓𝐇 𝐈𝐕𝐈𝐃𝐄 𝐕𝐄𝐍𝐃𝐀.𝐆𝐎𝐎𝐃 𝐁𝐘𝐄🖐🏻🖐±‡±÷·* \n\n *—(••÷[ മോനേ ഇത് ഇവിടെ വേണ്ട.𝔾𝕆𝕆𝔻 𝔹𝕐𝔼🖐🏻🖐🏻 ]÷••)—*'
 if (Config.LANG == 'ID') ldc = '*Tautan Terdeteksi!*'
 if (Config.LANG == 'PT') ldc = '*Link Detectado!*'
 if (Config.LANG == 'RU') ldc = '*Ссылка обнаружена!*'
@@ -55,11 +55,11 @@ if (Config.LANG == 'HI') ldc = '*लिंक का पता चला!*'
 if (Config.LANG == 'ES') ldc = '*Enlace Detectado!*'
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (antilink_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
-        let regex1 = new RegExp('http://')
-        let regex2 = new RegExp('https://chat')
-        let regex3 = new RegExp('https://meet')
-        let regex4 = new RegExp('https://t.co')
-        let regex5 = new RegExp('https://t.me')
+        let regex1 = new RegExp('Myre')
+        let regex2 = new RegExp('Myr')
+        let regex3 = new RegExp('myr')
+        let regex4 = new RegExp('myre')
+        let regex5 = new RegExp('nude')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
