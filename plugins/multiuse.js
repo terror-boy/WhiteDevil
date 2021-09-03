@@ -37,7 +37,7 @@ else if (Config.WORKTYPE == 'public') {
       let { data, type } = await instaGram(match[1], '07d6782b83a82b05');
   //if(match[1] == '') return 
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
-    else if (type === 'video') { await message.sendMessage(quoted: message.quoted, caption: `*hd link :* ${links[1] || ''}` }, MessageType.video);
+    else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
 
 });
 //const axios = require('axios')
