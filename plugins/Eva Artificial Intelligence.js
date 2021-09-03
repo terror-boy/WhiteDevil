@@ -148,7 +148,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                                     fins = ceviri.text
                                 }
                             } else { fins = response.data.cnt }
-                            await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 100, isForwarded: true }, { quoted: message.data})
+                            await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 100, isForwarded: true },  quoted: message.data})
                         })
                     }
                 })
