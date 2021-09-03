@@ -1,39 +1,31 @@
 /* Codded by Phaticusthiccy
-
 Eva, The Phaticusthiccy's Multifunctional Artificial Intelligence
-
 Eva AI has more than 50 Gigabyte dataset which including neural calculator,
 wikipedia data, sentiment analysis, Instagram workflow with neural cells.
-
 Thanks for Brainshop.ai for a rest connection with non-ethernet interaction
 Eva database. 
-
+ 
 Eva is a multimedia-powered artificial intelligence with its own virtual brain.
 Brainshop.ai allow access to load all external conversation for train Neural cells,
 from every user's historical conversations.
-
 Think twice about your choices about Eva. 
 May react differently in directed situations. This is completely natural and depends on users.
 All message history with Eva is not exported to any 3rd applications.
 Since Eva works entirely with deep learning, all responsibility belongs to the user.
-
 Arvix Articles About Eva's System:
 >> https://arxiv.org/abs/2106.09461
 >> https://arxiv.org/abs/2102.00287
 >>https://arxiv.org/abs/2106.06157
-
 Wikipedia Articles About Eva'a System:
 >> https://en.m.wikipedia.org/wiki/Optical_character_recognition
 >> https://en.m.wikipedia.org/wiki/Text_mining
 >> https://en.m.wikipedia.org/wiki/Natural_language_processing
-
 */
 // ===================================================
 /*
 Eva has never been connected to the internet previously.
 The Brainshop.ai supports to javascript datasets, so thats way we cloned some datas from Eva to 
 Brainshop.ai. 
-
 Therefore, 100% efficiency cannot be obtained from Eva Artificial Intelligence.
 The voice recognition doesn't work with eva infrastructure.
 We are using wit.ai's voice recognition for voicy conversation.
@@ -66,13 +58,13 @@ let wk = conf.WORKTYPE == 'public' ? false : true
 var vtalk_dsc = ''
 var reply_eva = ''
 if (conf.LANG == 'TR') vtalk_dsc = 'Eva sesli sohbetini başlatır.', reply_eva = '*Herhangi Bir Sesli Mesaja Yanıt Verin!*'
-if (conf.LANG == 'EN') vtalk_dsc = 'Starts to Eva voice chat.', reply_eva = '*Reply to Any Voice Message!*'
+if (conf.LANG == 'EN') vtalk_dsc = 'Starts to White voice chat.', reply_eva = '*Reply to Any Voice Message!*'
 if (conf.LANG == 'AZ') vtalk_dsc = 'Eva səsli söhbətinə başlayır.', reply_eva = '*Hər hansı bir səsli mesaja cavab verin!*'
 if (conf.LANG == 'PT') vtalk_dsc = 'Começa o bate-papo por voz de Eva.', reply_eva = '*Responder a qualquer mensagem de voz!*'
 if (conf.LANG == 'RU') vtalk_dsc = 'Запускает голосовой чат Eva.', reply_eva = '*Ответьте на любое голосовое сообщение!*'
 if (conf.LANG == 'HI') vtalk_dsc = 'Eva ध्वनि चैट प्रारंभ करता है', reply_eva = '*किसी भी ध्वनि संदेश का उत्तर दें!*'
 if (conf.LANG == 'ES') vtalk_dsc = 'Comienza con el chat de voz de Eva.', reply_eva = '*¡Responde a cualquier mensaje de voz!*'
-if (conf.LANG == 'ML') vtalk_dsc = 'Eva വോയ്‌സ് ചാറ്റിലേക്ക് ആരംഭിക്കുന്നു.', reply_eva = '*ഏത് വോയ്‌സ് സന്ദേശത്തിനും മറുപടി നൽകുക!*'
+if (conf.LANG == 'ML') vtalk_dsc = 'White വോയ്‌സ് ചാറ്റിലേക്ക് ആരംഭിക്കുന്നു.', reply_eva = '*ഏത് വോയ്‌സ് സന്ദേശത്തിനും മറുപടി നൽകുക!*'
 if (conf.LANG == 'ID') vtalk_dsc = 'Mulai obrolan suara Eva.', reply_eva = '*Balas Pesan Suara Apapun!*'
 
 const recognizeAudio = () => {
@@ -99,11 +91,11 @@ const convertToWav = file => {
 }
 
 Asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
-    if (message.message.startsWith('Eva') && conf.FULLEVA !== 'true') {        
+    if (message.message.startsWith('bot') && conf.FULLEVA !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'
-        var finm = message.message.replace('Eva', '').replace(' ', '')   
+        var finm = message.message.replace('bot', '').replace(' ', '')   
         var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
         if (ainame !== 'Asena') return;
         var ldet = lngDetector.detect(finm)
@@ -156,7 +148,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                                     fins = ceviri.text
                                 }
                             } else { fins = response.data.cnt }
-                            await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 2, isForwarded: true }, quoted: message.data})
+                            await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 100, isForwarded: true }, { quoted: message.data})
                         })
                     }
                 })
@@ -184,7 +176,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                                 fins = ceviri.text
                             }
                         } else { fins = response.data.cnt }
-                        await message.client.sendMessage(message.jid,fins, MessageType.text,{contextInfo: { forwardingScore:100, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.BOT + '\n', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./src/image/Whitedevil.png')}}}});
+                        await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 100, isForwarded: true }, quoted: message.data}
                     })
                 }
             } else {
@@ -210,14 +202,14 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                             fins = ceviri.text
                         }
                     } else { fins = response.data.cnt }
-                    await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 100, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.BOT + '\n', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./src/image/Whitedevil.png')}}}});
+                    await message.client.sendMessage(message.jid,fins, MessageType.text, {contextInfo: { forwardingScore: 100, isForwarded: true }, quoted: message.data}
                 })
             }
         }
 
 }));
 Asena.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, fromMe: wk }, (async (message, match) => {
-    if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_eva, MessageType.text, { quoted: message.data }) 
+    if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_eva, MessageType.text, {contextInfo: { forwardingScore: 100, isForwarded: true }, { quoted: message.data }) 
     try {
         const file = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -278,11 +270,11 @@ if (conf.LANG == 'TR') {
     succ_off = 'Eva, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
 }
 if (conf.LANG == 'EN') {
-    fulleva_dsc = 'Activates full functional Eva features. Turn your account into a ai chatbot!'
-    already_on = 'Eva artificial intelligence is already fully functional.'
-    already_off = 'Eva artificial intelligence is currently running semi-functional.'
-    succ_on = 'Eva Opened Fully Functionally! Please wait a bit! ✅'
-    succ_off = 'Eva Set to Semi-Functional! Please wait a bit! ☑️'
+    fulleva_dsc = 'Activates full functional White features. Turn your account into a ai chatbot!'
+    already_on = 'White artificial intelligence is already fully functional.'
+    already_off = 'White artificial intelligence is currently running semi-functional.'
+    succ_on = 'White Opened Fully Functionally! Please wait a bit! ✅'
+    succ_off = 'White Set to Semi-Functional! Please wait a bit! ☑️'
 }
 if (conf.LANG == 'AZ') {
     fulleva_dsc = 'Tam funksional Eva xüsusiyyətlərini aktivləşdirir. Hesabınızı bir chatbot halına gətirin!'
@@ -313,7 +305,7 @@ if (conf.LANG == 'HI') {
     succ_off = 'अर्ध-कार्यात्मक करने के लिए ईवा सेट! कृपया थोड़ी प्रतीक्षा करें! ☑️'
 }
 if (conf.LANG == 'ML') {
-    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ Eva സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
+    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ White സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
     already_on = 'ഇവ കൃത്രിമബുദ്ധി ഇതിനകം പൂർണ്ണമായി പ്രവർത്തിക്കുന്നു.'
     already_off = 'ഇവാ AI നിലവിൽ സെമി-ഫംഗ്ഷണൽ ആണ്.'
     succ_on = 'ഇവ പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
