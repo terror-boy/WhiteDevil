@@ -77,6 +77,9 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          let regex14 = new RegExp('Hi')
          let regex15 = new RegExp('Da')
          let regex16 = new RegExp('Pm')
+         let regex17 = new RegExp('bot setting')
+         let regex18 = new RegExp('Bot setting')
+         let regex19 = new RegExp('setting')
           if (regex1.test(message.message)) {              
              await message.client.sendMessage(message.jid,'\n *「 ENNA OK😍😍 」*', MessageType.text, {quoted: message.data })
          } 
@@ -127,6 +130,22 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         
          else if (regex16.test(message.message)) {
             await message.client.sendMessage(message.jid,'┌ *「 അത് എന്ത് ചോദ്യം 😉」* \n *വരുന്നത് ഓക്കെ കൊള്ളാം spam ആക്കരുത്...😉*', MessageType.text, {quoted: message.data })
+         }
+        
+         else if (regex17.test(message.message)) {
+            await message.client.sendMessage(message.jid,'*http://imgur.com/a/alPJ0fY.mp4*', MessageType.text, {quoted: message.data })
+         }
+        
+         else if (regex18.test(message.message)) {
+            await message.client.sendMessage(message.jid,'*http://imgur.com/a/alPJ0fY.mp4*', MessageType.text, {quoted: message.data })
+         }
+        
+         else if (regex18.test(message.message)) {
+            await message.client.sendMessage(message.jid,'*http://imgur.com/a/alPJ0fY.mp4*', MessageType.text, {quoted: message.data })
+         }
+        
+         else if (regex19.test(message.message)) {
+            await message.client.sendMessage(message.jid,'*http://imgur.com/a/alPJ0fY.mp4*', MessageType.text, {quoted: message.data })
          }
         
  }));
