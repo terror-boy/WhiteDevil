@@ -11,7 +11,7 @@ const FormData = require('form-data');
 
 const ffmpeg = require('fluent-ffmpeg');
 
-const FIND_DESC = "Finds the Song"
+const FIND_DESC = "Finds the Song ✨️"
 
 Asena.addCommand({pattern: 'find', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
 
