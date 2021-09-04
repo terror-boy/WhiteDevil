@@ -32,7 +32,7 @@ if (Config.LANG == 'EN') language = 'English', FMSG = 'Have a Nice Day 💖\n\n`
 if (Config.LANG == 'ML') language = 'മലയാളം', FMSG = 'ഒരു നല്ല ദിനം ആശംസിക്കുന്നു 💖\n\n```ഗിറ്റ്:``` *'+Config.GIT+'*\n\n```WhiteDevil ഉപയോഗിച്ചതിന് നന്ദി 💕```\n*© WhiteDevil, ഉണ്ടാക്കിയത് TERROR BOY*\n\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*', MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nനമസ്കാരം *user!*,\n*'+wishml+'*\n\n*◆ ബോട്ട് വിവരം ◆*\n\n```▣ ഡെവലപ്പർ:``` *TERROR BOY*\n```▣ ഉടമ:``` *'+Config.OWNER+'*\n```▣ ഉടമയുമായി ബന്ധപ്പെടുക:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ ഭാഷ:``` *'+language+'*\n```▣ ഓട്ടോ ബയോ:``` *'+auto_bio+'*\n```▣ ആന്റി ലിങ്ക്:``` *'+anti_link+'*\n```▣ വര്‍ക്ക്‌ തരം:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *കമാൻഡുകൾ* ⇓ ∎\n\n'
 if (Config.LANG == 'ID') language = 'Indonasian', FMSG = 'Semoga harimu menyenangkan 💖\n\n```Git:``` *'+Config.GIT+'*\n\n```Terima kasih telah menggunakan WhiteDevil 💕```\n*© WhiteDevil, Dibuat oleh TERROR BOY*\n\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*', MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nHai *user!*,\n*'+wishid+'*\n\n*◆ INFORMASI BOT ◆*\n\n```▣ Pengembang:``` *TERROR BOY*\n```▣ Pemilik:``` *'+Config.OWNER+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ Hubungi Pemilik:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Bahasa:``` *'+language+'*\n```▣ Bio otomatis:``` *'+auto_bio+'*\n```▣ Anti Tautan:``` *'+anti_link+'*\n```▣ Jenis Pekerjaan:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *Perintah* ⇓ ∎\n\n'
 
-WhatsAlexa.addCommand({
+Asena.addCommand({
     pattern: 'list ?(.*)', fromMe: td, dontAddCommandList: true
 }, (async (message, match) => {
 
@@ -137,7 +137,7 @@ WhatsAlexa.addCommand({
         }
     }));
 
-WhatsAlexa.addCommand({
+Asena.addCommand({
     pattern: 'menu ?(.*)', fromMe: td, dontAddCommandList: true
 }, (async (message, match) => {
 
