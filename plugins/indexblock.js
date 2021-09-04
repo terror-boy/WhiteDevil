@@ -10,7 +10,7 @@ const Config = require('../config')
 
 // Inbox Block System
 // This Plugins By Hisham Muhammed 
-const INBO = "Inbox Not Allowed"
+const INBO = "```~~~•••WhiteDevil•••~~~``` \n\n\n *മോനേ block ചെയ്യുകയാണ് എന്റെ _owner_ നിങ്ങളെ _unblock_ ചെയ്യും എന്ന് ഞാൻ  പ്രതീക്ഷിക്കുന്നു*"
  if (Config.INBO == 'true') {
 Hisham.addCommand({on: 'text', fromMe: false, delownsewcmd: false, onlyPm: true }, (async (message, match) => {
         let regexb1ichu = new RegExp('.')
