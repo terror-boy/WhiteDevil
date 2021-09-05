@@ -35,7 +35,7 @@ Asena.addCommand({pattern: 'find', fromMe: false, desc: FIND_DESC }, (async (mes
 
     ffmpeg(filePath).format('mp3').save('music.mp3').on('end', async () => {
 
-        form.append('api_token', '43ZHCT0cAZBISjO8DG9PnE');
+        form.append('api_token', 'be88a908-3b99-4254-9807-c855d53f6b2b');
 
         form.append('file', fs.createReadStream('./music.mp3'));
 
