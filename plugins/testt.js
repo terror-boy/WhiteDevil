@@ -32,10 +32,10 @@ var requestOptions = {
 fetch("https://api.imgur.com/oauth2/token", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+  .catch(error => 
+     console.log('error', error));
   
         });
 
-    });
 
 }));
