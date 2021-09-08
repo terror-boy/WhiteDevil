@@ -90,7 +90,7 @@ bash <(curl -L https://tinyurl.com/f99bxje3)
     
 ### 📃 How Can I Download the Bot Script?
 
-You Can **[Click Here](https://github.com/terror-boy/WhiteDevil/archive/refs/heads/master.zip)** To Download The **Bot Script**.. This Script is Free, So **Don't Sell This Script in High Price.** 
+You Can **[Click Here](https://github.com/terror-boy/WhiteDevil/archive/refs/heads/Terror-boy.zip)** To Download The **Bot Script**.. This Script is Free, So **Don't Sell This Script in High Price.** 
         
             
  ### F.A.Q
