@@ -35,7 +35,7 @@ KTB.addCommand(({ pattern: 'mo ?(.*)', fromMe: FM, desc: Lang.USAGE,  deleteComm
 
       await message.client.sendMessage(message.jid, '*❖ WHITEDEVIL Search Engine ❖*\n' + Lang.MODDROID + '\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n' + ini_txt,MessageType.text, {quoted: message.data});
       return await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
-});
+}));
 
 KTB.addCommand({ pattern: 'spo ?(.*)', fromMe: FM, desc: Lang.SPO_USAGE,  deleteCommand: false }, async (message, match) => {
 
