@@ -1,4 +1,4 @@
-//Spl thanks to SyedTahseen/Nexa bot
+//Spl thanks to SyedTahseen
 
 const fetch = require('node-fetch')
 
