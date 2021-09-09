@@ -125,7 +125,14 @@
             "GRP_DES": "*🗨️ Group description :*",
             "PRO_JID": "*💬 User JID :*",
             "PRO_DES": "*🗨️ Description :*"
-        },
+       },
+        "spotify": {
+            "SPO_DESC": "Download spotify songs.",
+            "SPO_NEED": "Please enter a link!",
+            "SPO_DOWN": "\n```🔄 CONNECTION ESTABLISHED IN SPOTIFY...```\n",
+            "SPO_UP": "\n```⬆️ SONG IS READY AND UPLOADING...```\n",
+            "SPO_ERR": "Please enter a valid spotify link!"
+       },
         "greetings": {
             "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
             "NOT_SET_WELCOME": "*You don't set the welcome message yet.!*\n**To set:** ```.welcome hi && hi#how are you?```",
