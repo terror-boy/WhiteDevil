@@ -128,6 +128,20 @@
             "ALREADY_NO_FILTER": "*❌ ഫിൽട്ടറുകൾ ഒന്നുംതന്നെയില്ല!*",
             "DELETED": "*✅ വിജയകരമായ ഫിൽറ്റർ ഡിലീറ്റ് ചെയ്തു!*"
         },
+        "search":{
+            "USAGE": "Search modded apk in Moddroid site.",
+            "MODDROID": "_📡 Based site : https://moddroid.com/_",
+            "NEED_WORDS": "```Need words to search!```",
+            "GET_MODD": "\n```🔎 Please wait..```\n",
+            "NOT_FOUND": "*I could not find this😔*",
+            "SPO_USAGE": "Search songs from spotify.",
+            "SPOTIFY": "_📡 Based site : https://open.spotify.com/_",
+            "APK_DESC": "Search APK package names from playstore.",
+            "PSTORE": "_📡 Based site : Official Playstore_",
+            "FIND_DESC": "Search songs by audio file.",
+            "NEED": "```Reply to an audio!```",
+            "SONG": "_📡 Based site : https://audd.io/_"
+        },
         "spotify": {
             "SPO_DESC": "Download spotify songs.",
             "SPO_NEED": "Please enter a link!",
