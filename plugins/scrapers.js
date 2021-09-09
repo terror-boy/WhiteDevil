@@ -1114,6 +1114,17 @@ else if (config.WORKTYPE == 'public') {
           )
       },
     )
+        Asena.addCommand({ pattern: 'number ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+
+
+const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+            + 'VERSION:3.0\n' 
+            + 'FN:Config.LIYANAME\n' // full name
+            + 'ORG:script SAIDALI;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=Config.SAID_NUMBER:+91 8606759500\n' // WhatsApp ID + phone number
+            + 'END:VCARD'
+await message.client.sendMessage(message.jid,{displayname: "Config.LIYANAME", vcard: vcard}, MessageType.contact)
+}))
 
     Asena.addCommand({pattern: 'lyric ?(.*)', fromMe: false, desc: Slang.LY_DESC }, (async (message, match) => {
 
