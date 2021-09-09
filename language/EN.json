@@ -216,6 +216,8 @@
             "NO_RESULT": "*I couldn't find anything :(*",
             "DOWNLOADING_SONG": "\n*Searching*\n",
             "UPLOADING_SONG": "\n*🎧Feel the song🎧*\n",
+            "DOWNLOADING_PLAY": "\n*Searching*\n",
+            "UPLOADING_PLAY": "\n*🎧Feel the song🎧*\n",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "*Downloading*",
