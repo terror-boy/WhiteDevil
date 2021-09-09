@@ -79,4 +79,4 @@ KTB.addCommand({ pattern: 'getpack ?(.*)', fromMe: FM, desc: Lang.APK_DESC,  del
   return await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
 })
 
-}));
+});
