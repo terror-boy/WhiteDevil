@@ -5,6 +5,7 @@ WHITE DEVIL-->> TERROR BOY
 */
 
 const ktb = require('../events');
+const QueenAmdi = require('queenamdi-public-1');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -17,7 +18,7 @@ ktb.addCommand({ pattern: 'spotify ?(.*)', fromMe: FM, desc: Lang.SPO_DESC,  del
   const link = match[1]
     
       if (!link) return await message.client.sendMessage(message.jid,Lang.SPO_NEED,MessageType.text, {quoted: message.data})
-      var payload = await ktb.spotify(link)
+      var payload = await QueenAmdi.spotify(link)
       var downloading = await message.client.sendMessage(message.jid,Lang.SPO_DOWN,MessageType.text, {quoted: message.data});
       var spo_link = await axios.get(payload.link, { responseType: 'arraybuffer'})
     
