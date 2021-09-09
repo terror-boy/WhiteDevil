@@ -18,7 +18,7 @@ const Language = require('../language')
 const Lang = Language.getString('search')
 
 
-KTB.addCommand(({ pattern: 'mod ?(.*)', fromMe: FM, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+KTB.addCommand(({ pattern: 'mo ?(.*)', fromMe: FM, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
 
   if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
   var load = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
@@ -35,7 +35,7 @@ KTB.addCommand(({ pattern: 'mod ?(.*)', fromMe: FM, desc: Lang.USAGE,  deleteCom
 
       await message.client.sendMessage(message.jid, '*❖ WHITEDEVIL Search Engine ❖*\n' + Lang.MODDROID + '\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n' + ini_txt,MessageType.text, {quoted: message.data});
       return await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
-})
+});
 
 KTB.addCommand({ pattern: 'spo ?(.*)', fromMe: FM, desc: Lang.SPO_USAGE,  deleteCommand: false }, async (message, match) => {
 
@@ -55,7 +55,7 @@ KTB.addCommand({ pattern: 'spo ?(.*)', fromMe: FM, desc: Lang.SPO_USAGE,  delete
 
   await message.client.sendMessage(message.jid, '*❖ Nexa Search Engine ❖*\n' + Lang.SPOTIFY + '\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n' + ini_txt,MessageType.text, {quoted: message.data});
   return await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
-})
+});
 
 KTB.addCommand({ pattern: 'getpack ?(.*)', fromMe: FM, desc: Lang.APK_DESC,  deleteCommand: false }, async (message, match) => {
 
