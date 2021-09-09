@@ -12,7 +12,7 @@ const Language = require('../language');
 const Lang = Language.getString('spotify');
 let FM = Config.WORKTYPE == 'public' ? false : true
 
-Amdi.addCommand({ pattern: 'spotify ?(.*)', fromMe: FM, desc: Lang.SPO_DESC,  deleteCommand: false}, async (message, match) => {
+ktb.addCommand({ pattern: 'spotify ?(.*)', fromMe: FM, desc: Lang.SPO_DESC,  deleteCommand: false}, async (message, match) => {
 
   const link = match[1]
     
