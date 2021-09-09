@@ -32,6 +32,8 @@ module.exports = {
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://imgur.com/kB30S41.png' : process.env.ALIVE_LOGO,
     TERRORBOY: process.env.TAG_REPLY === undefined ? '919778044264@s.whatsapp.net' : process.env.TAG_REPLY,
+    LIYANAME: process.env.LIYA_NAME === undefined ? 'ZARA MWOL' : process.env.LIYA_NAME,
+    SAIDNUMBER: process.env.SAID_NUMBER=== undefined ? '918606759500' : process.env.SAID_NUMBER,
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
     INBO1: process.env.INBO_BLOCK === undefined ? 'true' : process.env.INBO_BLOCK,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
