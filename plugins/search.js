@@ -6,6 +6,7 @@ WHITE DEVIL-->> TERROR BOY
 
 const KTB = require('../events')
 const {MessageType} = require('@adiwajshing/baileys');
+const QueenAmdi = require('queenamdi-public-1');
 const axios = require('axios')
 const FormData = require('form-data');
 const fs = require('fs');
@@ -23,7 +24,7 @@ KTB.addCommand(({ pattern: 'mo ?(.*)', fromMe: FM, desc: Lang.USAGE,  deleteComm
   if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
   var load = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-  var apikey = await KTB.api()
+  var apikey = await QueenAmdi.api()
 
   get_result = await fetchJson('https://api.lolhuman.xyz/api/moddroid?apikey=' + apikey.key + `&query=${match[1]}`)
   get_result = get_result.result
@@ -42,7 +43,7 @@ KTB.addCommand({ pattern: 'spo ?(.*)', fromMe: FM, desc: Lang.SPO_USAGE,  delete
   if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
   var load = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-  var apikey = await KTB.api()
+  var apikey = await QueenAmdi.api()
 
   get_result = await fetchJson('https://api.lolhuman.xyz/api/spotifysearch?apikey=' + apikey.key + `&query=${match[1]}`)
   get_result = get_result.result
@@ -62,7 +63,7 @@ KTB.addCommand({ pattern: 'getpack ?(.*)', fromMe: FM, desc: Lang.APK_DESC,  del
   if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
   var load = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-  var apikey = await KTB.api()
+  var apikey = await QueenAmdi.api()
 
   get_result = await fetchJson('https://api.lolhuman.xyz/api/playstore?apikey=' + apikey.key + `&query=${match[1]}`)
   get_result = get_result.result
