@@ -407,60 +407,6 @@ Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: tru
             });
         }
     }
-    if (match[1] == 'NO_ONLİNE: false' || match[1] == 'NO_ONLİNE: False' || match[1] == 'NO_ONLİNE: FALSE' || match[1] == 'NO_ONLİNE:False' || match[1] == 'NO_ONLİNE:FALSE' || match[1] == 'NO_ONLİNE:fakse' || match[1] == 'NO_ONLİNE: fakse' || match[1] == 'NO_ONLİNE:falde' || match[1] == 'NO_ONLİNE: falde' || match[1] == 'NO_ONLİNE:flase' || match[1] == 'NO_ONLİNE:Flase' || match[1] == 'NO_ONLİNE: flase') {
-
-        if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
-            await message.client.sendMessage(
-                message.jid,
-                '_Görünüşe göre_ *NO_ONLİNE* _anahtarını_ *false* _yapmaya çalışıyorsun._\n_Merak etme, senin için doğrusunu ayarlayabilirim._',
-                MessageType.text
-            );
-            return await heroku.patch(baseURI + '/config-vars', {
-                body: {
-                    ['NO_ONLİNE']: 'false'
-                }
-            });
-        }
-        else {
-            await message.client.sendMessage(
-                message.jid,
-                '_It looks like you are trying to make the_ *NO_ONLİNE* _var switch_ *false.*\n_Dont worry, I will set it for you._',
-                MessageType.text
-            );
-            return await heroku.patch(baseURI + '/config-vars', {
-                body: {
-                    ['NO_ONLİNE']: 'false'
-                }
-            });
-        }
-    }
-    if (match[1] == 'NO_ONLİNE: true' || match[1] == 'NO_ONLİNE: True' || match[1] == 'NO_ONLİNE: TRUE' || match[1] == 'NO_ONLİNE:True' || match[1] == 'NO_ONLİNE:TRUE' || match[1] == 'NO_ONLİNE:ture' || match[1] == 'NO_ONLİNE: ture' || match[1] == 'NO_ONLİNE:ttue' || match[1] == 'NO_ONLİNE:trie' || match[1] == 'NO_ONLİNE: trie' || match[1] == 'NO_ONLİNE:Trie' || match[1] == 'NO_ONLİNE: Trie') {
-
-        if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
-            await message.client.sendMessage(
-                message.jid,
-                '_Görünüşe göre_ *NO_ONLİNE* _anahtarını_ *true* _yapmaya çalışıyorsun._\n_Merak etme, senin için doğrusunu ayarlayabilirim._',
-                MessageType.text
-            );
-            return await heroku.patch(baseURI + '/config-vars', {
-                body: {
-                    ['NO_ONLİNE']: 'true'
-                }
-            });
-        }
-        else {
-            await message.client.sendMessage(
-                message.jid,
-                '_It looks like you are trying to make the_ *NO_ONLİNE* _var switch_ *true.*\n_Dont worry, I will set it for you._',
-                MessageType.text
-            );
-            return await heroku.patch(baseURI + '/config-vars', {
-                body: {
-                    ['NO_ONLİNE']: 'true'
-                }
-            });
-        }
-    }
     if (match[1] == 'LANGUAGE:tr' || match[1] == 'LANGUAGE: tr' || match[1] == 'LANGUAGE: Tr' || match[1] == 'LANGUAGE:Tr' || match[1] == 'LANGUAGE: TR' || match[1] == 'LANGUAGE:tR' || match[1] == 'LANGUAGE: tR' || match[1] == 'LANGUAGE:T R' || match[1] == 'LANGUAGE:Turkce' || match[1] == 'LANGUAGE:turkce' || match[1] == 'LANGUAGE:türkce' || match[1] == 'LANGUAGE:Türkce') {
 
         if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
