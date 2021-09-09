@@ -36,6 +36,16 @@
             "required": false,
             "value": "true"   
         },
+        "SAID_NUMBER": {
+            "description": "use your orginal phone number ex 918606759500",
+            "required": false,
+            "value": "918606759500"
+        },
+         "LIYA_NAME": {
+            "description": "use your condact name",
+            "required": false,
+            "value": "ZARA MWOL"
+        },
         "ANTİ_LİNK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
             "required": true,
