@@ -6,7 +6,7 @@ const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
 
-Asena.addCommand({pattern: 'p ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
+Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_PLAY,MessageType.text);    
         let arama = await yts(match[1]);
