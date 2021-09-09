@@ -77,6 +77,6 @@ KTB.addCommand({ pattern: 'getpack ?(.*)', fromMe: FM, desc: Lang.APK_DESC,  del
 
   await message.client.sendMessage(message.jid, '*❖ WHITEDEVIL Search Engine ❖*\n' + Lang.PSTORE + '\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n' + ini_txt,MessageType.text, {quoted: message.data});
   return await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
-})
+
 
 });
