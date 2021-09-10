@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 WHITE DEVIL ----»»» TERROR BOY
 */
 
-const KTB = require('../events');
+const Ktb = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 
@@ -18,7 +18,7 @@ const Lang = Language.getString('Autovideo');
 
 // THIS PLUGIN IS OWNED BY KARTHIK_TERROR-BOY
 
- KTB.addCommand({pattern: 'atvo', fromMe:true , desc: Lang.AV}, (async (message, match) => {
+ Ktb.addCommand({pattern: 'atvo', fromMe:true , desc: Lang.AV}, (async (message, match) => {
 
     var r_text = new Array ();
     
