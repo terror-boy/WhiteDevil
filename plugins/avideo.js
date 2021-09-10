@@ -18,7 +18,7 @@ const Lang = Language.getString('Autovideo');
 
 // THIS PLUGIN IS OWNED BY KARTHIK_TERROR-BOY
 
- Ktb.addCommand({pattern: 'atvo', fromMe:true , desc: Lang.AV}, (async (message, match) => {
+ Ktb.addCommand({pattern: 'atvo', fromMe:false , desc: Lang.AV}, (async (message, match) => {
 
     var r_text = new Array ();
     
