@@ -28,11 +28,11 @@ if (Config.WORKTYPE == 'private') {
         r_text[2] = "https://imgur.com/rbGjIBI.mp4";
         r_text[3] = "https://imgur.com/tt2gMXr.mp4";
         r_text[4] = "https://imgur.com/kR4XGKY.mp4";
-        r_text[5] = "https://youtube.com/shorts/W5xayvz5FSI?feature=share.mp4";
+        
         
         
 
-        var i = Math.floor(6*Math.random())
+        var i = Math.floor(5*Math.random())
 
         var respovideo = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 // EXPORTING
@@ -46,11 +46,13 @@ else if (Config.WORKTYPE == 'public') {
 
         var r_text = new Array ();
 
-        r_text[0] = "https://youtube.com/shorts/W5xayvz5FSI?feature=share.mp4";
-        r_text[1] = "https://youtube.com/shorts/W5xayvz5FSI?feature=share.mp4";        
-        
+        r_text[0] = "https://i.imgur.com/WXEksN4.mp4";
+        r_text[1] = "https://imgur.com/3VOuEfg.mp4";
+        r_text[2] = "https://imgur.com/rbGjIBI.mp4";
+        r_text[3] = "https://imgur.com/tt2gMXr.mp4";
+        r_text[4] = "https://imgur.com/kR4XGKY.mp4";        
 
-        var i = Math.floor(2*Math.random())
+        var i = Math.floor(5*Math.random())
 
         var respovideo = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 // EXPORTING 
