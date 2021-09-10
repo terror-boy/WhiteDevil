@@ -9,7 +9,7 @@ WHITE DEVIL ----»»» TERROR BOY
 const KTB = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
-let fm = Config.WORKTYPE == 'public' ? false : true
+
 
 const Language = require('../language');
 const Lang = Language.getString('Autovideo');
@@ -18,7 +18,7 @@ const Lang = Language.getString('Autovideo');
 
 // THIS PLUGIN IS OWNED BY KARTHIK_TERROR-BOY
 
- KTB.addCommand({pattern: 'av', fromMe: fm , desc: Lang.AV}, (async (message, match) => {
+ KTB.addCommand({pattern: 'av', fromMe:true , desc: Lang.AV}, (async (message, match) => {
 
     var r_text = new Array ();
     
