@@ -125,7 +125,19 @@
             "GRP_DES": "*🗨️ Group description :*",
             "PRO_JID": "*💬 User JID :*",
             "PRO_DES": "*🗨️ Description :*"
-       },
+         },
+        "chatbot":{
+            "BOT_DESC": "Chat with white devil AI chat.",
+            "BOT": "*----»»»*",
+            "TB": "*ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*",
+            "NOT_FOUNDAC": "*Invaild Request*",
+            "NEED_LOCATIONA": "*Invaild Request*",
+            "SWITCH_DESC": "Turn on/off chat bot.\n⌨️ Example: To turn on white devil AI chat, *.switch CHAT_BOT:true*\nTo turn on white devil AI chat, *.switch CHAT_BOT:false*\n(This is a only admin command)",
+            "SWITCH_MISSING": "```white devil AI chat Invalid command.```",
+            "SWITCH_SUCCESS": "```white devil AI chat command detected.```",
+            "SWITCH_INVALID": "```white devil AI chat Invalid command.```",
+            "NOT_AVAILABLE": "🚫 white devil AI chat bot in sleep mode."
+        },
         "search":{
             "USAGE": "Search modded apk in Moddroid site.",
             "MODDROID": "_📡 Based site : https://moddroid.com/_",
