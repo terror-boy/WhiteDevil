@@ -32,6 +32,9 @@
         "Autovideo": {
             "AV": "to get autovideo commands"
        },
+        "whatsappstatus": {
+            "WS": "It sends Whatsapp status."
+       },
         "admin": {
             "BAN_DESC": "Ban someone in the group. Reply to message or tag a person to use command.",
             "IM_NOT_ADMIN": "*I am not admin in this group!*",
