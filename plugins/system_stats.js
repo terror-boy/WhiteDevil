@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'private') {
         );
     }));
                                                                                 
- });
+}
         
 else if (Config.WORKTYPE == 'public') {
 
@@ -60,5 +60,5 @@ else if (Config.WORKTYPE == 'public') {
         );
     }));
                                                                                 
- });
+}
      
