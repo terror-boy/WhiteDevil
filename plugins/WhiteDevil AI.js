@@ -25,7 +25,7 @@ if (Config.WD_AI == 'true') {
 	if (Config.WORKTYPE == 'private') {
 		KTB.addCommand({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC, deleteCommand: false}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
-			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
+			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=ml&cf=true`;
 			try {
 				const response = await got(url);
 				const json = JSON.parse(response.body);
@@ -39,7 +39,7 @@ if (Config.WD_AI == 'true') {
 	else if (Config.WORKTYPE == 'public') {
 		KTB.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
-			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
+			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=ml&cf=true`;
 			try {
 				const response = await got(url);
 				const json = JSON.parse(response.body);
@@ -55,7 +55,7 @@ else if (Config.WD_AI == 'false') {
 	if (Config.WORKTYPE == 'private') {
 		KTB.addCommand({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC, deleteCommand: false}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
-			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
+			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=ml&cf=true`;
 			try {
 				const response = await got(url);
 				const json = JSON.parse(response.body);
@@ -69,7 +69,7 @@ else if (Config.WD_AI == 'false') {
 	else if (Config.WORKTYPE == 'public') {
 		KTB.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
-			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
+			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=ml&cf=true`;
 			try {
 				const response = await got(url);
 				const json = JSON.parse(response.body);
