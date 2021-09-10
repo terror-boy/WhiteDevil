@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 WHITE DEVIL ----»»» TERROR BOY
 */
 
-const KTB = require('../events');
+const Ktb = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -12,14 +12,14 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('whatsappstatus');
 
-// AUTO VIDEO COMMAND LIST
+// WHATSAPP STATUS 
 
 // THIS PLUGIN IS OWNED BY KARTHIK_TERROR-BOY
 
 
 if (Config.WORKTYPE == 'private') {
 
-    KTB.addCommand({pattern: 'ws', fromMe: true, desc: Lang.WS}, (async (message, match) => {
+    Ktb.addCommand({pattern: 'ws', fromMe: true, desc: Lang.WS}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    KTB.addCommand({pattern: 'ws', fromMe: false, desc: Lang.WS}, (async (message, match) => {
+    Ktb.addCommand({pattern: 'ws', fromMe: false, desc: Lang.WS}, (async (message, match) => {
 
         var r_text = new Array ();
 
