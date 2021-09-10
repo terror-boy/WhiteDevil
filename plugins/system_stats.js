@@ -32,8 +32,10 @@ if (Config.WORKTYPE == 'private') {
             '```' + child + '```', MessageType.text
         );
     }));
-
-if (Config.WORKTYPE == 'public') {
+                                                                                
+ });
+        
+else if (Config.WORKTYPE == 'public') {
 
    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
         
@@ -57,4 +59,6 @@ if (Config.WORKTYPE == 'public') {
             '```' + child + '```', MessageType.text
         );
     }));
-
+                                                                                
+ });
+     
