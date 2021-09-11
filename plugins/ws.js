@@ -47,7 +47,10 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     Ktb.addCommand({pattern: 'ws', fromMe: false, desc: Lang.WS}, (async (message, match) => {
-
+        
+        var reply = await message.client.sendMessage(message.jid,config.WSD,MessageType.text);
+     
+        
         var r_text = new Array ();
 
         r_text[0] = "https://i.imgur.com/WXEksN4.mp4";
@@ -67,7 +70,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var respovideo = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 // EXPORTING 
-        await message.client.sendMessage(message.jid, Buffer(respovideo.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
+        reply = await message.client.sendMessage(message.jid, config.WSU, MessageType.video, {mimetype: Mimetype.mp4, caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
 
     }));
-}
+} 
