@@ -2,7 +2,7 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const IG_DESC = "Downloads Image/Video From Instagram"
-const LOAD_ING = "*✅️Connected To INSTAGRAM* \n\n\n *DOWNLOADING & UPLOADING...*"
+const LOAD_ING = "*✅️Connected To INSTAGRAM* \n\n\n *DOWNLOADING & UPLOADING IN PROCESS...*"
 const Config = require('../config');
 
 const Language = require('../language');
@@ -17,7 +17,7 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, desc: IG_DESC }, async 
 await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
 
 //if(match[1] == '') return 
-    let { data, type } = await instaGram(match[1], '07d6782b83a82b05');
+    let { data, type } = await instaGram(match[1], '03e489f0f5e52095');
 //if(match[1] == '') return 
     if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
@@ -34,7 +34,7 @@ else if (Config.WORKTYPE == 'public') {
   await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
   
   //if(match[1] == '') return 
-      let { data, type } = await instaGram(match[1], '07d6782b83a82b05');
+      let { data, type } = await instaGram(match[1], '03e489f0f5e52095');
   //if(match[1] == '') return 
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
