@@ -79,8 +79,8 @@ else if (Config.WORKTYPE == 'public') {
         var i = Math.floor(14*Math.random())
 
         var respovideo = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-// EXPORTING 
-        var reply = await message.client.sendMessage(message.jid, config.WSU, MessageType.video, {mimetype: Mimetype.mp4, caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
+// EXPORTING
+        await message.client.sendMessage(message.jid, Buffer(respovideo.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
 
     }));
 } 
