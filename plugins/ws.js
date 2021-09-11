@@ -48,7 +48,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Ktb.addCommand({pattern: 'ws', fromMe: false, desc: Lang.WS}, (async (message, match) => {
         
-        var reply = await message.client.sendMessage(message.jid,config.WSD,MessageType.text);
+        
      
         
         var r_text = new Array ();
