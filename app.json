@@ -36,16 +36,6 @@
             "required": false,
             "value": "true"   
         },
-        "SAID_NUMBER": {
-            "description": "use your orginal phone number ex 918606759500",
-            "required": false,
-            "value": "918606759500"
-        },
-         "LIYA_NAME": {
-            "description": "use your condact name",
-            "required": false,
-            "value": "ZARA MWOL"
-        },
         "ANTİ_LİNK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
             "required": true,
@@ -79,7 +69,7 @@
         "Z_BOT_REPLY": {
             "description": "enter the repply message you want when deployer name is typed by users  (for auto reply white to identify)",
             "required": false,
-            "value": "i know him he is my creator"
+            "value": "I know him he is my creator"
         },
         "ALL_LINK_BAN": {
             "description": "Link Blocking System.- this one blocks all link",
@@ -120,6 +110,16 @@
             "description": "Heading when taging all",
             "required": false,
             "value": "*𝙒𝙃𝙄𝙏𝙀 𝘿𝙀𝙑𝙄𝙇 𝘽𝙊𝙏*"
+        },
+        "WEL_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+        "BYE_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
         },
         "BLOCK_CHAT": {
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
