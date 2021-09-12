@@ -13,16 +13,16 @@ Asena.addCommand({pattern: 'hack ?(.*)', fromMe: true}, (async (message, match) 
 
         var r_text = new Array ();
 
-        r_text[0] = "*Starting Process For Chosen User!* \n\n```Java Version:``` 3.5\n```UserBot:``` Asena\n```WEB API:``` True ";
-        r_text[1] = " \n*Target Selected! Processes Starting..* \n\n```Java Version:``` 3.5\n```UserBot:``` Asena\n```WEB API:``` True ";
+        r_text[0] = "*Starting Process For Chosen User!* \n\n```Java Version:``` 3.5\n```UserBot:``` Asena\n```WHATSAPP:``` True ";
+        r_text[1] = " \n*Target Selected! Processes Starting..* \n\n```Java Version:``` 3.5\n```UserBot:``` Asena\n`WHATSAPP:``` True  ";
         r_text[2] = " \n*User Detected!* \n\n```Java Version:``` 3.6\n```Target User:``` Mobile\n```Bot:``` False ";
         r_text[3] = " \n*User Detected!.* \n\n```Java Version:``` 2.8\n```Target User:``` Null\n```Bot:``` False ";
         r_text[4] = " \n*User Found!.* \n\n```Java Version:``` 3.9\n```Target User:``` Mobile\n```WEB API:``` False-Inactive ";
         r_text[5] = " \n*Account Found!!* \n\n```Java Version:``` 2.6\n```Target User:``` Null\n```API TYPE:``` Whatsapp-Mobile/WEB ";
-        r_text[6] = " \n*Asena, Gathered Information For Your Chosen Account!* \n\n```Asena Version:``` 0.8.1-Beta\n```String Type:``` New-Anonymously\n```Repo:``` DeepWeb-Universal ";
+        r_text[6] = " \n*Gathered Information For Your Chosen Account!* \n\n```Asena Version:``` 0.8.1-Beta\n```String Type:``` New-Anonymously\n```Repo:``` DeepWeb-Universal ";
         r_text[7] = " \n*Gathering Information...* \n\n```UserBot Version:``` 0.9\n```Bot:``` False\n```Confirmed:``` False ";
         r_text[8] = " \n*Gathering Information...* \n\n```UserBot Version:``` 0.9\n```Bot:``` False-Null\n```Confirmed:``` False ";
-        r_text[9] = " \n*Beniwal, Gathered Information For Your Chosen Account!* \n\n```Bot Version:``` 0.8.1-Beta\n```String Type:``` Legacy\n```Repo:``` DeepWeb-Universal-New ";
+        r_text[9] = " \n*Gathered Information For Your Chosen Account!* \n\n```Bot Version:``` 0.8.1-Beta\n```String Type:``` Legacy\n```Repo:``` DeepWeb-Universal-New ";
 
         var i = Math.floor(10*Math.random())
 
@@ -417,11 +417,11 @@ r_text5[5] = "99%";
 
     var d = Math.floor(6*Math.random())
 
-    await message.sendMessage(`*Connecting Target Account by Using WhatsApp WEB API* \n\n𝕎𝕙𝕒𝕥𝕤𝔸𝕡𝕡: ${r_text[i]} \n𝔾𝕒𝕝𝕝𝕖𝕣𝕪: ${r_text2[a]} \n𝔻𝕠𝕔𝕦𝕞𝕖𝕟𝕥𝕤: ${r_text3[b]} \n𝔽𝕚𝕝𝕖𝕤: ${r_text4[c]} \nℂ𝕒𝕞𝕖𝕣𝕒: ${r_text5[d]}`);
+    await message.sendMessage(`*Connecting Target Account by Using WhatsApp  API* \n\n𝕎𝕙𝕒𝕥𝕤𝔸𝕡𝕡: ${r_text[i]} \n𝔾𝕒𝕝𝕝𝕖𝕣𝕪: ${r_text2[a]} \n𝔻𝕠𝕔𝕦𝕞𝕖𝕟𝕥𝕤: ${r_text3[b]} \n𝔽𝕚𝕝𝕖𝕤: ${r_text4[c]} \nℂ𝕒𝕞𝕖𝕣𝕒: ${r_text5[d]}`);
 
     await new Promise(r => setTimeout(r, 3800));
 
-    await message.sendMessage('*Connection Established!* \n\n𝕎𝕙𝕒𝕥𝕤𝔸𝕡𝕡: %100 \n𝔾𝕒𝕝𝕝𝕖𝕣𝕪: %100 \n𝔻𝕠𝕔𝕦𝕞𝕖𝕟𝕥𝕤: %100 \n𝔽𝕚𝕝𝕖𝕤: %100 \nℂ𝕒𝕞𝕖𝕣𝕒: %100');
+    await message.sendMessage('*Connection Established!* \n\n𝕎𝕙𝕒𝕥𝕤𝔸𝕡𝕡: 100% \n𝔾𝕒𝕝𝕝𝕖𝕣𝕪: 100% \n𝔻𝕠𝕔𝕦𝕞𝕖𝕟𝕥𝕤: 100% \n𝔽𝕚𝕝𝕖𝕤: 100% \nℂ𝕒𝕞𝕖𝕣𝕒: 100%');
 
     await new Promise(r => setTimeout(r, 3800));
 
@@ -432,13 +432,13 @@ r_text5[5] = "99%";
 
     await new Promise(r => setTimeout(r, 2700));
 
-    await message.sendMessage('*Sending LOG Documents* ');
+    await message.sendMessage('*Sending portvirus* ');
 
     await message.client.sendMessage(message.jid, MessageType.document, {filename: 'SCRAPER.log', mimetype: Mimetype.log});
    
     await new Promise(r => setTimeout(r, 2600));
 
-    await message.sendMessage('*LOG Documents Created! You Can Access It In Your Database.* ');
+    await message.sendMessage('*LOG Access granted ! You Can Access It In Your Database.* ');
 
 }));
 
