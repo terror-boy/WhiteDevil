@@ -75,7 +75,12 @@
             "description": "Link Blocking System.- this one blocks all link",
             "required": true,
             "value": "false"
-        },
+        },      
+        "TALKING_WHITEDEVIL": {
+            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+       },
         "NO_LOG": {
             "description": "Hata logu görmek istemiyorsanız true yapın. Set true if you don't want to see error log.",
             "required": true,
