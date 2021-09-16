@@ -36,6 +36,7 @@ module.exports = {
     SAIDNUMBER: process.env.SAID_NUMBER=== undefined ? '918606759500' : process.env.SAID_NUMBER,
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
     INBO1: process.env.INBO_BLOCK === undefined ? 'true' : process.env.INBO_BLOCK,
+    AI: process.env.AI_EVA === undefined ? 'false' : process.env.AI_EVA,
     WD_AI: process.env.WD_AI === undefined ? 'true' : process.env.WD_AI,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
