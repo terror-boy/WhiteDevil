@@ -5,11 +5,18 @@
     "AUTHOR": "terror-boy / Karthik",
     "STRINGS": {
         "_asena": {
-            "COMMAND": "കമാൻഡ്",
-            "DESC": "വിവരണം",
-            "EXAMPLE": "ഉദാഹരണം",
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
             "NOT_FOUND": "*I couldnt find a command like this*",
             "PLKADMIN": ".report you are not admin \n\n 🇩🇴🇳🇹 🇹🇷🇾 🇦🇬🇦🇮🇳, 🇮🇫 🇾🇴🇺 🇹🇷🇾 🇾🇴🇺 🇼🇮🇱🇱 🇧🇪 🇷🇪🇲🇴🇻🇪🇩 🇧🇾 🇦🇩🇲🇮🇳🇸",
+            "WARN": "Warn"
+       },
+        "menu": {
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
+            "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
         "_plugin": {
