@@ -55,7 +55,8 @@ Asena.addCommand({pattern: 'news ?(.*)', fromMe: false, desc: Lang.NEWS_DESC}, a
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDC, MessageType.text);
 	}
 });
-
+const AI = ""
+ if (Config.AI == 'true') {
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (message.jid === '919562803423-1627735504@g.us') {
 
