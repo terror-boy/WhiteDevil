@@ -227,7 +227,7 @@ Asena.addCommand({
     }));
 
 Asena.addCommand({
-    pattern: 'ktb ?(.*)', fromMe: td, dontAddCommandList: true
+    pattern: 'list ?(.*)', fromMe: td, dontAddCommandList: true
 }, (async (message, match) => {
 
         var CMD_HELP = '';
@@ -324,7 +324,7 @@ Asena.addCommand({
     }));
 
 Asena.addCommand({
-    pattern: 'tb ?(.*)', fromMe: td, dontAddCommandList: true
+    pattern: 'white ?(.*)', fromMe: td, dontAddCommandList: true
 }, (async (message, match) => {
 
         var CMD_HELP = '';
