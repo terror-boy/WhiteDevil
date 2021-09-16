@@ -410,9 +410,7 @@ Asena.addCommand({
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
                 message.jid, MSG + CMD_HELP + FMSG, MessageType.text, {
-                    contextInfo: {
-                        forwardingScore: 49, isForwarded: true
-                    }, quoted: {
+                     quoted: {
                         key: {
                             fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? {
                                 remoteJid: "status@broadcast"
