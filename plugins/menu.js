@@ -29,7 +29,7 @@ if (Config.ANTILINK == 'false') anti_link = 'Off'
 if (Config.AUTOBIO == 'true') auto_bio = 'On'
 if (Config.AUTOBIO == 'false') auto_bio = 'Off'
 if (Config.LANG == 'EN') language = 'English', FMSG = 'Have a Nice Day 💖\n\n```Git:``` *'+Config.GIT+'*\n\n```Thank You For using WhiteDevil 💕```\n*© WhiteDevil, Made By Terror Boy*\n\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*', MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nHi *user!*,\n*'+wish+'*\n\n*◆ BOT INFO ◆*\n\n```▣ Developer:``` *TERROR BOY*\n```▣ Owner:``` *'+Config.OWNER+'*\n```▣ Contact Owner:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ Language:``` *'+language+'*\n```▣ Auto Bio:``` *'+auto_bio+'*\n```▣ Antilink:``` *'+anti_link+'*\n```▣ Work Type:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *Commands* ⇓ ∎\n\n'
-if (Config.LANG == 'ML') language = 'മലയാളം', FMSG = 'ഒരു നല്ല ദിനം ആശംസിക്കുന്നു 💖\n\n```ഗിറ്റ്:``` *'+Config.GIT+'*\n\n```WhiteDevil ഉപയോഗിച്ചതിന് നന്ദി 💕```\n*© WhiteDevil, ഉണ്ടാക്കിയത് TERROR BOY*\n\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*', MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nനമസ്കാരം *user!*,\n*'+wishml+'*\n\n*◆ ബോട്ട് വിവരം ◆*\n\n```▣ ഡെവലപ്പർ:``` *TERROR BOY*\n```▣ ഉടമ:``` *'+Config.OWNER+'*\n```▣ ഉടമയുമായി ബന്ധപ്പെടുക:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ ഭാഷ:``` *'+language+'*\n```▣ ഓട്ടോ ബയോ:``` *'+auto_bio+'*\n```▣ ആന്റി ലിങ്ക്:``` *'+anti_link+'*\n```▣ വര്‍ക്ക്‌ തരം:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *കമാൻഡുകൾ* ⇓ ∎\n\n'
+if (Config.LANG == 'ML') language = 'മലയാളം', FMSG = 'ഒരു നല്ല ദിനം ആശംസിക്കുന്നു 💖\n\n```Git:``` *'+Config.GIT+'*\n\n```WhiteDevil ഉപയോഗിച്ചതിന് നന്ദി 💕```\n*© WhiteDevil, ഉണ്ടാക്കിയത് TERROR BOY*\n\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*', MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nനമസ്കാരം *user!*,\n*'+wishml+'*\n\n*◆ ബോട്ട് വിവരം ◆*\n\n```▣ ഡെവലപ്പർ:``` *TERROR BOY*\n```▣ ഉടമ:``` *'+Config.OWNER+'*\n```▣ ഉടമയുമായി ബന്ധപ്പെടുക:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ ഭാഷ:``` *'+language+'*\n```▣ ഓട്ടോ ബയോ:``` *'+auto_bio+'*\n```▣ ആന്റി ലിങ്ക്:``` *'+anti_link+'*\n```▣ വര്‍ക്ക്‌ തരം:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *കമാൻഡുകൾ* ⇓ ∎\n\n'
 if (Config.LANG == 'ID') language = 'Indonasian', FMSG = 'Semoga harimu menyenangkan 💖\n\n```Git:``` *'+Config.GIT+'*\n\n```Terima kasih telah menggunakan WhiteDevil 💕```\n*© WhiteDevil, Dibuat oleh TERROR BOY*\n\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*', MSG = '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n   *⦁◊═⦁ WhiteDevil ⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n\nHai *user!*,\n*'+wishid+'*\n\n*◆ INFORMASI BOT ◆*\n\n```▣ Pengembang:``` *TERROR BOY*\n```▣ Pemilik:``` *'+Config.OWNER+'*\n```▣ Version:``` *'+Config.VERSION+'*\n```▣ Branch:``` *'+Config.BRANCH+'*\n```▣ Hubungi Pemilik:``` *wa.me/'+Config.OWNERNUM+'*\n```▣ Bahasa:``` *'+language+'*\n```▣ Bio otomatis:``` *'+auto_bio+'*\n```▣ Anti Tautan:``` *'+anti_link+'*\n```▣ Jenis Pekerjaan:``` *'+Config.WORKTYPE+'*\n\n∎ ⇓ *Perintah* ⇓ ∎\n\n'
 
 Asena.addCommand({
@@ -64,7 +64,7 @@ Asena.addCommand({
 
             await message.client.sendMessage(
                 message.jid,
-                MSG + CMD_HELP + FMSG,
+                MSG + FMSG + CMD_HELP,
                 MessageType.text,
                 { quoted: {
                         key: {
@@ -118,7 +118,7 @@ Asena.addCommand({
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid, MSG + CMD_HELP + FMSG, MessageType.text, {quoted: {
+                message.jid, MSG + FMSG + CMD_HELP, MessageType.text, {quoted: {
                         key: {
                             fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? {
                                 remoteJid: "status@broadcast"
@@ -161,7 +161,7 @@ Asena.addCommand({
 
             await message.client.sendMessage(
                 message.jid,
-                MSG + CMD_HELP + FMSG,
+                MSG + FMSG + CMD_HELP,
                 MessageType.text,
                 {quoted: {
                         key: {
@@ -215,7 +215,7 @@ Asena.addCommand({
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid, MSG + CMD_HELP + FMSG, MessageType.text, {quoted: {
+                message.jid, MSG + FMSG + CMD_HELP, MessageType.text, {quoted: {
                         key: {
                             fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? {
                                 remoteJid: "status@broadcast"
@@ -258,7 +258,7 @@ Asena.addCommand({
 
             await message.client.sendMessage(
                 message.jid,
-                MSG + CMD_HELP + FMSG,
+                MSG + FMSG + CMD_HELP,
                 MessageType.text,
                 {quoted: {
                         key: {
@@ -312,7 +312,7 @@ Asena.addCommand({
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid, MSG + CMD_HELP + FMSG, MessageType.text, {quoted: {
+                message.jid, MSG + FMSG + CMD_HELP, MessageType.text, {quoted: {
                         key: {
                             fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? {
                                 remoteJid: "status@broadcast"
@@ -355,7 +355,7 @@ Asena.addCommand({
 
             await message.client.sendMessage(
                 message.jid,
-                MSG + CMD_HELP + FMSG,
+                MSG + FMSG + CMD_HELP,
                 MessageType.text,
                 {quoted: {
                         key: {
@@ -409,7 +409,7 @@ Asena.addCommand({
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid, MSG + CMD_HELP + FMSG, MessageType.text, {
+                message.jid, MSG + FMSG + CMD_HELP, MessageType.text, {
                      quoted: {
                         key: {
                             fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? {
@@ -453,7 +453,7 @@ Asena.addCommand({
 
             await message.client.sendMessage(
                 message.jid,
-                MSG + CMD_HELP + FMSG,
+                MSG + FMSG + CMD_HELP,
                 MessageType.text,
                 {quoted: {
                         key: {
@@ -507,7 +507,7 @@ Asena.addCommand({
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid, MSG + CMD_HELP + FMSG, MessageType.text, {
+                message.jid, MSG + FMSG + CMD_HELP, MessageType.text, {
                     quoted: {
                         key: {
                             fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? {
