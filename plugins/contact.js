@@ -13,4 +13,3 @@ handler.tags = ['tools']
 handler.command = /^save$/
 
 module.exports = handler
-© 2021 GitHub, Inc.
