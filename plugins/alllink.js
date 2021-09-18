@@ -54,6 +54,12 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
     if (alllink_var == 'true' && message.jid !== '9082891698-1616356915@g.us') {
         let regex1 = new RegExp('myr')
         let regex2 = new RegExp('nude')
+        let regex3 = new RegExp('thayoli')
+        let regex4 = new RegExp('kunna')
+        let regex5 = new RegExp('poorimone')
+        let regex6 = new RegExp('patti')
+        let regex7 = new RegExp('oombi')
+        let regex8 = new RegExp('thendi')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
@@ -85,6 +91,41 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
             if (us) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+        } 
+        else if (regex5.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+
+       } 
+        else if (regex6.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+
+       } 
+        else if (regex7.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+
+       } 
+        else if (regex8.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })     
         }
     }
 }));
