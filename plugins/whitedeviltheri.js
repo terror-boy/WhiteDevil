@@ -8,35 +8,35 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
 
  var AT = ''
- var T = ''
+ var ATO = ''
 
   if (config.LANG == 'EN') {
 
      AT = 'ᴀɴᴛɪ ᴛʜᴇʀɪ ᴏɴ'
-     T = 'ᴀɴᴛɪ ᴛʜᴇʀɪ ᴏꜰꜰ'
+     ATO = 'ᴀɴᴛɪ ᴛʜᴇʀɪ ᴏꜰꜰ'
 
     }
 
     if (config.LANG == 'ML') {
 
      AT = 'ᴀɴᴛɪ ᴛʜᴇʀɪ ᴏɴ'
-     T = 'ᴀɴᴛɪ ᴛʜᴇʀɪ ᴏꜰꜰ'
+     ATO = 'ᴀɴᴛɪ ᴛʜᴇʀɪ ᴏꜰꜰ'
     }
 
  Asena.addCommand({pattern: 'wtheri ?(.*)', fromMe: true,dontAddCommandList: true,desc: 'change theri on/off. example - .wtheri off/on' }, (async (message, match) => {
         if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['ANTI_THERI']: 'true'
+                        ['ALL_LINK_BAN']: 'true'
                     } 
                 });
                 await message.sendMessage(AT)
         } else if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['ANTI_THERI']: 'false'
+                        ['ALL_LINK_BAN']: 'false'
                     } 
                 });
-                await message.sendMessage(T)
+                await message.sendMessage(ATO)
         }
     }));
