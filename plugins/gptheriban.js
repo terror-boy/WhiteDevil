@@ -18,7 +18,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     var TLINK_off = ''
    
     if (config.LANG == 'EN') {
-        l_dsc = 'remove for all link'
+        l_dsc = 'remove given theri'
         alr_on = '!'
         alr_off = '!'
         ANTIT_on = '*ANTI_THERI TURNED ON*'
