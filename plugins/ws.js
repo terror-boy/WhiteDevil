@@ -40,10 +40,17 @@ if (Config.WORKTYPE == 'private') {
         r_text[12] = "https://i.imgur.com/SH3tyRo.mp4";
         r_text[13] = "https://i.imgur.com/mSAFD9c.mp4";
         r_text[14] = "https://imgur.com/a/yY48lMK.mp4";
+        r_text[15] = "https://imgur.com/64FWq3W.mp4";
+        r_text[16] = "https://imgur.com/aZlS1bV.mp4";
+        r_text[17] = "https://imgur.com/ed0X9m5.mp4";
+        r_text[18] = "https://imgur.com/nDlrBug.mp4";
+        r_text[19] = "https://imgur.com/3AczL5y.mp4";
+        r_text[20] = "https://imgur.com/CeizCwC.mp4";
+        r_text[21] = "https://imgur.com/XQNNBxg.mp4";
         
         
 
-        var i = Math.floor(15*Math.random())
+        var i = Math.floor(22*Math.random())
 
         var respovideo = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
         
@@ -79,10 +86,17 @@ else if (Config.WORKTYPE == 'public') {
         r_text[12] = "https://i.imgur.com/SH3tyRo.mp4";
         r_text[13] = "https://i.imgur.com/mSAFD9c.mp4";
         r_text[14] = "https://imgur.com/a/yY48lMK.mp4";
+        r_text[15] = "https://imgur.com/64FWq3W.mp4";
+        r_text[16] = "https://imgur.com/aZlS1bV.mp4";
+        r_text[17] = "https://imgur.com/ed0X9m5.mp4";
+        r_text[18] = "https://imgur.com/nDlrBug.mp4";
+        r_text[19] = "https://imgur.com/3AczL5y.mp4";
+        r_text[20] = "https://imgur.com/CeizCwC.mp4";
+        r_text[21] = "https://imgur.com/XQNNBxg.mp4";
         
         
 
-        var i = Math.floor(15*Math.random())
+        var i = Math.floor(22*Math.random())
 
         var respovideo = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
         
