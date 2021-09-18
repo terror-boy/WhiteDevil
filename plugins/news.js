@@ -152,7 +152,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         }
        
          else if (regex20.test(message.message)) {
-            await message.client.sendMessage(message.jid,'!b https://www.instagram.com/tv/CTcIoJZBjcI/?utm_medium=copy_link', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'*http://imgur.com/a/alPJ0fY.mp4*', MessageType.text, {quoted: message.data })
          }
   }));
 
