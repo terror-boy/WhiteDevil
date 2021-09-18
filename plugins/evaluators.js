@@ -36,10 +36,10 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     });
     return sonuc.includes(true);
 }
-var antilink_var = ''
+var antitheri_var = ''
 async function antlch() {
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
-        antilink_var = vars.ANTİ_LİNK
+        antitheri_var = vars.ANTI_THERI
     });
 }
 antlch()
