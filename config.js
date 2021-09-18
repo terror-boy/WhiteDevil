@@ -24,6 +24,7 @@ module.exports = {
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
     WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
+    ANTI_THERI: process.env.ANTI_THERI === undefined ? 'false' : process.env.ANTI_THERI,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
