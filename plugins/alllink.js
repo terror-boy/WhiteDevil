@@ -43,8 +43,8 @@ megalink()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '*Bağlantı Aşkarlandı!*'
 if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
-if (Config.LANG == 'EN') ldc = '*Link Detected! mone ee link ivde allowed alla appo pinne engane , oke bye \n\n 🕊🕊*'
-if (Config.LANG == 'ML') ldc = '*ലിങ്ക് കണ്ടെത്തി!* ```മോനെ ഈ ലിങ്ക് ഇവിടെ അലോഡഡ് അല്ല അപ്പോൾ പിന്നെ എങ്ങനെയാ പോവുവാല്ലേ...``` , *WARNING⚠️* *ആണ് കേട്ടോ 🚫*'
+if (Config.LANG == 'EN') ldc = '*ᴛʜᴇʀɪ Detected! mone ee ᴛʜᴇʀɪ ivde allowed alla appo pinne engane , oke bye \n\n 🕊🕊*'
+if (Config.LANG == 'ML') ldc = '*ᴛʜᴇʀɪ Detected! mone ee ᴛʜᴇʀɪ ivde allowed alla appo pinne engane... , oke bye \n\n 🕊🕊*'
 if (Config.LANG == 'ID') ldc = '*Tautan Terdeteksi!*'
 if (Config.LANG == 'PT') ldc = '*Link Detectado!*'
 if (Config.LANG == 'RU') ldc = '*Ссылка обнаружена!*'
@@ -52,8 +52,8 @@ if (Config.LANG == 'HI') ldc = '*लिंक का पता चला!*'
 if (Config.LANG == 'ES') ldc = '*Enlace Detectado!*'
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (alllink_var == 'true' && message.jid !== '9082891698-1616356915@g.us') {
-        let regex1 = new RegExp('http://')
-        let regex2 = new RegExp('https://')
+        let regex1 = new RegExp('myr')
+        let regex2 = new RegExp('nude')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
