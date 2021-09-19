@@ -34,7 +34,7 @@ else if (Config.WORKTYPE == 'public') {
   await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
   
   //if(match[1] == '') return 
-      let { data, type } = await instaGram(match[1], '2b87de8af2faa2fe');
+      let { data, type } = await instaGram(match[1], '03e489f0f5e52095');
   //if(match[1] == '') return 
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
