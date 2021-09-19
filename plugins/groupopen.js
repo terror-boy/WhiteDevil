@@ -15,9 +15,9 @@ const OP = ('This command for OPEN the  Group at MORNING');
 const code = ('!unmute')
 const FINAL = "```The group  has open 🔓!```"
 const TMUTE = "Trying to open the group"
-const TST = "!tagall !gm"
+const TST = "!tag !gm"
 const SCXR = "Running script...."
-Asena.addCommand({pattern: 'open', fromMe: true, deleteCommand: false, desc: OP,}, (async (message, match) => {
+Asena.addCommand({pattern: 'open', fromMe: true, deleteCommand: true, desc: OP,}, (async (message, match) => {
 
   var msg = await message.reply('Preforming....');
 
