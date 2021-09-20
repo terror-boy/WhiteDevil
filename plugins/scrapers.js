@@ -969,7 +969,7 @@ else if (config.WORKTYPE == 'public') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" });
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { quoted: message.data, caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" });
         });
     }));
 
@@ -1001,7 +1001,7 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true});
             });
     }));
 
