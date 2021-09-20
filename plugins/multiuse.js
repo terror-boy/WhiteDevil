@@ -2,7 +2,8 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const IG_DESC = "Downloads Image/Video From Instagram"
-const LOAD_ING = "*✅️Connected To INSTAGRAM* \n\n\n *DOWNLOADING & UPLOADING IN PROCESS...*"
+const LOAD_ING = "*✅️Connecting To INSTAGRAM*"
+const UPLOAD_ING = "*✅️Connected To INSTAGRAM* \n\n\n *DOWNLOADING & UPLOADING IN PROCESS...*"
 const Config = require('../config');
 
 const Language = require('../language');
@@ -14,11 +15,11 @@ if (Config.WORKTYPE == 'private') {
 Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, desc: IG_DESC }, async (message, match) => {
   const userName = match[1]
   if(!userName) return await message.sendMessage('not found')
-await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
-
+var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
 //if(match[1] == '') return 
     let { data, type } = await instaGram(match[1], '03e489f0f5e52095');
 //if(match[1] == '') return 
+  reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
     if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
 });
@@ -31,11 +32,15 @@ else if (Config.WORKTYPE == 'public') {
   Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
     const userName = match[1]
     if(!userName) return await message.sendMessage('not found')
-  await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
-  
+    
+  var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
+    
+//if(match[1] == '') return 
+    let { data, type } = await instaGram(match[1], '2b87de8af2faa2fe');
   //if(match[1] == '') return 
-      let { data, type } = await instaGram(match[1], '2b87de8af2faa2fe');
-  //if(match[1] == '') return 
+    
+  reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
+    
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
 });
