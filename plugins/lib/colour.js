@@ -81,4 +81,4 @@ var Figlet = (typeof exports !== "undefined" ? exports : window).Figlet = {
 };
 
 })();
-© 2021 GitHub, Inc.
+
