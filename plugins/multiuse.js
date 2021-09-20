@@ -35,10 +35,10 @@ else if (Config.WORKTYPE == 'public') {
     
   var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
     
-if(match[1] == '') return await message.sendMessage('*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_API KEY EXPIRED._* \n *Please inform the developer (TERROR-BOY)*') 
     let { data, type } = await instaGram(match[1], '2b87de8af2faa2fe');
  
-    
+    if(match[1] == '') await message.sendMessage('*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_API KEY EXPIRED._* \n *Please inform the developer (TERROR-BOY)*') 
+
   reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
     
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
