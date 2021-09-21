@@ -166,7 +166,7 @@ else if (Config.WORKTYPE == 'public') {
             .fromFormat('webp_pipe')
             .save('output.jpg')
             .on('end', async () => {
-                await message.client.sendMessage(mid, fs.readFileSync('output.jpg'), MessageType.image, quoted: message.data, {mimetype: Mimetype.jpg, caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'});
+                await message.client.sendMessage(mid, fs.readFileSync('output.jpg'), MessageType.image, quoted: message.data, {mimetype: Mimetype.jpg});
             });
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
