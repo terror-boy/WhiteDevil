@@ -27,6 +27,7 @@ module.exports = {
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     OWNER: process.env.OWNER_NAME === undefined ? 'TERROR BOY' : process.env.OWNER_NAME,
+    WHTDL: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
     OWNERNUM: process.env.OWNER_NUMBER === undefined ? '9778044264' : process.env.OWNER_NUMBER,
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://imgur.com/kB30S41.png' : process.env.ALIVE_LOGO,
