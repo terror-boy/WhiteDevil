@@ -1062,7 +1062,7 @@ else if (config.WORKTYPE == 'public') {
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, quoted: message.data, MessageType.image);
+                    await message.client.sendMessage(message.jid,image, MessageType.image);
                 });
             }
 
