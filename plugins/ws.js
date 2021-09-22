@@ -102,7 +102,7 @@ else if (Config.WORKTYPE == 'public') {
         
 // EXPORTING
         reply = await message.client.sendMessage(message.jid,'*꧁•⊹٭𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝚂𝚃𝙰𝚃𝚄𝚂٭⊹•꧂*',MessageType.text);
-        await message.client.sendMessage(message.jid, Buffer(respovideo.data), quoted:(message.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '◄━━━━━━━⦁⦁ *ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ* ⦁⦁━━━━━━━━►',})
+        await message.client.sendMessage(message.jid, Buffer(respovideo.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '◄━━━━━━━⦁⦁ *ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ* ⦁⦁━━━━━━━━►',})
 
     }));
 
