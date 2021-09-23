@@ -43,5 +43,5 @@ Asena.addCommand({pattern: 'find', fromMe: false, desc: FIND_DESC }, (async (mes
       }).catch((error) =>  {
           console.log(error);
       });
-  });
-
+        
+  }));
