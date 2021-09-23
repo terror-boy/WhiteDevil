@@ -577,7 +577,23 @@
             "PUNCHLINE": "Punchline:",
             "EVINS_DESC": "Get an evil insult.",
             "EVINS": "...",
-            "NEWEP": "confused about updates..? use to know about updates "
+            "NEWEP": "confused about updates..? use to know about updates ",      
+            "ZODIAC_DESC": "Get the days horosope for your sunsign.",
+            "NEED_ZOD": "*Invalid Request,Provide your sunsign*",
+            "SUNSIGN": "Sun Sign",
+            "HOROSCOPE": "Horoscope",
+            "NEWS_DESC": "Get the days news, add a category after .news .",
+            "NEED_CATEGORY": "*Please write a category!*\n*Example:* ```.news technology```",
+            "CATEGORY": "Category",
+            "RMLINK": "Read More",
+            "NEWS": "News Content",
+            "NEWST": "News Title",
+             "NOT_FOUND": "```oops...I couldn't find a category with this name. 😖```",
+            "SONG": "Song",
+            "RASHI_DESC": "It send anonymus photo",
+            "ALBUM": "Album",
+            "TITLE": "Title",
+            "PUBLICATION": "Publication"
             
         },
         "tiktok": {
