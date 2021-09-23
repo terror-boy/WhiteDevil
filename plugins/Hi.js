@@ -12,30 +12,30 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
   if (config.LANG == 'EN') {
 
-     AT = 'ON'
-     ATO = 'OFF'
+     AT = '*FAKE BGM DURATION is ON*'
+     ATO = '*FAKE BGM DURATION is OFF*'
     }
 
     if (config.LANG == 'ML') {
 
-     AT = 'ON'
-     ATO = 'OFF'
+     AT = '*FAKE BGM DURATION is ON*'
+     ATO = '*FAKE BGM DURATION is OFF*'
     }
 
- Asena.addCommand({pattern: 'fbgm ?(.*)', fromMe: true,dontAddCommandList: true,desc: 'change theri on/off. example - .wtheri off/on' }, (async (message, match) => {
+ Asena.addCommand({pattern: 'fbgm ?(.*)', fromMe: true,dontAddCommandList: true,desc: 'change fake bgm on/off. example - .fbgm off/on' }, (async (message, match) => {
         if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['BGM_DURATION']: '39999600'
+                        ['BGM_DURATION']: '99999999'
                     } 
                 });
                 await message.sendMessage(AT)
         } else if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['BGM_DURATION']: 'false'
+                        ['BGM_DURATION']: 'true'
                     } 
                 });
                 await message.sendMessage(ATO)
-        }
+        } 
     }));
