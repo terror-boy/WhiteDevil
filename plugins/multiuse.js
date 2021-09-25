@@ -12,7 +12,7 @@ const UPLOAD_ING = "*✅️Connected To INSTAGRAM* \n\n\n *DOWNLOADING & UPLOADI
 
 Ktb.addCommand({pattern: 'insta ?(.*)', fromMe: true, desc: "Downloads from instagaram" , dontAddCommandList: true }, async (message, match) => {
     
-    const {data} = await axios(`https://zenzapi.xyz/api/downloader/instagram?url=${match[1]}&apikey=whitedevil-terrorboy`)
+    const {data} = await axios(`https://zenzapi.xyz/api/downloader/instagram?url=${match[1]}&apikey=farhandqz`)
     const { status, result } = data
 if(!status) return await message.sendMessage('not found')
 var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
