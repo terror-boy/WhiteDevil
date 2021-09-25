@@ -37,7 +37,7 @@ else if (Config.WORKTYPE == 'public') {
     
     let { data, type } = await instaGram(match[1], 'cd12f3a61bc0c27b');
  
-    try { response = await got(data, type) } catch { return await message.sendMessage('*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_API KEY EXPIRED._* \n *Please inform the developer (TERROR-BOY)*') 
+    
 
   reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
     
