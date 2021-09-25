@@ -17,7 +17,7 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, desc: IG_DESC }, async 
   if(!userName) return await message.sendMessage('not found')
 var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
 //if(match[1] == '') return 
-    let { data, type } = await instaGram(match[1], '03e489f0f5e52095');
+    let { data, type } = await instaGram(match[1], 'cd12f3a61bc0c27b');
 //if(match[1] == '') return 
   reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
     if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
@@ -35,7 +35,7 @@ else if (Config.WORKTYPE == 'public') {
     
   var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
     
-    let { data, type } = await instaGram(match[1], '2b87de8af2faa2fe');
+    let { data, type } = await instaGram(match[1], 'cd12f3a61bc0c27b');
  
     try { response = await got(data, type) } catch { return await message.sendMessage('*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_API KEY EXPIRED._* \n *Please inform the developer (TERROR-BOY)*') 
 
