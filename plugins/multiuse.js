@@ -37,14 +37,12 @@ else if (Config.WORKTYPE == 'public') {
     
     let { data, type } = await instaGram(match[1], 'cd12f3a61bc0c27b');
  
-    
 
   reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
     
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
-  }
-    
+
 });
 //const axios = require('axios')
 async function instaGram(url, key){
