@@ -34,10 +34,9 @@ else if (Config.WORKTYPE == 'public') {
     if(!userName) return await message.sendMessage('not found')
     
   var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
-    
+//if(match[1] == '') return 
     let { data, type } = await instaGram(match[1], 'cd12f3a61bc0c27b');
- 
-
+//if(match[1] == '') return 
   reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
     
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
