@@ -1,3 +1,9 @@
+/* Copyright © 2021 TERROR BOY.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+WHITE DEVIL ----»»» TERROR BOY
+*/
+
 const Ktb = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require ('axios')
@@ -11,13 +17,13 @@ Ktb.addCommand({pattern: 'insta ?(.*)', fromMe: true, desc: "Downloads from inst
 if(!status) return await message.sendMessage('not found')
 var reply = await message.client.sendMessage(message.jid, LOAD_ING ,MessageType.text);
 
-let  =  await axios.get(`${result.url}`)
+let ktb =  await axios.get(`${result.url}`)
 const msg = `${result.type}`
  reply = await message.client.sendMessage(message.jid,UPLOAD_ING ,MessageType.text);
 
-  if ktb (type === 'image') { await message.sendMessage(Buffer.from(ktb.data), MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
+    if (msg === 'image') { await message.sendMessage(Buffer.from(ktb.data), MessageType.image,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
 
-    else if (type === 'video') { await message.sendMessage(Buffer.from(ktb.data), MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
+    if (msg === 'video') { await message.sendMessage(Buffer.from(ktb.data), MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     
  return await message.client.sendMessage(message.jid, "```Link Invalid```", MessageType.text);
 });
