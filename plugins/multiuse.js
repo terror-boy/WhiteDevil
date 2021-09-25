@@ -25,5 +25,5 @@ const msg = `${result.type}`
 
     if (msg === 'video') { await message.sendMessage(Buffer.from(ktb.data), MessageType.video,{ caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*" }) }
     
- return await message.client.sendMessage(message.jid, "```Link Invalid```", MessageType.text);
+ return await message.client.sendMessage(message.jid, "*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_API KEY EXPIRED._* \n *Please inform the developer (TERROR-BOY)*", MessageType.text);
 });
