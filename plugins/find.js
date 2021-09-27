@@ -38,7 +38,7 @@ Asena.addCommand({pattern: 'find', fromMe: false, desc: FIND_DESC }, (async (mes
           if (res === 'success') {
               await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text);
           } else {
-              await message.client.sendMessage(message.jid, '*THIS FEATURE IS BLOCKED BY OWNER PLEASE CONTACT HIM ---> [ https://tinyurl.com/yxu4m432 ]*', MessageType.text, quoted: message.data);
+              await message.client.sendMessage(message.jid, '*THIS FEATURE IS BLOCKED BY OWNER PLEASE CONTACT HIM ---> [ https://tinyurl.com/yxu4m432 ]*', MessageType.text);
           }
       }).catch((error) =>  {
           console.log(error);
