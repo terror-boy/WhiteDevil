@@ -19,7 +19,8 @@ Ktb.addCommand({pattern: 'insta ?(.*)', fromMe: false, desc: "Downloads from ins
    const { status, type, data } = await instagram(match[1], 'julie')
     if (!status) return await message.sendMessage('*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_API KEY EXPIRED._* \n *Please inform the developer (TERROR-BOY)*')
 
- 
+    reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
+    
     if (type === 'image') return await message.sendMessage(data, MessageType.image, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*", quoted: message.data })
     
     if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*", quoted: message.data })
