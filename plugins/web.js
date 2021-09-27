@@ -402,7 +402,7 @@ Asena.addCommand({pattern: 'ping$', fromMe: true, deleteCommand: false, desc: La
   var end = new Date().getTime();
 
   await message.client.sendMessage(
-    message.jid,「 *WHITEDEVIL  BOT* 」\n\n*©*\n     *KARTHIK_TERROR-BOY*\n\n\n*PING/SPEED:*' + (end - start) + '````milliseconds```', MessageType.text, { quoted: message.data });
+    message.jid,'「 *WHITEDEVIL  BOT* 」\n\n*©*\n     *KARTHIK_TERROR-BOY*\n\n\n*PING/SPEED:*' + (end - start) + '````milliseconds```', MessageType.text, { quoted: message.data });
 }));
 
 if (Config.WORKTYPE == 'private') {
