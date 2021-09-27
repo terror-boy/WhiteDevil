@@ -83,6 +83,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
          let regex18 = new RegExp('Bot setting')
          let regex19 = new RegExp('setting')
          let regex20 = new RegExp('bs')
+	 let regex21 = new RegExp('yblockedfind')
           if (regex1.test(message.message)) {              
              await message.client.sendMessage(message.jid,'\n *「 ENNA OK😍😍 」*', MessageType.text, {quoted: message.data })
          } 
@@ -153,6 +154,10 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
        
          else if (regex20.test(message.message)) {
             await message.client.sendMessage(message.jid,'*http://imgur.com/a/alPJ0fY.mp4*', MessageType.text, {quoted: message.data })
+         }
+       
+         else if (regex21.test(message.message)) {
+            await message.client.sendMessage(message.jid,'api key error', MessageType.text, {quoted: message.data })
          }
   }));
 
