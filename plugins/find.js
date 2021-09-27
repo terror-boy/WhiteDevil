@@ -38,7 +38,7 @@ Asena.addCommand({pattern: 'find', fromMe: false, desc: FIND_DESC }, (async (mes
           if (res === 'success') {
               await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text);
           } else {
-              await message.client.sendMessage(message.jid, 'No results found', MessageType.text);
+              await message.client.sendMessage(message.jid, '*THIS FEATURE IS BLOCKED BY OWNER PLEASE CONTACT HIM [ https://wa.me/919778042644 ]*', MessageType.text {quoted: message.data });
           }
       }).catch((error) =>  {
           console.log(error);
