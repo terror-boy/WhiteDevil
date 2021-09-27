@@ -17,8 +17,8 @@ var ddd = ggg.toString('utf-8')
 
 Ktb.addCommand({pattern: 'ownerr', fromMe: false, dontAddCommandList: false}, (async (message, match) => {
 // send a sendContact!
-    const sendContact = [
-      '918086169178', karthik 
+    const sendsendContact = [
+      '918086169178', 'karthik' 
       ]
 
 
@@ -26,6 +26,6 @@ Ktb.addCommand({pattern: 'ownerr', fromMe: false, dontAddCommandList: false}, (a
 
       }
       
-      await message.client.sendMessage(message.jid, '0@s.whatsapp.net', MessageType.buttonsMessage)
+      await message.client.sendContact(message.jid, '0@s.whatsapp.net', MessageType.sendContact)
 
 }));
