@@ -55,26 +55,7 @@
             "description": "Komutlar için. For commands.",
             "required": true,
             "value": "^[.!;]"
-        },
-       "Z_WHITE_AI": {
-            "description": "turn on chat back auto reply WHITE (use true to on and fale to off)",
-            "required": true,
-        "value": "true"
-        },
-        "Z_BOT_NAME": {
-            "description": "give a name you disire to give your bot (for auto reply white to identify)",
-            "required": false,
-            "value": "WHITEDEVIL"
-        },
-        "Z_DEP_NAME": {
-            "description": "bot deployer name make it short  (for auto reply white to identify)",
-            "required": false,
-            "value": "ktb"
-        },
-        "Z_BOT_REPLY": {
-            "description": "enter the repply message you want when deployer name is typed by users  (for auto reply white to identify)",
-            "required": false,
-            "value": "I know him he is my creator"
+       
         },
         "ALL_LINK_BAN": {
             "description": "Link Blocking System.- this one blocks all link",
@@ -219,10 +200,10 @@
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
             "required": false          
        },
-        "BOT_PRESENCE": {
-            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
+        "NO_ONLINE": {
+            "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
             "required": false,
-            "value": "offline"
+            "value": "true"
         },
         "COFFEEHOUSE_API_KEY": {
             "description": "Pass This Step! - Bu Bölümü Geçin!",
