@@ -398,9 +398,10 @@ Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}
 
 Asena.addCommand({pattern: 'ping$', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
   var start = new Date().getTime();
-  await message.sendMessage(message.jid,'*「TESTING...」*', MessageType.text, { quoted: message.data });
+  await message.sendMessage('*「TESTING...」*');
   var end = new Date().getTime();
   
+  await new Promise(r => setTimeout(r, 500));
   
   await message.client.sendMessage(
     message.jid,'「 *WHITEDEVIL  BOT* 」\n\n*©*\n    *KARTHIK_TERROR-BOY*\n\n\n*PING/SPEED*:' + (end - start) + '.5172```MILLI SECONDS```', MessageType.text, { quoted: message.data });
