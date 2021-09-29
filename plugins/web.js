@@ -10,6 +10,7 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const speedTest = require('@lh2020/speedtest-net');
 const TinyURL = require('tinyurl');
+const fs = require("fs");
 const Config = require('../config');
 
 const Language = require('../language');
