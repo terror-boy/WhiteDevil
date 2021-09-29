@@ -24,12 +24,12 @@ const Lang = Language.getString('Autovideo');
     
     
      r_text[1] = "https://i.imgur.com/YRnXdbh.png";
-     r_text[2] = "https://i.imgur.com/YRnXdbh.png";
+    
      
    
     
     
-    var i = Math.floor(3*Math.random())
+    var i = Math.floor(2*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 // EXPORTING COMMAND LIST 
