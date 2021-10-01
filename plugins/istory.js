@@ -10,10 +10,11 @@ const axios = require ('axios')
 const LOAD_ING = "*✅️Connecting To INSTAGRAM*"
 const UPLOAD_ING = "*✅️Connected To INSTAGRAM* \n\n\n *DOWNLOADING STORY & UPLOADING IN PROCESS...*"
 
-Ktb.addCommand({pattern: 'igstory ?(.*)', fromMe: false, desc: "Downloads STORY from instagaram" , dontAddCommandList: true }, async (message, match) => {
+Ktb.addCommand({pattern: 'story ?(.*)', fromMe: false, desc: "Downloads STORY from instagaram" , dontAddCommandList: true }, async (message, match) => {
     
     var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
-    
+    if (match[0].includes('install')) return;
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'username', MessageType.text, { quoted: message.data });
   const {data} = await axios(`https://xteam.xyz/dl/igs?nama=${match[1]}&APIKEY=ab9942f95c09ca89`)
     const { status, result } = data
      if(!status) return await message.sendMessage('api error')
