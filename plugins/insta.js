@@ -17,7 +17,7 @@ Ktb.addCommand({pattern: 'insta ?(.*)', fromMe: false, desc: "Downloads from ins
     var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
     
    const { status, type, data } = await instagram(match[1], 'julie')
-    if (!status) return await message.sendMessage('*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_INVALID FORMAT._* \n *CHANGE FORMAT TO :*  *✅️Example : https://www.instagram.com/reel/CCdcH3FBd1a/?utm_medium=copy_link\n\n*Change /reel/ to /p/ [if it is reel]* *\n\n*Any doubt ask to the developer (TERROR-BOY)[https://tinyurl.com/suf4xpat]*')
+    if (!status) return await message.sendMessage('*❌️SOMETHING WRONG❌️* \n\n ```REASON```: *_API KEY EXPIRED_*\n\n*CONTACT the  developer-->> (TERROR-BOY)[https://tinyurl.com/suf4xpat]*')
 
     reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
     
