@@ -14,18 +14,18 @@ Ktb.addCommand({pattern: 'story ?(.*)', fromMe: false, desc: "Downloads STORY fr
     
     var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
     if (match[0].includes('install')) return;
-        if (match[1] === '') return await message.client.sendMessage(message.jid,'username', MessageType.text, { quoted: message.data });
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'*need username*', MessageType.text, { quoted: message.data });
   const {data} = await axios(`https://xteam.xyz/dl/igs?nama=${match[1]}&APIKEY=ab9942f95c09ca89`)
     const { status, result } = data
      if(!status) return await message.sendMessage('api error')
-         let ktb =  await axios.get(`${result.nama}`)
+         let ktb =  await axios.get(`${result.url}`)
          const msg = `${result.type}`
 
     reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
     
-    if (type === 'image') return await message.sendMessage(data, MessageType.image, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*", quoted: message.data })
+    if (type === 'image') return await message.sendMessage(Buffer.from(ktb.data), MessageType.image, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*", quoted: message.data })
     
-    if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*", quoted: message.data })
+    if (type === 'video') return await message.sendMessage(Buffer.from(ktb.data), MessageType.video, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*", quoted: message.data })
     
 });
     
