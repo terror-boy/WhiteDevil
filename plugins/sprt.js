@@ -5,7 +5,8 @@ const axios = require('axios');
 
 Asena.addCommand({pattern: 'bot', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
 
-    var r_text = new Array ();    r_text[0] = "\n *Eda eda, mandankonappi..*  *Nee enne kooduthal mandan aakkatheda* \n";
+    var r_text = new Array ();    
+r_text[0] = "\n *Eda eda, mandankonappi..*  *Nee enne kooduthal mandan aakkatheda* \n";
 r_text[1] = "*Whitedevil tholpikkaan നിങ്ങൾക്കാവില്ല.* *Jeevitathil Whitedevil* *tholpichittundu…* *palarum…* *palavattom…😥😥* *aarellum aaa sed bgm onn iduo...*";
 r_text[2] = "*Whitedevil says i love you 😘*";
 r_text[3] = "*Whitedevilinte yudhangal Company Kanan Povunnatheyuloo*";
