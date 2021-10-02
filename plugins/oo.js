@@ -4,6 +4,7 @@ you may not use this file except in compliance with the License.
 WHITE DEVIL ----»»» TERROR BOY
 */
 
+
 const Ktb = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
