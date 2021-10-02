@@ -8,6 +8,7 @@ WHITE DEVIL ----»»» TERROR BOY
 const Ktb = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
+const fs = require('fs');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 const Config = require('../config');
