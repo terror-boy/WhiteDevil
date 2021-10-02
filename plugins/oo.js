@@ -14,7 +14,7 @@ const axios = require('axios')
 
 let TB = Config.WORKTYPE == 'public' ? false : true
 
-Ktb.applyCMD({ pattern: 'splay ?(.*)', fromMe: TB,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
+Ktb.addCommand({ pattern: 'splay ?(.*)', fromMe: TB,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});   
     let arama = await yts(match[1]);
