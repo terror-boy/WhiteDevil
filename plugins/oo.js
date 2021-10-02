@@ -52,6 +52,6 @@ Ktb.addCommand({ pattern: 'splay ?(.*)', fromMe: TB,  deleteCommand: false, desc
                 await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true});
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
                 return await message.client.deleteMessage(message.jid, {id: uploading.key.id, remoteJid: message.jid, fromMe: true})
-            }
+            
         });
 }));
