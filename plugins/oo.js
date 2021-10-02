@@ -9,6 +9,7 @@ const Ktb = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const Language = require('../language');
+const Lang = Language.getString('scrapers');
 const Config = require('../config');
 const axios = require('axios')
 
