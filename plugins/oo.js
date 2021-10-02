@@ -11,6 +11,11 @@ const translatte = require('translatte');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 const Config = require('../config');
+const ytdl = require('ytdl-core');
+const ffmpeg = require('fluent-ffmpeg');
+const yts = require( 'yt-search' );
+const got = require("got");
+const ID3Writer = require('browser-id3-writer');
 const axios = require('axios')
 
 let TB = Config.WORKTYPE == 'public' ? false : true
