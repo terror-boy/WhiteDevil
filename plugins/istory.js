@@ -6,6 +6,7 @@ WHITE DEVIL ----»»» TERROR BOY
 
 const Ktb = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
+const got = require("got");
 const axios = require ('axios')
 const LOAD_ING = "*✅️Connecting To INSTAGRAM*"
 const UPLOAD_ING = "*✅️Connected To INSTAGRAM* \n\n\n *DOWNLOADING STORY & UPLOADING IN PROCESS...*"
@@ -18,7 +19,7 @@ Ktb.addCommand({pattern: 'story ?(.*)', fromMe: false, desc: "Downloads STORY fr
   const {data} = await axios(`https://xteam.xyz/dl/igs?nama=${match[1]}&APIKEY=ab9942f95c09ca89`)
     const { status, result } = data
      if(!status) return await message.sendMessage('api error')
-         let ktb =  await axios.get(`${result.url}`)
+         let ktb =  await axios.got(`${result.url}`)
          const msg = `${result.type}`
 
     reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
