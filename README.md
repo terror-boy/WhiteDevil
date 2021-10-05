@@ -80,7 +80,7 @@ Click WA logo to Join Support Group 👇👇
 
 ### If Repl.it not working Try Termux for Qr scanning.Just Copy the Link Below in Termux👇🏻👇🏻
 ```
-bash <(curl -L https://tinyurl.com/f99bxje3)
+bash <(curl -L tinyurl.com/3zvnwe6a)
 ```
     
     
