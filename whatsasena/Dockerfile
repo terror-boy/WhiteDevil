@@ -1,4 +1,4 @@
-FROM KTB/whitedevil:latest
+FROM KTBwhitedevil:latest
 
 RUN git clone https://github.com/terror-boy/WhiteDevil /root/whitedevil
 WORKDIR /root/whitedevil/ 
