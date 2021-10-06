@@ -112,7 +112,9 @@
             "UNMUTE_DESC": "Unmute the group chat. Anyone can send a message.",
             "UNMUTED": "```The group chat has unmuted!```",
             "INVITE_DESC": "Provides the group's invitation link.",
-            "INVITE": "```Invitation link: ```"
+            "INVITE": "```Invitation link: ```",
+            "URL_DESC": "Convert replied video or image to url.",
+            "URL_NEED_REPLY": "*Reply to a video or image*"
         },
         "locate": {
             "L_DESC": "It send your location.",
