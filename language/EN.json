@@ -13,6 +13,17 @@
             "WARN": "Warn"
             
         },
+        "ktb": {
+            "INSTA_DESC": "Download from instagram story\n.insta url or reply to a url",
+            "NEED_REPLY": "*Give me a url.*",
+            "DOWNLOADING": "```Downloading...```",
+            "STORY_DESC": "Download stories of given username\n.story username or reply to a username or story url",
+            "DOWNLOADING_STORY": "```Donwloading {} stories```",
+            "NOT_FOUND": "*Not found!*",
+            "SIZE": "*Video size is {}MB, I can't upload it.sd link :* {}\n*hd link :* {}",
+            "CAPTION": "*HD link :* {}",
+            "FB_DESC": "Download facebook video."
+       },
         "menu": {
             "COMMAND": "Command",
             "DESC": "Description",
