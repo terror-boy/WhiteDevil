@@ -5,6 +5,6 @@ WORKDIR /root/WhatsAsenaDuplicated/
 ENV TZ=Europe/Istanbul
 RUN yarn install --no-audit
 RUN git clone https://github.com/terror-boy/White
-RUN cp -R /root/Utils/* /root/WhatsAsenaDuplicated 
+RUN mv /root/bottus/* /root/WhatsAsenaDuplicated 
 
 CMD ["node", "bot.js"]
