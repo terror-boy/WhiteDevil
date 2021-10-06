@@ -16,4 +16,4 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
 		return await message.client.sendMessage(message.jid,'NOT FOUND', MessageType.text);
 	}
 });
-}
+
