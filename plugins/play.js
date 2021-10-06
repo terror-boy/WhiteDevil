@@ -11,7 +11,7 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
     
 		const json = JSON.parse(response.body);
     
-		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '``` TITLE      : *' + json.title + '* \n' + 'CHANNEL      :'+ json.channel + 'DATE OF PUBLISHED    :' + json.published + '\n' + 'TOTAL VIEWS   :'+ json.views + '\n' +  'URL  :'+ json.url + '```' , MessageType.text);
+		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '``` THUMBNAIL      : *' + json.thumb + '* \n' + 'TITLE      : *' + json.title + '* \n' + 'CHANNEL      :'+ json.channel + 'DATE OF PUBLISHED    :' + json.published + '\n' + 'TOTAL VIEWS   :'+ json.views + '\n' +  'URL  :'+ json.url + '```' , MessageType.text);
       } catch {
 		return await message.client.sendMessage(message.jid,'NOT FOUND', MessageType.text);
 	}
