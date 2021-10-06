@@ -1,24 +1,19 @@
-const Ktb = require('../events');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const axios = require('axios');
-
-const Language = require('../language');
-const Lang = Language.getString('gitlink');
-
-Ktb.addCommand({pattern: 'play', fromMe: false, desc: Lang.GL}, (async (message, match) => {
-
-    var r_text = new Array ();
+const Asena = require('../events');
+const { MessageType } = require('@adiwajshing/baileys');
+const got = require('got');
+const Config = require('../config');
 
 
-
-  r_text[0] = "https://i.imgur.com/kvX50Ch.png";
-
-
-    var i = Math.floor(1*Math.random())
-
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*PLEASE TYPE  [^]musics* \n\n\n\n\n *[^]=handlers like {!,./}* \n\n _CODED BY KARTHIK-TERROR BOY_
-`}) 
-
-}));
+Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true }, async (message, match) => {
+	const url = `https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=whitedevil-terrorboy`;
+	try {
+		const response = await got(url);
+    
+		const json = JSON.parse(response.body);
+    
+		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '``` TITLE      : *' + json.title + '* \n' + 'CHANNEL      :'+ json.channel + 'DATE OF PUBLISHED    :' + json.published + '\n' + 'TOTAL VIEWS   :'+ json.views + '\n' +  'URL  :'+ json.url + '```' , MessageType.text);
+      } catch {
+		return await message.client.sendMessage(message.jid,'NOT FOUND', MessageType.text);
+	}
+});
+}
