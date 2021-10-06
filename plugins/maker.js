@@ -20,15 +20,7 @@ Ktb.addCommand({pattern: 'glue ?(.*)', fromMe: false, dontAddCommandList: true},
 
 }));
 
-Ktb.addCommand({pattern: 'emoji ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid,"need emoji \n example: .emoji 😍");
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/emoji2png?emoji=${match[1]}&type=apple`, { responseType: 'arraybuffer' })
-
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
-
-}));
 
 Ktb.addCommand({pattern: 'wasted ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
