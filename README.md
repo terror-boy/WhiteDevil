@@ -124,14 +124,24 @@ If you are concerned about security, you can install it on your own computer. If
     
     
 
-### ⚠️ Warning! 
-```
-Due to Userbot; Your WhatsApp account may be banned.
-This is an open source project, you are responsible for everything you do. 
-Absolutely, Asena executives do not accept responsibility.
-By establishing the Asena, you are deemed to have accepted these responsibilities.
-```
+## ⚠ Warning ⚠
 
+```
+By using kick, add, promote, demote Commands, Your WhatsApp account may be banned.
+WhiteDevil or we are not responsible for your account, 
+This bot is intended for the purpose of having fun with some fun commands 
+and group management with some helpfull commands.
+
+If  you ended up spamming groups, getting reported left and right, 
+and you ended up in being fight with WhatsApp
+and at the end WhatsApp Team deleted your account. DON'T BLAME US.
+
+No personal support will be provided / We won't spoon feed you. 
+If you need help
+you can contact 👇🏻👇🏻 
+```
+**[![KARTHIK_TERROR-BOY/KARTHIK](https://www.linkpicture.com/q/WHTSPP-LOGO.png)](https://wa.me/message/7UBLBAJZHISYH1)**
+    
 ## **Developers & Supporters**
           
   <div align="center">
