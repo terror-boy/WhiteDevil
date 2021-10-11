@@ -120,7 +120,13 @@ If you are concerned about security, you can install it on your own computer. If
 **Of course not.** It will never happen.
     
     
-    
+### ❗ Does our number will banned from WhatsApp by Using This Bot?
+
+If you are concerned about that, Then you can just use bot on a [Fake Number](https://youtu.be/v8lGcQp0RjQ). **[Also Read This](https://github.com/terror-boy/WhiteDevil#-warning-)**
+
+### 🔄 Can I Edit this bot?
+
+**As per the license, You Can** But We Will Not Support. 🙃   
     
     
 
