@@ -31,7 +31,7 @@
     "browser-id3-writer": "^4.4.0",
     "playstore-scraper": "^1.0.0",
     "axios": "^0.21.1",
-    "googlethis": "^1.0.7",
+    "googlethis": "^1.2.0",
     "audiobuffer-to-wav": "1.0.0",
     "chalk": "^4.1.0",
     "coffeehouse": "^2.0.0",
@@ -40,7 +40,7 @@
     "deepai": "^1.0.17",
     "cwebp-bin": "^6.1.1",
     "tinyurl": "^1.1.7",
-    "dotenv": "^8.2.0",
+    "dotenv": "^10.0.0",
     "tiktok-scraper": "1.4.20",
     "request": "2.88.2",
     "exchange-rates-api": "^1.0.2",
@@ -51,7 +51,7 @@
     "got": "^11.8.2",
     "heroku-client": "^3.1.0",
     "jimp": "0.16.0",
-    "js-ffmpeg": "0.0.26",
+    "js-ffmpeg": "^0.0.32",
     "jsdom": "^16.5.1",
     "langs": "^2.0.0",
     "languagedetect": "^2.0.0",
@@ -59,7 +59,7 @@
     "mongodb": "^3.6.3",
     "node-fetch": "^2.6.1",
     "node-tesseract-ocr": "^2.0.0",
-    "pg": "^8.5.1",
+    "pg": "^8.7.1",
     "sequelize": "^6.5.1",
     "simple-git": "^2.37.0",
     "sozlukjs": "^1.1.0",
@@ -68,7 +68,7 @@
     "solenolyrics": "^5.0.0",
     "translatte": "^3.0.0",
     "wikijs": "^6.0.1",
-    "yt-search": "^2.7.4",
-    "ytdl-core": "^4.8.3"
+    "yt-search": "^2.10.1",
+    "ytdl-core": "^4.9.1"
   }
 }
