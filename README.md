@@ -122,7 +122,7 @@ If you are concerned about security, you can install it on your own computer. If
     
 ### ❗ Does our number will banned from WhatsApp by Using This Bot?
 
-If you are concerned about that, Then you can just use bot on a [Fake Number](https://youtu.be/v8lGcQp0RjQ). **[Also Read This](https://github.com/terror-boy/WhiteDevil#-warning-)**
+If you are concerned about that, Then you can just use bot on a [Fake Number](https://youtu.be/v8lGcQp0RjQ). **[Also Read This Warning](https://github.com/terror-boy/WhiteDevil#-warning-)**
 
 ### 🔄 Can I Edit this bot?
 
