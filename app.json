@@ -46,6 +46,11 @@
             "required": true,
             "value": "false"
         },
+        "WHTS_PASSWORD": {
+            "description": "PASSWORD IN WHATSAPP GROUP",
+            "required": true
+            
+        },
         "AUTO_BİO": {
             "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
             "required": true,
