@@ -106,6 +106,21 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.green.bold('✅ Login successful!')
         );
+        console.log(
+            chalk.blueBright.italic('Confirming password...')
+        );
+        if (config.KTB == 'whitedevil' || config.KTB == 'Whitedevil') {
+        //thanks to afnanplk
+        console.log(
+            chalk.green.bold('THANK YOU FOR VISITING WHATSAPP GROUP -key cofirmed-')
+        );
+         }
+         else if (config.KTB == 'whitedevil' || config.KTB == 'Whitedevil') {
+         console.log(
+            chalk.red.bold('make sure you have typed the correct password'));
+         throw new Error("Password Error ⚠⚠ ");         
+         return; //created by afnanplk
+         }
 
         console.log(
             chalk.blueBright.italic('⬇️ Installing external plugins...')
@@ -113,33 +128,25 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
         var plugins = await plugindb.PluginDB.findAll();
         plugins.map(async (plugin) => {
-          try {
-              if (!fs.existsSync('./plugins/' + plugin.dataValues.name + '.js')) {
-                  console.log(plugin.dataValues.name);
-                  var response = await got(plugin.dataValues.url);
-                  if (response.statusCode == 200) {
-                      fs.writeFileSync('./plugins/' + plugin.dataValues.name + '.js', response.body);
-                      require('./plugins/' + plugin.dataValues.name + '.js');
-                  }     
-              }
-          } catch {
-              console.log('Some Plugins Are Corrupted: ' + plugin.dataValues.name)
-          }
-            
-                });
-        // ==================== End External Plugins ====================
+            if (!fs.existsSync('./plugins/' + plugin.dataValues.name + '.js')) {
+                console.log(plugin.dataValues.name);
+                var response = await got(plugin.dataValues.url);
+                if (response.statusCode == 200) {
+                    fs.writeFileSync('./plugins/' + plugin.dataValues.name + '.js', response.body);
+                    require('./plugins/' + plugin.dataValues.name + '.js');
+                }     
+            }
+        });
 
         console.log(
-            chalk.blueBright.italic('⬇️  Installing Plugins...')
+            chalk.blueBright.italic('⬇️Installing plugins...')
         );
 
-        // ==================== Internal Plugins ====================
         fs.readdirSync('./plugins').forEach(plugin => {
             if(path.extname(plugin).toLowerCase() == '.js') {
                 require('./plugins/' + plugin);
             }
         });
-        // ==================== End Internal Plugins ====================
 
         console.log(
             chalk.green.bold('✅ WHITE DEVIL working!')
@@ -299,12 +306,12 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if (config.LANG == 'ML') announce = '📢 പ്രഖ്യാപന സംവിധാനം ഇപ്പോൾ Whitedevil- ൽ ചേർത്തിരിക്കുന്നു !! 🥳\nഎല്ലാ ദിവസവും ഞങ്ങൾ ( ഡവലപ്പർമാർ ) ഈ സിസ്റ്റത്തിൽ നിന്ന് *ഇവന്റുകൾ/സവിശേഷതകൾ/പുതിയ എന്തെങ്കിലും* പ്രഖ്യാപിക്കും 📝\nകണക്റ്റഡ് ആയി തുടരുക ✅'
             if (config.LANG == 'ID') announce = '📢 Sistem pengumuman sekarang ditambahkan ke Whitedevil !! 🥳\nHarian Kami ( pengembang ) akan mengumumkan *acara/fitur/sesuatu yang baru* dari sistem ini 📝\nTetap Terhubung ✅'
             
-            let video = 'https://imgur.com/u9LLLGV.mp4'
+            let video = ''
             let image = 'https://i.imgur.com/kB30S41.jpg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
-                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['1080p','720p', '480p', '360p', '240p', '144p'].map(() => true)});
+                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
                 yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
                 yt.on('end', async () => {
                     return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
