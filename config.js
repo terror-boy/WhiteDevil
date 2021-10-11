@@ -38,6 +38,7 @@ module.exports = {
     INBO1: process.env.INBO_BLOCK === undefined ? 'true' : process.env.INBO_BLOCK,
     AI: process.env.AI_EVA === undefined ? 'false' : process.env.AI_EVA,
     WD_AI: process.env.WD_AI === undefined ? 'true' : process.env.WD_AI,
+    KTB1: process.env.WHTS_PASSWORD === undefined ? false : process.env.WHTS_PASSWORD,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
