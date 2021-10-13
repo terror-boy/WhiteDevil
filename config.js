@@ -44,6 +44,7 @@ module.exports = {
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     BOT: process.env.BOT_NAME === undefined ? 'ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ' : process.env.BOT_NAME,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    BOT1: process.env.BOT_NAMES === undefined ? 'ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ' : process.env.BOT_NAMES,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
     AUTOSTICKER: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
