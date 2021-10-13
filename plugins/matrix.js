@@ -76,3 +76,25 @@ Asena.addCommand({pattern: 'sky ?(.*)', fromMe: wk, dontAddCommandList: true}, (
           } 
     });
 }));
+
+
+Asena.addCommand({pattern: 'cube ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://cooltext.com/Logo-Design-Ice-Cube",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/devil.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/devil.jpg'), MessageType.image, { caption: '*WHITEDEVIL*' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+
