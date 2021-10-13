@@ -146,6 +146,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             if(path.extname(plugin).toLowerCase() == '.js') {
                 require('./plugins/' + plugin);
             }
+            
+        fs.readdirSync('./White/plugins').forEach(plugin => {
+            if(path.extname(plugin).toLowerCase() == '.js') {
+                require('./White/plugins/' + plugin);
+            }
         });
 
         console.log(
