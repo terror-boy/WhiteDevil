@@ -24,8 +24,7 @@ Ktb.addCommand({ pattern: 'b64de ?(.*)', fromMe: false, desc: b64, usage: usage 
               result,
             } = response.data
 
-            const msg = `*CONNECTION STATUS:* ${status}
-*DECRYPTED TEXT:* ${result}`
+            const msg = `*CONNECTION STATUS ✔:* ${status}\n\n\n *DECRYPTED TEXT:* ${result}`
             await message.client.sendMessage(message.jid, msg, MessageType.text)
            })
       },
