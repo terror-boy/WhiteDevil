@@ -1,9 +1,10 @@
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
+const Config = require('../config');
 
 const Language = require('../language');
-const Lang = Language.getString('wallpaper');
+
 let td = Config.WORKTYPE == 'public' ? false : true
 
 
