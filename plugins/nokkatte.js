@@ -15,4 +15,4 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'END:VCARD'
 const sentMsg  = await conn.sendMessage(id, {displayname: "WHITEDEVIL", vcard: vcard}, MessageType.contact)
 
-}));
+});
