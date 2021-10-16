@@ -15,6 +15,6 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'ORG:WHITEDEVIL;\n'
             + 'TEL;type=CELL;type=VOICE;waid=919778042644:+91 97780 42644\n' 
             + 'END:VCARD'
-const sentMsg  = await conn.sendMessage(id, {displayname: "WHITEDEVIL", vcard: vcard}, MessageType.contact)
+const sentMsg  = await message.client.sendMessage(id, {displayname: "WHITEDEVIL", vcard: vcard}, MessageType.contact)
 
 });
