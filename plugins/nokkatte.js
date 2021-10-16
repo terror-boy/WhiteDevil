@@ -4,7 +4,8 @@ const axios = require('axios');
 const Config = require('../config');
 
 Ktb.addCommand({ pattern: 'ktb ?(.*)', fromMe: false, desc: b64, usage: usage }, async (message, match) => {
-
+const b64 = "testing."
+const usage = ".ktb"
 
 // send a contact!
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
