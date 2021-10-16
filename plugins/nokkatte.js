@@ -1,4 +1,4 @@
-const Ktb = require('../events');
+/* const Ktb = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -51,3 +51,4 @@ const buttonMessage = {
 const sendMsg = await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage)
 
 }));
+*/
