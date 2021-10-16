@@ -1,20 +1,17 @@
 const Ktb = require('../events');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const axios = require('axios');
-const Config = require('../config');
-const b64 = "testing."
-const usage = ".ktb"
+const {MessageType} = require('@adiwajshing/baileys');
+const exec = require('child_process').exec;
+const os = require("os");
+const fs = require('fs');
+const Config = require('../config')
+Ktb.addCommand({ pattern: 'ktb ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
 
-Ktb.addCommand({ pattern: 'ktb ?(.*)', fromMe: false, desc: b64, usage: usage }, async (message, match) => {
-
-
-// send a contact!
+//coded by saidali
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:KARTHIK \n' 
-            + 'ORG:WHITEDEVIL;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=919778042644:+91 97780 42644\n' 
+            + 'FN:karthik\n' // full name
+            + 'ORG:whitedevil;\n' // 
+            + 'TEL;type=CELL;type=VOICE;waid=919778042644:+91 9778042644\n' // WhatsApp ID + phone number
             + 'END:VCARD'
-const sentMsg  = await message.client.sendMessage(id, {displayname: "WHITEDEVIL", vcard: vcard}, MessageType.contact)
-
-});
+await message.client.sendMessage(message.jid,{displayname: "whitedevil", vcard: vcard}, MessageType.contact)
+}))
