@@ -10,5 +10,5 @@ Asena.addCommand({pattern: 'owner', fromMe: false, desc: "OWNER NUMBER"}, (async
     
 
 const ownr = "YOU CAN CONTACT MY OWNER,HE WILL HELP YOU.BUT DON'T SPAM IN HIS PM OR DISTURB BY CALLING.IF HE DOESN'T REPLY WAIT FOR ONE DAY HE WILL REPLY."
-await message.client.sendMessage(message.jid, ownr}, MessageType.text)
+await message.client.sendMessage(message.jid, ownr, MessageType.text)
 }))
