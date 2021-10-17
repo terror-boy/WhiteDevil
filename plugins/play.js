@@ -27,4 +27,4 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
         msg += '```'
          return await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
         });
-    }
+    
