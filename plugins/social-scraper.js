@@ -81,7 +81,7 @@ else if (cn.WORKTYPE == 'public') {
 	
         let urls = `https://zenzapi.xyz/api/downloader/instagram?url=${match[1]}&apikey=whitedevil-terrorboy`
         let response
-        try { response = await got(urls) 
+        try { response = await got(urls) } catch { return await message.client.sendMessage(message.jid, Lang.FİX, MessageType.text, { quoted: message.data });
         }
         const json = JSON.parse(response.body);
 
