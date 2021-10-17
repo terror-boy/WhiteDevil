@@ -2,7 +2,7 @@
 re coded and edited by afnanplk
 */
 
-const Asena = require('../events');
+/* const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
@@ -140,3 +140,4 @@ Asena.addCommand({pattern: 'upload ?(.*)', fromMe: false, desc: "Instagram youtu
         await message.client.sendMessage(message.jid,'```' + ''The given link or text' + ' : ```'+ pallikkel +' \n ```' + 'Is not found or not supported' + '```',MessageType.text);
     }
     }));
+*/
