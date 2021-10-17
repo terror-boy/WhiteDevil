@@ -96,7 +96,7 @@ async function whatsAsena () {
     })    
 
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
+        console.log(`${chalk.green.bold('WHITE')}${chalk.blue.bold('DEVIL')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     });
@@ -300,7 +300,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
          
-        while (getGMTh == 19 && getGMTm == 1) {
+        while (getGMTh == 10 && getGMTm == 1) {
             var announce = ''
             if (config.LANG == 'EN') announce = '📢 Announcement system is now been added to Whitedevil!! 🥳\nDaily We ( the developers ) will announce *events/features/something new* from this system 📝\nStay Connected ✅'
             if (config.LANG == 'ML') announce = '📢 പ്രഖ്യാപന സംവിധാനം ഇപ്പോൾ Whitedevil- ൽ ചേർത്തിരിക്കുന്നു !! 🥳\nഎല്ലാ ദിവസവും ഞങ്ങൾ ( ഡവലപ്പർമാർ ) ഈ സിസ്റ്റത്തിൽ നിന്ന് *ഇവന്റുകൾ/സവിശേഷതകൾ/പുതിയ എന്തെങ്കിലും* പ്രഖ്യാപിക്കും 📝\nകണക്റ്റഡ് ആയി തുടരുക ✅'
