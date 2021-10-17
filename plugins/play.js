@@ -18,13 +18,13 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
 	
         await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
         let msg = '```'
-        msg +=  `TITLE                    :${result.title}\n\n`
-        msg +=  `THUMBNAIL                :${result.thumb}\n\n`
-        msg +=  `CHANNEL                  :${result.channel}\n\n`
-        msg +=  `DATE OF PUBLISHED        :${result.published}\n\n`
-        msg +=  `TOTAL VIEWS              :${result.views}\n\n`
-        msg +=  `SONG URL                 :${result.url}\n\n`
+        msg +=  `TITLE :${result.title}\n\n`
+        msg +=  `THUMBNAIL :${result.thumb}\n\n`
+        msg +=  `CHANNEL :${result.channel}\n\n`
+        msg +=  `DATE OF PUBLISHED :${result.published}\n\n`
+        msg +=  `TOTAL VIEWS :${result.views}\n\n`
         msg += '```'
          return await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
+	
         });
     
