@@ -8,8 +8,8 @@
     "success_url": "https://www.github.com/terror-boy",
     "stack": "container",
     "env": {
-        "ASENA_SESSION": {
-            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Asena Session.",
+        "WHITE_SESSION": {
+            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours White Session.",
             "required": true
         },
         "SUDO": {
