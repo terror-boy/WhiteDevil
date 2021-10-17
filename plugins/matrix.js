@@ -78,8 +78,8 @@ Asena.addCommand({pattern: 'sky ?(.*)', fromMe: wk, dontAddCommandList: true}, (
 }));
 
 
-Asena.addCommand({pattern: 'cube ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://cooltext.com/Logo-Design-Ice-Cube",
+Asena.addCommand({pattern: 'fiction ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    thiccysapi.textpro("https://textpro.me/create-science-fiction-text-effect-online-free-1038.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
