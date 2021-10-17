@@ -20,6 +20,7 @@ module.exports = {
     CHANNEL: 'https://t.me/remasterplugin',
     SESSION: process.env.WHITE_SESSION === undefined ? '' : process.env.WHITE_SESSION,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
+    AFN: process.env.ALL_CAPTION === undefined ? '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*' : process.env.ALL_CAPTION,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     BAD_KICK: process.env.BAD_KICK === undefined ? 'false' : process.env.BAD_KICK,
     WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
