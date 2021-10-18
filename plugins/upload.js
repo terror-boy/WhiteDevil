@@ -138,5 +138,5 @@ Asena.addCommand({pattern: 'upload ?(.*)', fromMe: false, desc: "Instagram youtu
    if (match[1].includes('instagram.com') && match[1].includes('mp3') || match[1].includes('.gov') || match[1].includes('.edu') || match[1].includes('.org') || match[1].includes('.net') || match[1].includes('.biz') || match[1].includes('.info') || match[1].includes('.facebook')) {
         let pallikkel = match[1]
         await message.client.sendMessage(message.jid,'```'The given link or text' : ```'+ pallikkel +' \n ```'Is not found or not supported'```',MessageType.text);
-    }
+    })
     }));
