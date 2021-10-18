@@ -2,7 +2,7 @@
 re coded and edited by afnanplk
 */
 
-/* const Asena = require('../events');
+const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
@@ -32,7 +32,7 @@ const Language = require('../language');
 const Lang = Language.getString('scrapers');
 const LOAD_ING = "```Downloading media...```"
 
-Asena.addCommand({pattern: 'upload ?(.*)', fromMe: false, desc: "Instagram youtube downloader" }, (async (message, match) => { 
+Asena.addCommand({pattern: 'upload ?(.*)', fromMe: false, desc: "Instagram youtube downloader"}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,"Give me link \n example: .upload <instagram or youtube link here>. \n\n to download youtube song (audio only) \n example: .upload shape of you \n    or    \n.upload https://www.youtube.com/watch?v=t1r_tmgQago mp3",MessageType.text);    
         if (!match[1].includes('mp3') && match[1].includes('youtu.be') || match[1].includes('youtube.com')) {
@@ -46,7 +46,7 @@ Asena.addCommand({pattern: 'upload ?(.*)', fromMe: false, desc: "Instagram youtu
                     VID = match[1].split('/')[3]
                 }
             } catch {
-                return await message.client.sendMessage(message.jid,"*I couldn't find anything :(*",MessageType.text);
+                return await message.client.sendMessage(message.jid,"*I couldn't find anything 😔*",MessageType.text);
             }
             var afnjson = await message.client.groupMetadata(message.jid)
             var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
@@ -137,7 +137,6 @@ Asena.addCommand({pattern: 'upload ?(.*)', fromMe: false, desc: "Instagram youtu
     }
    if (match[1].includes('instagram.com') && match[1].includes('mp3') || match[1].includes('.gov') || match[1].includes('.edu') || match[1].includes('.org') || match[1].includes('.net') || match[1].includes('.biz') || match[1].includes('.info') || match[1].includes('.facebook')) {
         let pallikkel = match[1]
-        await message.client.sendMessage(message.jid,'```' + ''The given link or text' + ' : ```'+ pallikkel +' \n ```' + 'Is not found or not supported' + '```',MessageType.text);
+        await message.client.sendMessage(message.jid,'```'The given link or text' : ```'+ pallikkel +' \n ```'Is not found or not supported'```',MessageType.text);
     }
     }));
-*/
