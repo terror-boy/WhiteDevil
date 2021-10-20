@@ -12,25 +12,25 @@ const fs = require('fs');
 async function whatsAsena() {
   const conn = new WAConnection();
   conn.logger.level = 'warn';
-  conn.version = [2, 2126, 14]
+  conn.version = [2, 2119, 6]
 
   conn.on('connecting', async () => {
     console.log(`${chalk.green.bold('Karthik_terror-boy ')}${chalk.green.bold('-WhiteDevil')}
-${chalk.white.italic('AsenaString code recipient')}
+${chalk.white.italic('WhiteDevilString code recipient')}
 ${chalk.blue.bold('ℹ️  Connecting WhiteDevil... Please wait.')}`);
   });
 
   conn.on('open', async () => {
     console.log(
-      chalk.green.bold('Asena QR Code: '),
-      'ASENA;;;' +
+      chalk.green.bold('WHITEDEVIL QR Code: '),
+      'WHITE;;;' +
       Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
         'base64'
       )
     );
     await conn.sendMessage(
       conn.user.jid,
-      'ASENA;;;' +
+      'WHITE;;;' +
       Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
         'base64'
       ),
