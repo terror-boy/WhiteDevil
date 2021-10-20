@@ -18,9 +18,6 @@
 
 
 
-```
-  bash <(curl -L https://tinyurl.com/347e3y56)
-```              
 
 
 
