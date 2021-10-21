@@ -63,13 +63,26 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=terror-boy&repo=WhiteDevil&theme=nightowl)](https://github.com/terror-boy/WhiteDevil)
   </div>
     
-## Setup
+# Setup
 <div align="center">
   
+## STEPUP VIDEO 👇🏻👇 [ IF ANY DOUBT TO STEP ]
+  
+<img src=https://imgur.com/REABqih.gif>
   
   
- 
   
+ <img src=https://imgur.com/fQBq5CJ.gif>
+  
+  
+  
+  
+ <img src=https://i.imgur.com/acODONm.gif>
+  
+  
+  
+  
+<img src=https://i.imgur.com/efCwO2E.gif>
 
 ### **👇🏻👇🏻CLICK THE WEBSITE LOGO TO SET THE BOT(THIS WILL REDIRECTED TO  MY WEBSITE)👇🏻👇🏻**
   
