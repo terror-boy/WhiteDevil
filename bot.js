@@ -327,10 +327,10 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         }
     }, 50000);
 
-while (getGMTh == 10 && getGMTm == 30) {
+while (getGMTh == 11 && getGMTm == 1) {
             var announce = ''
             if (config.LANG == 'EN') announce = '📢 Announcement system is now been added to Whitedevil!! 🥳\nDaily We ( the developers ) will announce *events/features/something new* from this system 📝\nStay Connected ✅'
-            if (config.LANG == 'ML') announce tesing....
+            if (config.LANG == 'ML') announce = 'tesing....'
             if (config.LANG == 'ID') announce = '📢 Sistem pengumuman sekarang ditambahkan ke Whitedevil !! 🥳\nHarian Kami ( pengembang ) akan mengumumkan *acara/fitur/sesuatu yang baru* dari sistem ini 📝\nTetap Terhubung ✅'
             
             let video = ''
