@@ -68,13 +68,7 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
   
 ## STEPUP VIDEO 👇🏻👇 [ IF ANY DOUBT TO STEP ]
   
-<img src=https://imgur.com/REABqih.gif>
-  
-  
-  
- <img src=https://imgur.com/fQBq5CJ.gif>
-  
-  
+
   
   
  <img src=https://i.imgur.com/acODONm.gif>
