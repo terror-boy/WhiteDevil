@@ -46,6 +46,9 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
 <a href="https://github.com/terror-boy/WhiteDevil/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/terror-boy/WhiteDevil?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
 </p>
+  
+  #### TOTAL REPO VIEWS📍
+![Visitor Count](https://profile-counter.glitch.me/terror-boy/count.svg)
 
 ## 📢 Guide
   
