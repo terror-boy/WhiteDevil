@@ -65,6 +65,11 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
     
 ## Setup
 <div align="center">
+  
+  
+  
+ 
+  
 
 ### **👇🏻👇🏻CLICK THE WEBSITE LOGO TO SET THE BOT(THIS WILL REDIRECTED TO  MY WEBSITE)👇🏻👇🏻**
   
@@ -96,7 +101,7 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
 ``` 
 <div align="center">
   
-[![SETUP](https://www.linkpicture.com/q/WHITEDEVIL-SITE.png)](https://url-x.it/17FtZCJ)
+[![SETUP](https://www.linkpicture.com/q/WHITEDEVIL-SITE.png)](https://whitedevil-bot.yolasite.com)
   
      
     
