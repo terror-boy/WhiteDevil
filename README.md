@@ -23,7 +23,7 @@
 
 
   <p align="center">
-<a href="https://github.com/terror-boy"><img title="Author" src="https://img.shields.io/badge/Author-Karthik_terror-boy/WhiteDevil?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/terror-boy"><img title="Author" src="https://img.shields.io/badge/Author-Karthik_terror-boy/WhiteDevil?color=white&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
