@@ -31,7 +31,7 @@ Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_WELCOME,MessageType.text);
     } else {
-        await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
+        await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
    
         
         
