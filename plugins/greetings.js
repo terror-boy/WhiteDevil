@@ -24,7 +24,7 @@ Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
        
         }
    
-        await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, duration: Config.WHTDL, quoted : message.data, ptt: true})
+        await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
         
     
 }));
