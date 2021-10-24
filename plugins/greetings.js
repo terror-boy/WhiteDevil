@@ -21,7 +21,12 @@ Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
         await message.client.sendMessage(message.jid,Lang.NOT_SET_WELCOME,MessageType.text);
     } else {
         await message.client.sendMessage(message.jid,Lang.WELCOME_ALREADY_SETTED + hg.message + '```',MessageType.text);
-    }
+       
+        }
+   
+        await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, duration: Config.WHTDL, quoted : message.data, ptt: true})
+        }
+    
 }));
 
 Asena.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
