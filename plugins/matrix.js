@@ -1,4 +1,4 @@
-const thiccysapi = require('textmaker-thiccy'); // Import NPM Package
+const w5botapi = require('w5bot-textmaker'); // Import NPM Package
 
 const Asena = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
@@ -15,7 +15,7 @@ clh.pay = ddd
 let wk = Config.WORKTYPE == 'public' ? false : true
 
 Asena.addCommand({pattern: 'matrix ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/matrix-style-text-effect-online-884.html",
+    w5botapi.textpro("https://textpro.me/matrix-style-text-effect-online-884.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -36,7 +36,7 @@ Asena.addCommand({pattern: 'matrix ?(.*)', fromMe: wk, dontAddCommandList: true}
 
 
 Asena.addCommand({pattern: 'paper ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-art-paper-cut-text-effect-online-1022.html",
+    w5botapi.textpro("https://textpro.me/create-art-paper-cut-text-effect-online-1022.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -58,7 +58,7 @@ Asena.addCommand({pattern: 'paper ?(.*)', fromMe: wk, dontAddCommandList: true},
 
 
 Asena.addCommand({pattern: 'sky ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/1917-style-text-effect-online-980.html",
+    w5botapi.textpro("https://textpro.me/1917-style-text-effect-online-980.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -79,7 +79,7 @@ Asena.addCommand({pattern: 'sky ?(.*)', fromMe: wk, dontAddCommandList: true}, (
 
 
 Asena.addCommand({pattern: 'fiction ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-science-fiction-text-effect-online-free-1038.html",
+    w5botapi.textpro("https://textpro.me/create-science-fiction-text-effect-online-free-1038.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -97,4 +97,3 @@ Asena.addCommand({pattern: 'fiction ?(.*)', fromMe: wk, dontAddCommandList: true
           } 
     });
 }));
-
