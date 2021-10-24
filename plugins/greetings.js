@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
        
         } 
 }));
-
+/*
 Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid);
     if (hg === false) {
@@ -33,7 +33,7 @@ Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
     } else {
         await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
    
-        
+    */    
         
     
 }));
