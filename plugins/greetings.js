@@ -33,10 +33,11 @@ Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
     } else {
         await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
    
-    */    
+     
         
     
 }));
+*/   
 
 Asena.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
