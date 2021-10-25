@@ -444,12 +444,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         } catch (error) {
                             if (config.LANG == 'EN') {
                                 await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: '*『 ERROR 』*\n\n*Whitedevil an error has occurred!*\n_Report this error to the developer! [ TERROR BOY ]._\n\n*Error:* ```' + error + '```\n\n' });
-                                
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/error.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                             } else if (config.LANG == 'ML') {
                                 await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: '*『 ERROR 』*\n\n*Whitedevil error സംഭവിച്ചു!*\n_ഈ error  ഡെവലപ്പറെ അറിയിക്കുക! [ TERROR BOY ]._\n\n*error:* ```' + error + '```\n\n' });
-                                
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/error.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                             } else {
                                 await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: '*『 KESALAHAN 』*\n\n*Whitedevil telah terjadi kesalahan!*\n_Laporkan kesalahan ini ke pengembang [ TERROR BOY ]._\n\n*Kesalahan:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/error.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                             }
                         }
                     }
