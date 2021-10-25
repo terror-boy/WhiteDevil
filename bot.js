@@ -350,8 +350,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
                         await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); 
                         await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true}); 
-                       })   
-                    }
+                       });  
+                    
                     return;
                 } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
                     // welcome
@@ -362,8 +362,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
                         await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); 
                         await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});  
-                       })    
-                    }
+                     });
+                        
                     return;
                 }
             }
@@ -375,8 +375,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         var sewqueenimage = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
                         await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
                         await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true}); 
-                       })
-                    }
+                    });
+                
                     return;
                 } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
                     // Thanks to Ravindu Manoj
@@ -385,8 +385,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     var sewqueenimage = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
                     await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
                     await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
-                     })
-                    }
+                     });
+                    
                     return;
                 }
              }
