@@ -128,7 +128,7 @@ Asena.addCommand({pattern: 'bc$', fromMe: true, desc: stag_dsc }, (async (messag
     mesaj = '';
     grup['participants'].map(async (uye) => {
         await message.client.sendMessage(uye.jid, message.reply_message.text, MessageType.text)
-    })
+    }
 }));
 }
 
