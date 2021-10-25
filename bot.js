@@ -154,13 +154,14 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         
          if (config.LANG == 'EN') {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: `『 Whitedevil』\n\nHello ${conn.user.name}!\n\n*🆘 General Help For You! 🆘*\n\n🔹 *#alive:* Check if the bot is running.\n\n🔹 *#list:* Shows the complete list of commands.\n\n🔹 *#restart:* It Restarts the bot.\n\n🔹 *#shutdown:* It Shutdown/Turn off the bot.\n\n *⚠ Warning, If you shutdown/turn off, there is no command to turn on the bot So You must got to heroku & turn on the worker. ⚠*.\n\nThank You For Using Whitedevil 💖`});
-             
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
          } else if (config.LANG == 'ID') {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: `『 Whitedevil 』\n\nHalo ${conn.user.name}!\n\n*🆘 Bantuan umum 🆘*\n\n🔹 *#alive:* Periksa apakah bot sedang berjalan.\n\n🔹 *#list:* Menampilkan daftar lengkap perintah.\n\n🔹 *#restart:* Ini me-restart bot.\n\n🔹 *#shutdown:* Ini Matikan/Matikan bot.\n\n *⚠ Peringatan, Jika Anda mematikan/mematikan, tidak ada perintah untuk menghidupkan bot Jadi Anda harus pergi ke heroku & Nyalakan worker. ⚠*.\n\nTerima Kasih Telah Menggunakan Whitedevil 💖`});
-             
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
          } else {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: `『 Whitedevil 』\n\n *ഹലോ*  ${conn.user.name}!\n\n*🆘 പൊതുവായ സഹായം 🆘*\n\n🔹 *#alive:* ബോട്ട് പ്രവർത്തിക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുന്നു.\n\n🔹 *#list:* കമാൻഡുകളുടെ പൂർണ്ണ ലിസ്റ്റ് കാണിക്കുന്നു.\n\n🔹 *#restart:* ഇത് ബോട്ടിനെ പുനരാരംഭിപ്പിക്കുന്നു.\n\n🔹 *#shutdown:* ഇത് ഷട്ട്ഡൗൺ/ബോട്ട് ഓഫ് ചെയ്യുന്നു.\n\n *⚠ മുന്നറിയിപ്പ്, നിങ്ങൾ ഷട്ട്ഡൗൺ/ഓഫ് ചെയ്യുകയാണെങ്കിൽ, ബോട്ട് ഓണാക്കാൻ ഒരു കമാൻഡും ഇല്ല അതിനാൽ നിങ്ങൾ Heroku ഇല്പോയി worker ഓൺ ചെയ്യണം ⚠*.\n\nWhitedevil ഉപയോഗിച്ചതിന് നന്ദി 💖`});
-        }
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+         }
      });
     
     /* credit:- Toxic-Devil
