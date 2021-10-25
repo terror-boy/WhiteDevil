@@ -163,6 +163,14 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
          }
      });
+
+
+
+
+
+
+
+
     
     /* credit:- Toxic-Devil
     */
@@ -348,11 +356,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         let pp
                         try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); 
-                        await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true}); 
-                       
-                    })  
-                    
+                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                        await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+                    }
                     return;
                 } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
                     // welcome
@@ -361,11 +367,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                        let pp
                         try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); 
-   
-                        await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});  
-                     })
-                        
+                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                        await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+                    }
                     return;
                 }
             }
@@ -375,22 +379,16 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     var gb = await getMessage(msg.key.remoteJid, 'goodbye');
                     if (gb !== false) {
                         var sewqueenimage = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
-                        await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message}); 
-                    
-                        await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true}); 
-                    })
-                
+                        await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
+                    }
                     return;
                 } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
                     // Thanks to Ravindu Manoj
                     var gb = await getMessage(msg.key.remoteJid);
                     if (gb !== false) {
                     var sewqueenimage = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
-                    await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message}); 
-                    
-                    await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
-                     })
-                    
+                    await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
+                    }
                     return;
                 }
              }
@@ -462,7 +460,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                 await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/error.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                             } else {
                                 await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: '*『 KESALAHAN 』*\n\n*Whitedevil telah terjadi kesalahan!*\n_Laporkan kesalahan ini ke pengembang [ TERROR BOY ]._\n\n*Kesalahan:* ```' + error + '```\n\n' });
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/error.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                             }
                         }
                     }
