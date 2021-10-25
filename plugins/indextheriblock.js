@@ -26,6 +26,8 @@ Hisham.addCommand({on: 'text', fromMe: false, delownsewcmd: false, onlyPm: true 
            
             await message.client.sendMessage(message.jid, '*' + INBO1 + '*', MessageType.text);
             await message.client.blockUser(message.jid, "add");
+            await message.client.sendMessage(message.jid, fs.readFileSync('./White/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, duration: Config.WHTDL, quoted : message.data, ptt: true});
+        
           } 
         else if (regexb2ichu.test(message.message)) {
           
