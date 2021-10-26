@@ -380,7 +380,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
                         await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
-                        await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+                        await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                     }
                     return;
                 }
