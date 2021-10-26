@@ -16,6 +16,6 @@ git clone https://github.com/terror-boy/WhiteDevil
 
 cd WhiteDevil
 
-npm i
+npm install 
 
 node qr.js
