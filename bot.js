@@ -343,6 +343,38 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
          
+        while (getGMTh == 12 && getGMTm == 20) {
+            var announce = ''
+            if (config.LANG == 'EN') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ML') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ID') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            
+            let video = ''
+            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            
+            if (video.includes('http') || video.includes('https')) {
+                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
+                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
+                yt.on('end', async () => {
+                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
+                });
+            } else {
+                if (image.includes('http') || image.includes('https')) {
+                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
+                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
+                } else {
+                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+                }
+            }
+        }
+    }, 50000);
+    
+    
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
         while (getGMTh == 11 && getGMTm == 59) {
             var announce = ''
             if (config.LANG == 'EN') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
