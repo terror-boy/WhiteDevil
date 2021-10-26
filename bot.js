@@ -154,14 +154,17 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         
          if (config.LANG == 'EN') {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: `『 Whitedevil』\n\nHello ${conn.user.name}!\n\n*🆘 General Help For You! 🆘*\n\n🔹 *#alive:* Check if the bot is running.\n\n🔹 *#list:* Shows the complete list of commands.\n\n🔹 *#restart:* It Restarts the bot.\n\n🔹 *#shutdown:* It Shutdown/Turn off the bot.\n\n *⚠ Warning, If you shutdown/turn off, there is no command to turn on the bot So You must got to heroku & turn on the worker. ⚠*.\n\nThank You For Using Whitedevil 💖`});
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": '*THANKS FOR DEPLOYING WHITEDEVIL BOT*', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./White/image/logo.jpg'), ptt: true}}}});
+              await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+         
          } else if (config.LANG == 'ID') {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: `『 Whitedevil 』\n\nHalo ${conn.user.name}!\n\n*🆘 Bantuan umum 🆘*\n\n🔹 *#alive:* Periksa apakah bot sedang berjalan.\n\n🔹 *#list:* Menampilkan daftar lengkap perintah.\n\n🔹 *#restart:* Ini me-restart bot.\n\n🔹 *#shutdown:* Ini Matikan/Matikan bot.\n\n *⚠ Peringatan, Jika Anda mematikan/mematikan, tidak ada perintah untuk menghidupkan bot Jadi Anda harus pergi ke heroku & Nyalakan worker. ⚠*.\n\nTerima Kasih Telah Menggunakan Whitedevil 💖`});
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": '*THANKS FOR DEPLOYING WHITEDEVIL BOT*', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./White/image/logo.jpg'), ptt: true}}}});
+              await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+              
          } else {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Whitedevil.png"), MessageType.image, { caption: `『 Whitedevil 』\n\n *ഹലോ*  ${conn.user.name}!\n\n*🆘 പൊതുവായ സഹായം 🆘*\n\n🔹 *#alive:* ബോട്ട് പ്രവർത്തിക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുന്നു.\n\n🔹 *#list:* കമാൻഡുകളുടെ പൂർണ്ണ ലിസ്റ്റ് കാണിക്കുന്നു.\n\n🔹 *#restart:* ഇത് ബോട്ടിനെ പുനരാരംഭിപ്പിക്കുന്നു.\n\n🔹 *#shutdown:* ഇത് ഷട്ട്ഡൗൺ/ബോട്ട് ഓഫ് ചെയ്യുന്നു.\n\n *⚠ മുന്നറിയിപ്പ്, നിങ്ങൾ ഷട്ട്ഡൗൺ/ഓഫ് ചെയ്യുകയാണെങ്കിൽ, ബോട്ട് ഓണാക്കാൻ ഒരു കമാൻഡും ഇല്ല അതിനാൽ നിങ്ങൾ Heroku ഇല്പോയി worker ഓൺ ചെയ്യണം ⚠*.\n\nWhitedevil ഉപയോഗിച്ചതിന് നന്ദി 💖`});
-            await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": '*THANKS FOR DEPLOYING WHITEDEVIL BOT*', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./White/image/logo.jpg'), ptt: true}}}});
-         }
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./White/bot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+              
+              }
      });
 
 
@@ -311,12 +314,136 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
          
         while (getGMTh == 10 && getGMTm == 1) {
             var announce = ''
-            if (config.LANG == 'EN') announce = '📢 Announcement system is now been added to Whitedevil!! 🥳\nDaily We ( the developers ) will announce *events/features/something new* from this system 📝\nStay Connected ✅'
-            if (config.LANG == 'ML') announce = '📢 പ്രഖ്യാപന സംവിധാനം ഇപ്പോൾ Whitedevil- ൽ ചേർത്തിരിക്കുന്നു !! 🥳\nഎല്ലാ ദിവസവും ഞങ്ങൾ ( ഡവലപ്പർമാർ ) ഈ സിസ്റ്റത്തിൽ നിന്ന് *ഇവന്റുകൾ/സവിശേഷതകൾ/പുതിയ എന്തെങ്കിലും* പ്രഖ്യാപിക്കും 📝\nകണക്റ്റഡ് ആയി തുടരുക ✅'
-            if (config.LANG == 'ID') announce = '📢 Sistem pengumuman sekarang ditambahkan ke Whitedevil !! 🥳\nHarian Kami ( pengembang ) akan mengumumkan *acara/fitur/sesuatu yang baru* dari sistem ini 📝\nTetap Terhubung ✅'
+            if (config.LANG == 'EN') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ML') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ID') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
             
             let video = ''
-            let image = 'https://i.imgur.com/kB30S41.jpg'
+            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            
+            if (video.includes('http') || video.includes('https')) {
+                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
+                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
+                yt.on('end', async () => {
+                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
+                });
+            } else {
+                if (image.includes('http') || image.includes('https')) {
+                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
+                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
+                } else {
+                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+                }
+            }
+        }
+    }, 50000);
+    
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
+        while (getGMTh == 12 && getGMTm == 1) {
+            var announce = ''
+            if (config.LANG == 'EN') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ML') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ID') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            
+            let video = ''
+            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            
+            if (video.includes('http') || video.includes('https')) {
+                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
+                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
+                yt.on('end', async () => {
+                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
+                });
+            } else {
+                if (image.includes('http') || image.includes('https')) {
+                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
+                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
+                } else {
+                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+                }
+            }
+        }
+    }, 50000);
+    
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
+        while (getGMTh == 17 && getGMTm == 1) {
+            var announce = ''
+            if (config.LANG == 'EN') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ML') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ID') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            
+            let video = ''
+            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            
+            if (video.includes('http') || video.includes('https')) {
+                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
+                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
+                yt.on('end', async () => {
+                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
+                });
+            } else {
+                if (image.includes('http') || image.includes('https')) {
+                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
+                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
+                } else {
+                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+                }
+            }
+        }
+    }, 50000);
+    
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
+        while (getGMTh == 19 && getGMTm == 1) {
+            var announce = ''
+            if (config.LANG == 'EN') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ML') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ID') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            
+            let video = ''
+            let image = '' //'https://i.imgur.com/kB30S41.jpg'
+            
+            if (video.includes('http') || video.includes('https')) {
+                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
+                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
+                yt.on('end', async () => {
+                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
+                });
+            } else {
+                if (image.includes('http') || image.includes('https')) {
+                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
+                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
+                } else {
+                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+                }
+            }
+        }
+    }, 50000);
+    
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
+        while (getGMTh == 19 && getGMTm == 30) {
+            var announce = ''
+            if (config.LANG == 'EN') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ML') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            if (config.LANG == 'ID') announce = '*THIS IS ANNOUNCEMENT MESSAGE\n\nTHERE WILL BE NO REPLY FROM MY OWNWER FOR MONDAY-FRIDAY BECAUSE OF BUSY IN CLASS \n\n YOU CAN REPORT BUGS & ERRORS IN OFFICIAL BOT GROUP[ https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf ] FOR ALL BOT SUPPORT YOU SHOULD MENTION ME IN THIS GROUP OR SAY THE NAME OF BOT.......\n\n\n\n        --BOT OWNER*'
+            
+            let video = ''
+            let image = '' //'https://i.imgur.com/kB30S41.jpg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
