@@ -46,7 +46,6 @@
     "tiktok-scraper": "1.4.20",
     "request": "^2.88.2",
     "exchange-rates-api": "^1.0.2",
-    "jpeg": "^2.0.0",
     "fluent-ffmpeg": "^2.1.2",
     "form-data": "^4.0.0",
     "g-i-s": "^2.1.6",
