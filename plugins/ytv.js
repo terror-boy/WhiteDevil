@@ -24,7 +24,6 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
 
 	var img = await Axios.get(`${result.thumbnail}`, {responseType: 'arraybuffer'})
 	
-	var video = await Axios.get(`${result.url_video}`, {responseType: 'arraybuffer'})
 
         if(!status) return await message.sendMessage('*NO RESULT FOUND🥲*')
 
@@ -38,6 +37,5 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
         msg +=  `DOWNLOADING LINK :${result.url_video}\n\n`
         msg += '```'
          return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
-	return await message.client.sendMessage(message.jid,Buffer.from(video.data), MessageType.video, {mimetype: Mimetype.mp4Video , caption: msg })
         });
     
