@@ -42,6 +42,7 @@
     "tinyurl": "^1.1.7",
     "custom-soffice-to-pdf": "^1.0.0",
     "dotenv": "^8.2.0",
+    "fs-extra": "^9.1.0",
     "tiktok-scraper": "1.4.20",
     "request": "^2.88.2",
     "exchange-rates-api": "^1.0.2",
