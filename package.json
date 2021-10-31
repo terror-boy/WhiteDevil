@@ -40,6 +40,7 @@
     "deepai": "^1.0.17",
     "cwebp-bin": "^6.1.1",
     "tinyurl": "^1.1.7",
+    "custom-soffice-to-pdf": "^1.0.0",
     "dotenv": "^8.2.0",
     "tiktok-scraper": "1.4.20",
     "request": "^2.88.2",
