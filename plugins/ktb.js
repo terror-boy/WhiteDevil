@@ -31,6 +31,6 @@ const main = async () => {
     } catch (err) {
         print(err, "err");
         
-        await message.client.sendMessage(message.jid, choice, MessageType.text )
+        await message.client.sendMessage(message.jid, choice, MessageType.text );
     }
 });
