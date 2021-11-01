@@ -1,3 +1,4 @@
+/*
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
@@ -34,3 +35,4 @@ const main = async () => {
         await message.client.sendMessage(message.jid, choice, MessageType.text );
     }
 });
+*/
