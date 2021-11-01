@@ -33,4 +33,4 @@ const main = async () => {
         
         await message.client.sendMessage(message.jid, choice, MessageType.text )
     }
-};
+});
