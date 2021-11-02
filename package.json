@@ -35,6 +35,7 @@
     "audiobuffer-to-wav": "1.0.0",
     "chalk": "^4.1.0",
     "parse-int":"^1.0.3",
+    "util":"^0.12.4",
     "coffeehouse": "^2.0.0",
     "cwebp": "^2.0.5",
     "search-engine-client": "^1.2.6",
