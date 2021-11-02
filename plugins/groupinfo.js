@@ -59,4 +59,4 @@ let wk = conf.WORKTYPE == 'public' ? false : true
             );
         }
     });
-}
+
