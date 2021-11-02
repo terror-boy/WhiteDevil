@@ -6,12 +6,13 @@ Developer & Co-Founder - Phaticusthiccy
 */
 
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const {WAConnection , MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
 const util = require('util')
 const parseInt = require('parse-int');
 const chalk = require('chalk');
+const conn = new WAConnection();
 
 const White = require('../white');
 const axios = require('axios');
