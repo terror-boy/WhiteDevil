@@ -48,11 +48,11 @@ ${'```' + `
 🔋 Battery : ${conn.battery ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging...' : '⚡ Discharging'}` : 'Unknown'}
 ${util.format(conn.user.phone)}
 `.trim() + '```'}`
-})
+}));
         await message.sendMessage(
             '```' + child + '```', MessageType.text
         );
-    }));
+    
                                                                                 
-}
+
      
