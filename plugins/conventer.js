@@ -174,5 +174,5 @@ thumbnail: White.tm_b })
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-}
+
     
