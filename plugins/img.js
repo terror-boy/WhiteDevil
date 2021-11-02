@@ -6,39 +6,52 @@ WHITE DEVIL ----»»» TERROR BOY
 
 const Ktb = require('../events');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
+const got = require('got');
 const fs = require('fs');
-const axios = require('axios');
+const Config = require('../config');
+const White = require('../white');
+const LOAD_ING = "*TRYING TO DOWNLOAD*"
+const UPLOAD_ING = "*DOWNLOADING COMPLETED* \n\n *UPLOADING IN PROCESS...*"
+const axios = require('axios')
+const Axios = require('axios')
+
+const conf = require('../config');
+let wk = conf.WORKTYPE == 'public' ? false : true
 
 
-Ktb.addCommand({pattern: 'google ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Ktb.addCommand({pattern: 'google ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,"*word need to search*");
 
     var webimage = await axios.get(`https://zenzapi.xyz/api/gimage2?query=${match[1]}&apikey=whitedevil-terrorboy`, { responseType: 'arraybuffer' })
+    
+    let msg = '```'
+        msg +=  `TITLE :${match[1]}\n\n`
+         msg += '```'
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
-
-}));
-
-/*
-Ktb.addCommand({pattern: 'img ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,"*word need to search*");
-
-    var webimage = await axios.get(`https://zenzapi.xyz/api/gimage?query=${match[1]}&apikey=whitedevil-terrorboy`, { responseType: 'arraybuffer' })
-
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b})
 
 }));
 
+Ktb.addCommand({pattern: 'gimg ?(.*)', fromMe: wk, desc: 'to get google img'}, async (message, match) => {
 
-Ktb.addCommand({pattern: 'img ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
+	
+        const {data} = await axios(`https://zenzapi.xyz/api/gimage?query=${match[1]}&apikey=whitedevil-terrorboy`)
+	
+        const { status, result } = data
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid,"*word need to search*");
+	var img = await Axios.get(`${result}`, {responseType: 'arraybuffer'})
+	
 
-    var webimage = await axios.get(`https://zenzapi.xyz/api/pinterest2?query=${match[1]}&apikey=whitedevil-terrorboy`, { responseType: 'arraybuffer' })
+        if(!status) return await message.sendMessage('*NO RESULT FOUND🥲*')
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*'})
+	reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
 
-}));
-*/
+        let msg = '```'
+        msg +=  `TITLE :${match[1]}\n\n`
+        msg +=  `SOURCE :${result}\n\n`
+        msg += '```'
+         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b})
+        });
+    
