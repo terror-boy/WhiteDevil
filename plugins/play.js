@@ -2,6 +2,7 @@ const Asena = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const got = require('got');
 const Config = require('../config');
+const White = require('../white');
 const LOAD_ING = "*RESULT FOUND UPLOADING...* \n\n *🛑SONG IS UNDER MAINTAINCE🛑*"
 const axios = require('axios')
 const Axios = require('axios')
@@ -28,5 +29,5 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
         msg +=  `TOTAL VIEWS :${result.views}\n\n`
         msg +=  `DOWNLOADING LINK :${result.url}\n\n`
         msg += '```'
-         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
+         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b })
         });
