@@ -9,8 +9,10 @@ const LOAD_ING = "*RESULT FOUND UPLOADING...*"
 const axios = require('axios')
 const Axios = require('axios')
 
+const conf = require('../config');
+let wk = conf.WORKTYPE == 'public' ? false : true
 
-Asena.addCommand({pattern: 'ininfo ?(.*)', fromMe: false, desc: 'searching insta info' , dontAddCommandList: true }, async (message, match) => {
+Asena.addCommand({pattern: 'ininfo ?(.*)', fromMe: wk, desc: 'searching insta info' , dontAddCommandList: true }, async (message, match) => {
 	
 	await message.client.sendMessage(message.jid, '*SEARCHING YOU DATA*' , MessageType.text, { quoted: message.data });
 	
