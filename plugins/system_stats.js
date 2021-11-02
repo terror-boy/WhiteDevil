@@ -40,7 +40,7 @@ let wk = conf.WORKTYPE == 'public' ? false : true
             '```' + child + '```', MessageType.text
         );
     }));
-    
+    /*
     Asena.addCommand({pattern: 'me', fromMe: wk, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         const child = `📱 *Phone Info* :
@@ -53,6 +53,6 @@ ${util.format(conn.user.phone)}
             '```' + child + '```', MessageType.text
         );
     
-                                                                                
+                         */                                                       
 
      
