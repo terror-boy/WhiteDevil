@@ -43,11 +43,11 @@ let wk = conf.WORKTYPE == 'public' ? false : true
     
     Asena.addCommand({pattern: 'me', fromMe: wk, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
-        const child = 📱 *Phone Info* :
+        const child = `📱 *Phone Info* :
 ${'```' + `
 🔋 Battery : ${conn.battery ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging...' : '⚡ Discharging'}` : 'Unknown'}
 ${util.format(conn.user.phone)}
-`.trim() + '```'}
+`.trim() + '```'`}
 }));
         await message.sendMessage(
             '```' + child + '```', MessageType.text
