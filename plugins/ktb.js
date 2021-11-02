@@ -28,15 +28,12 @@ const button = {
  description: "Hello it's list message",
  sections: sections,
  listType: 1
-}  
+} 
 
-const main = async () => {
-    try {
-        const { choice } = await inquirer.prompt(button);
-        choice == rows[0] && require("./git.js");
-        choice == rows[1] && require("./nokkatte.js");
-    } catch (err) {
-        print(err, "err");
+const { choice } = await inquirer.prompt(button);
+        choice == rows["rowid1"] && require("./git.js");
+        choice == rows["rowid2"] && require("./nokkatte.js");
+    
         
 const sendMsg = await message.client.sendMessage(message.jid, button, MessageType.listMessage)
 
