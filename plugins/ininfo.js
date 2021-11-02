@@ -1,6 +1,8 @@
 const Asena = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const got = require('got');
+
+const White = require('../white');
 const Config = require('../config');
 const LOAD_ING = "*RESULT FOUND UPLOADING...*"
 
@@ -34,5 +36,6 @@ Asena.addCommand({pattern: 'ininfo ?(.*)', fromMe: false, desc: 'searching insta
         msg +=  `TIMELINE :${result.timeline}\n\n`
         msg +=  `VIDEO TIMELINE :${result.videotimeline}\n\n`
         msg += '```'
-         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg })
+         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , 
+thumbnail: White.tm_b})
         });
