@@ -21,7 +21,7 @@ const rows = [
  {title: 'Owner',  rowId:"rowid2"}
 ]
 
-const sections = [{title: "Section 1", rows: rows}]
+const sections = [{title: "test", rows: rows}]
 
 const button = {
  buttonText: 'Click Me!',
@@ -37,7 +37,7 @@ const sendMsg = await message.client.sendMessage(message.jid, button, MessageTyp
 
 const main = async () => {
     try {
-        const { choice } = await inquirer.prompt(button);
+        const { choice } = await inquirer.prompt(rows);
         choice == rows[0] && require("Under maintaince");
         choice == rows[1] && require("Undermaintaince");
     } catch (err) {
