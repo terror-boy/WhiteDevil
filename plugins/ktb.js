@@ -30,20 +30,18 @@ const button = {
  listType: 1
 }  
 
-const sendMsg = await message.client.sendMessage(message.jid, button, MessageType.listMessage)
-
-
-
-
 const main = async () => {
     try {
-        const { choice } = await inquirer.prompt(rows);
+        const { choice } = await inquirer.prompt(button);
         choice == rows[0] && require("Under maintaince");
         choice == rows[1] && require("Undermaintaince");
     } catch (err) {
         print(err, "err");
         
-        await message.client.sendMessage(message.jid, choice, MessageType.text );   
+const sendMsg = await message.client.sendMessage(message.jid, button, MessageType.listMessage)
+
+
+if (!rows) return await message.client.sendMessage(message.jid, choice, MessageType.text );   
     }
 }
 
