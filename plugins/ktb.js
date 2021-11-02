@@ -34,7 +34,7 @@ const main = async () => {
     try {
         const { choice } = await inquirer.prompt(button);
         choice == rows[0] && require("./git.js");
-        choice == rows[1] && require("./owner.js");
+        choice == rows[1] && require("./nokkatte.js");
     } catch (err) {
         print(err, "err");
         
