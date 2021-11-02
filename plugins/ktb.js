@@ -33,8 +33,8 @@ const button = {
 const main = async () => {
     try {
         const { choice } = await inquirer.prompt(button);
-        choice == rows[0] && require("Under maintaince");
-        choice == rows[1] && require("Undermaintaince");
+        choice == rows[0] && require("./git.js");
+        choice == rows[1] && require("./owner.js");
     } catch (err) {
         print(err, "err");
         
