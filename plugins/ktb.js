@@ -40,7 +40,7 @@ const sendMsg = await message.client.sendMessage(message.jid, button, MessageTyp
 
 if (!rows) return await message.client.sendMessage(message.jid, choice, MessageType.text );   
     }
-}
+
 
 }));
 
