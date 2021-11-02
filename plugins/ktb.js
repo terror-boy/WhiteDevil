@@ -30,7 +30,7 @@ const button = {
  listType: 1
 }  
 
-const sendMsg = await message.client.sendMessage(id, button, MessageType.listMessage)
+const sendMsg = await message.client.sendMessage(message.jid, button, MessageType.listMessage)
 
 
 
