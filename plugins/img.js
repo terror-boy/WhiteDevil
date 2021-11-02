@@ -10,7 +10,7 @@ const fs = require('fs');
 const axios = require('axios');
 
 
-Ktb.addCommand({pattern: 'img ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Ktb.addCommand({pattern: 'google ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,"*word need to search*");
 
