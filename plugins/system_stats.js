@@ -49,9 +49,7 @@ ${'```' + `
 ${util.format(conn.user.phone)}
 `
 }));
-        await message.sendMessage(
-            '```' + child + '```', MessageType.text
-        );
+        await message.sendMessage(message.jid, child , MessageType.text);
     
                                                                            
 
