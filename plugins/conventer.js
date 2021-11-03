@@ -173,6 +173,26 @@ thumbnail: White.tm_b })
             });
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
+    Asena.addCommand({pattern: 'tovideo ?(.*)', fromMe: wk, desc: 'convert audio to video' , usage : usge}, (async (message, match) => { 
+      
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'give me a name',MessageType.text);  
+        const mid = message.jid
+        if (message.reply_message === false) return await message.client.sendMessage(mid,afn, MessageType.text);
+        var downloading = await message.client.sendMessage(mid,plk,MessageType.text);
+        var location = await message.client.downloadAndSaveMediaMessage({
+            key: {
+                remoteJid: message.reply_message.jid,
+                id: message.reply_message.id
+            },
+            message: message.reply_message.data.quotedMessage
+        });
 
+        ffmpeg(location)    
+            .save('output.mp4')
+            .on('end', async () => {
+                await message.client.sendMessage(mid, fs.readFileSync('output.mp4'), MessageType.video, {caption: match[1] + '.mp4', mimetype: Mimetype.mp4, quoted: message.data, thumbnail: White.tm_b});
+            });
+        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+    }));
 
     
