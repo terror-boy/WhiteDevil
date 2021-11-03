@@ -162,7 +162,7 @@ thumbnail: White.tm_b })
     }
     if (Config.LANG == 'ML') {
         afn = '```ഒരു ഓഡിയോയ്ക്ക് മറുപടി നൽകുക```'
-        ktb = '```ഡോക്യുമെന്റിലേക്ക് പരിവർത്തനം ചെയ്യുകയും പേര് നൽകുകയും ചെയ്യുന്നു```'
+        ktb = '```വീഡിയോയിലേക്ക് പരിവർത്തനം  ചെയ്യുകയും പേര് നൽകുകയും ചെയ്യുന്നു```'
         use = '```.tovideo whitedevil```'
     }
     
@@ -204,7 +204,7 @@ thumbnail: White.tm_b })
         ffmpeg(location)    
             .save('output.mp4')
             .on('end', async () => {
-                await message.client.sendMessage(mid, fs.readFileSync('output.mp4'), MessageType.video, {caption: '*TITLE:*' + match[1]  , mimetype: Mimetype.mp4, quoted: message.data, thumbnail: White.tm_b })
+                await message.client.sendMessage(mid, fs.readFileSync('output.mp4'), MessageType.video, {caption: '*TITLE:*'  '```' + match[1] + '```' , mimetype: Mimetype.mp4, quoted: message.data, thumbnail: White.tm_b })
         });
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
