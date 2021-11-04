@@ -18,7 +18,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 
-Ktb.addCommand({pattern: 'handler ?', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
+Ktb.addCommand({ 'handler ?', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
 
         await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         for (vr in vars) {
