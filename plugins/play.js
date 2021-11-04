@@ -17,6 +17,7 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
         const { status, result } = data
 	
 	var img = await Axios.get(`${result.thumb}`, {responseType: 'arraybuffer'})
+	var audio = await axios.get(`${result.url}`, {responseType: 'arraybuffer'})
 	
         if(!status) return await message.sendMessage('*NO RESULT FOUND*')
 	
@@ -30,4 +31,5 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
         msg +=  `DOWNLOADING LINK :${result.url}\n\n`
         msg += '```'
          return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b })
+	 return await message.client.sendMessage(message.jid,Buffer.from(audio.data), MessageType.audio, { mimetype: Mimetype.mp4Audio,  quoted : message.data})
         });
