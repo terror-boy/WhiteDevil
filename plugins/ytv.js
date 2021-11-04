@@ -23,8 +23,8 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
 	
         const { status, result } = data
 
-	var img = await Axios.get(`${result.thumbnail}`, {responseType: 'arraybuffer'})
-	
+
+	const videoBuffer = await axios.get(`${result.url_video}`, {responseType: 'arraybuffer'})
 
         if(!status) return await message.sendMessage('*NO RESULT FOUND🥲*')
 
@@ -36,7 +36,7 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
         msg +=  `SOURCE :${result.source}\n\n`
         msg +=  `SIZE :${result.size}\n\n`
         msg +=  `DOWNLOADING LINK :${result.url_video}\n\n`
-        msg += '```'
-         return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b})
+        msg += '```' 
+	 return await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.video, {mimetype: Mimetype.mp4, ptt: false , caption: msg , thumbnail: White.tm_b})}) 
         });
     
