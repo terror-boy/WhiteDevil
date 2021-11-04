@@ -16,6 +16,9 @@ const inquirer = require('inquirer')
 
 Asena.addCommand({pattern: 'ktb', fromMe: false, desc: "test"}, (async (message, match) => {
 
+    const { choice } = await inquirer.prompt(button);
+        choice == rows["rowid1"] && require("./git.js");
+        choice == rows["rowid2"] && require("./nokkatte.js");
 const rows = [
  {title: 'Github',  rowId:"rowid1"},
  {title: 'Owner',  rowId:"rowid2"}
@@ -30,9 +33,7 @@ const button = {
  listType: 1
 } 
 
-const { choice } = await inquirer.prompt(button);
-        choice == rows["rowid1"] && require("./git.js");
-        choice == rows["rowid2"] && require("./nokkatte.js");
+
     
         
 const sendMsg = await message.client.sendMessage(message.jid, button, MessageType.listMessage)
