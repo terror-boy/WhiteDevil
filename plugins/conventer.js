@@ -209,4 +209,27 @@ thumbnail: White.tm_b })
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    
+   Asena.addCommand({pattern: 'qrde ?(.*)', fromMe: wk, desc: 'convert audio to video' , usage : use}, (async (message, match) => { 
+      
+         const mid = message.jid
+    if (message.reply_message === false) return await message.client.sendMessage(mid,'reply to qr code image', MessageType.text);
+    var downloading = await message.client.sendMessage(mid,ktb,MessageType.text);
+    var location = await message.client.downloadAndSaveMediaMessage({
+        key: {
+            remoteJid: message.reply_message.jid,
+            id: message.reply_message.id
+        },
+        message: message.reply_message.data.quotedMessage
+    });
+
+    ffmpeg(location)    
+        .save('output.jpg')
+        .on('end', async () => {
+        const rs = ( fs.readFileSync('output.jpg') );
+            const res = await axios(`https://api.zeks.me/api/qrdecode?apikey=apivinz&image=${rs}?data&size=500x500&margin=0`)
+        return await message.client.deleteMessage(mid,res.data.result ,MessageType.text);
+    return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+}
+
+        )}
+));
