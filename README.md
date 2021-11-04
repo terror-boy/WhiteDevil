@@ -66,22 +66,8 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
 # Setup
 <div align="center">
   
-## STEPUP VIDEO 👇🏻👇 [ IF ANY DOUBT TO STEP ]
-  
 
-  
-  ![1634830030860](https://user-images.githubusercontent.com/85664936/138309756-fd8b0a49-6bf2-4d12-b0f0-7a8a15aa2245.png)
-
-  
-  
- <img src=https://i.imgur.com/acODONm.gif>
-  
-  
-  
-  
-<img src=https://i.imgur.com/efCwO2E.gif>
-
-### **👇🏻👇🏻CLICK THE WEBSITE LOGO TO SET THE BOT(THIS WILL REDIRECTED TO  MY WEBSITE)👇🏻👇🏻**
+### **👇🏻👇🏻CLICK THE ANY LOGO TO SET THE BOT(THIS WILL REDIRECTED TO  MY WEBSITE)👇🏻👇🏻**
   
  ```
 ꧁༒☬𝓢𝓣𝓔𝓟 𝓣𝓞 𝓕𝓞𝓛𝓛𝓞𝓦☬༒꧂
@@ -111,7 +97,10 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
 ``` 
 <div align="center">
   
-[![SETUP](https://www.linkpicture.com/q/WHITEDEVIL-SITE.png)](https://whitedevil-bot.yolasite.com)
+[![SETUP](https://www.linkpicture.com/q/318848_website-logo-png.png)](https://whitedevil-bot.yolasite.com)
+  
+  
+[![SETUP](https://www.linkpicture.com/q/Daco_561272.png)](https://whitedevil-bot.yolasite.com)
   
      
     
