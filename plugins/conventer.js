@@ -233,3 +233,36 @@ thumbnail: White.tm_b })
 
         )}
 ));
+
+Asena.addCommand({pattern: 'me ?(.*)', fromMe: wk, desc: 'convert audio to video' , usage : use}, (async (message, match) => { 
+      
+         const mid = message.jid
+    if (message.reply_message === false) return await message.client.sendMessage(mid,'reply to audio', MessageType.text);
+    var downloading = await message.client.sendMessage(mid,ktb,MessageType.text);
+    var location = await message.client.downloadAndSaveMediaMessage({
+        key: {
+            remoteJid: message.reply_message.jid,
+            id: message.reply_message.id
+        },
+        message: message.reply_message.data.quotedMessage
+    });
+
+    ffmpeg(location)    
+        .save('output.mp3')
+        .on('end', async () => {
+        const rs = ( fs.readFileSync('output.mp3') );
+            const res = await axios(`https://api.zeks.me/api/searchmusic?apikey=itsmewhitedevil&audio=${rs}`)
+            
+            let msg = '```'
+        msg +=  `TITLE :${data.title}\n\n`
+        msg +=  `ARTISTS :${data.artists}\n\n`
+        msg +=  `GENRE :${data.genre}\n\n`
+        msg +=  `ALBUM :${data.album}\n\n`
+        msg +=  `RELEASE DATE :${data.release_date}\n\n`
+        msg += '```'
+        return await message.client.deleteMessage(mid, msg ,MessageType.text);
+    return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+}
+
+        )}
+));
