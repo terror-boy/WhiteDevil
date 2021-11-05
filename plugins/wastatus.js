@@ -66,7 +66,7 @@ const Config = require('../config');
             message: message.reply_message.data.quotedMessage
         });
 
-        if (message.reply_message.video === false && message.reply_message.image) {
+        if (message.reply_message.video === false && message.reply_message.video) {
             ffmpeg(location)
                 .save('status.mp4')
                 .on('end', async () => {
