@@ -69,33 +69,7 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
 
 ### **👇🏻👇🏻CLICK THE ANY LOGO TO SET THE BOT(THIS WILL REDIRECTED TO  MY WEBSITE)👇🏻👇🏻**
   
- ```
-꧁༒☬𝓢𝓣𝓔𝓟 𝓣𝓞 𝓕𝓞𝓛𝓛𝓞𝓦☬༒꧂
-  
-  
-  •  CLICK THE LOGO
-  
-  
-     •  READ FULL IF YOU HAVE TIME
-  
-  
-       •  SCROLL DOWN AND GIVE YOUR FEEDBACK
-  
-  
-         •  THERE WILL BE TWO BUTTON IN DOWN [NAMED AS  QR CODE & DEPLOY]
-  
-  
-           •  FIRST CLICK SCAN QR CODE & THEN CLICK THE DEPLOY BUTTON
-  
-  
-  
-  
-  HOPE YOU UNDERSTAND IF YOU NEED HELP 
-  YOU CAN FEEL FREE TO CONTACT ME
-  ON WHATSAPP 
- [ NUMBER IN THIS REPO LAST YOU CAN SCROLL DOWN]
-``` 
-<div align="center">
+
   
 [![SETUP](https://www.linkpicture.com/q/318848_website-logo-png.png)](https://whitedevil-bot.yolasite.com)
   
