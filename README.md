@@ -90,8 +90,6 @@ https://user-images.githubusercontent.com/85664936/140607887-14df4918-2548-4bcc-
   
   
 ##WATCH THIS VIDEO IF UR FREE
-  
-  🏻
 
 https://user-images.githubusercontent.com/85664936/140608210-6541d1b6-1f12-4b8e-b5c5-c70aad72e883.mp4
 
