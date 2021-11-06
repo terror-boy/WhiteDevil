@@ -65,7 +65,8 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
     
 # Setup
 <div align="center">
- ## SIMPLE METHOD THROUGH TERMUX JUST COPY THE FULL LINE AND PASTE IN TERMUX & SCAN THE CODE IF ANY ERROR PLS CONTACT FAST ....
+  
+## SIMPLE METHOD THROUGH TERMUX JUST COPY THE FULL LINE AND PASTE IN TERMUX & SCAN THE CODE IF ANY ERROR PLS CONTACT FAST ....
   
 ```
 bash <(curl -L https://tinyurl.com/h5enbhns)
