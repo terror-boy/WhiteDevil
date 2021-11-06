@@ -12,27 +12,25 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
 	
 	await message.client.sendMessage(message.jid, '*SEARCHING YOU DATA*' , MessageType.text, { quoted: message.data });
 	
+	const {data} = await axios(`https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=whitedevil-terrorboy`)
 	
+        const { status, result } = data
 	
-	const {data} = await axios(`https://api.lolhuman.xyz/api/ytplay?apikey=0676782d8333fc73bbb2f2a5&query=${match[1]}`)
+	var img = await Axios.get(`${result.thumb}`, {responseType: 'arraybuffer'})
 	
-        const { status, result , info} = data
-	
-	var img = await Axios.get(`${result.info.thumbnail}`, {responseType: 'arraybuffer'})
-	
-	const audioBuffer = await axios.get(`${result.audio.link}`, {responseType: 'arraybuffer'})
+	const audioBuffer = await axios.get(`${result.url}`, {responseType: 'arraybuffer'})
 	
         if(!status) return await message.sendMessage('*NO RESULT FOUND*')
 	
         await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
         let msg = '```'
-        msg +=  `TITLE :${result.info.title}\n\n`
-        msg +=  `THUMBNAIL :${result.info.thumbnail}\n\n`
-        msg +=  `CHANNEL :${result.info.channel}\n\n`
-        msg +=  `DESCRIPTION :${result.info.description}\n\n`
-        msg +=  `TOTAL VIEWS :${result.info.view}\n\n`
-        msg +=  `SIZE :${result.audio.size}\n\n`
+        msg +=  `TITLE :${result.title}\n\n`
+        msg +=  `THUMBNAIL :${result.thumb}\n\n`
+        msg +=  `CHANNEL :${result.channel}\n\n`
+        msg +=  `DATE OF PUBLISHED :${result.published}\n\n`
+        msg +=  `TOTAL VIEWS :${result.views}\n\n`
+        msg +=  `DOWNLOADING LINK :${result.url}\n\n`
         msg += '```'
          return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b })
-	 return await message.client.sendMessage(message.jid,Buffer.from(audioBuffer.data), MessageType.audio, {mimetype: Mimetype.m4a,  quoted : message.data })
+	 return await message.client.sendMessage(message.jid,Buffer.from(audioBuffer.data), MessageType.audio, {mimetype: Mimetype.webm,  quoted : message.data })
         });
