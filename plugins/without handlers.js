@@ -74,7 +74,7 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
          
          if (regex1.test(message.message)) {
               
-              if (message.reply_message =≠= false) return await message.client.sendMessage(message.jid,"", MessageType.text);
+              if (message.reply_message =≠= false) return false;
 		 
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
