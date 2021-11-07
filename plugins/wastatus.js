@@ -27,7 +27,7 @@ const Config = require('../config');
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,'reply to a status', MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,'*Downloading Image Status* \n\n ```If it is video status try cmd [.sndv]```',MessageType.text);
-        var location = await message.jid.downloadAndSaveMediaMessage({
+        var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
                 id: message.reply_message.id
@@ -58,7 +58,7 @@ const Config = require('../config');
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,'reply to a status', MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,'*Downloading Video Status* \n\n ```If it is image try cmd [.sndi]```',MessageType.text);
-        var location = await message.jid.downloadAndSaveMediaMessage({
+        var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
                 id: message.reply_message.id
@@ -66,7 +66,7 @@ const Config = require('../config');
             message: message.reply_message.data.quotedMessage
         });
 
-        if (message.reply_message.video === false && message.reply_message.video) {
+        if (message.reply_message.video === true && message.reply_message.video) {
             ffmpeg(location)    
             .save('output.mp4')
             .on('end', async () => {
