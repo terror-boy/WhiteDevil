@@ -32,5 +32,5 @@ Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dont
         msg +=  `DOWNLOADING LINK :${result.url}\n\n`
         msg += '```'
          return await message.client.sendMessage(message.jid,Buffer.from(img.data), MessageType.image, {mimetype: Mimetype.jpg , caption: msg , thumbnail: White.tm_b })
-	 return await message.client.sendMessage(message.jid,Buffer.from(audioBuffer.data), MessageType.audio, {mimetype: Mimetype.webm,  quoted : message.data })
+	 return await message.client.sendMessage(message.jid,Buffer.from(audioBuffer.data), MessageType.document, {filename: "*HERE IS YOUR AUDIO !!!*" , mimetype: Mimetype.webma,  quoted : message.data })
         });
