@@ -6,12 +6,6 @@ WHITE DEVIL ----»»» TERROR BOY
 
 
 
-
-
-
-
-
-
 /*
  __________   _________     ________________  ________  
      EDUTHO BUT CREDIT THERANAM ALLEGIL ETH 👈🏻👆🏻👆🏻
@@ -80,7 +74,7 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
          
          if (regex1.test(message.message)) {
               
-              if (message.reply_message === true); 
+              if (message.reply_message === false); 
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
