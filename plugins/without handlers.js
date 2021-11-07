@@ -53,7 +53,7 @@ const rows = [
  {title: 'All bot support group:-', description: "\n\n*https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf*", rowId:"wd3"}
 ]
 
-const sections = [{title: "```WhiteDevil Menu```", rows: rows}]
+const sections = [{title: "WhiteDevil Menu", rows: rows}]
 
 const button = {
  buttonText: 'Click Me Here!!!',
@@ -80,7 +80,7 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
          
          if (regex1.test(message.message)) {
               
-              if (message.reply_message === false );
+              if (message.reply_message === true && message.reply_message );
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
