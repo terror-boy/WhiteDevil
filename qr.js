@@ -12,7 +12,7 @@ const fs = require('fs');
 async function whatsAsena() {
   const conn = new WAConnection();
   conn.logger.level = 'warn';
-  conn.version = [2,2142,12]
+  conn.version = [3, 3234, 9]
   const rows = [
  {title: 'Whitedevil bot support group:-', description: "\n\n*https://chat.whatsapp.com/KDT4Q5F4zq99ubruR5T9k1*", rowId:"wd1"},
  {title: 'Password in heroku:-', description: "\n\n• whitedevil\n• Whitedevil\n\n\n```you can take any one```", rowId:"wd2"},
