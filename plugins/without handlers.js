@@ -65,16 +65,16 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
              return;
          }
          let regex1 = new RegExp('sticker')
-         let regex2 = new RegExp('https://www.instagram.com/')
+         let regex2 = new RegExp('https://www.instagram.com')
          let regex3 = new RegExp('owner')
          let regex4 = new RegExp('Owner')
-         let regex5 = new RegExp('https://youtu.be/')
+         let regex5 = new RegExp('https://youtu.be')
 	 let regex6 = new RegExp('link')
 	 
          
          if (regex1.test(message.message)) {
               
-              if (message.reply_message === false); 
+              if (message.reply_message === false) return await message.client.sendMessage(message.jid,"", MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
