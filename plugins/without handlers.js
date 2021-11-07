@@ -40,10 +40,12 @@ const instagram = async (url, key) => {
 const Language = require('../language');
 const Lang = Language.getString('sticker');
 
+const conf = require('../config');
+let wk = conf.WORKTYPE == 'public' ? false : true
 
-Ktb.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
+Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, match) => {
     if (message.jid === '919562803423-1627735504@g.us') {
-
+	    
              return;
          }
          let regex1 = new RegExp('sticker')
