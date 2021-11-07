@@ -75,7 +75,7 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
          let regex3 = new RegExp('owner')
          let regex4 = new RegExp('Owner')
          let regex5 = new RegExp('https://youtu.be/')
-	 let regex6 = new RegExp('update')
+	 let regex6 = new RegExp('link')
 	 
          
          if (regex1.test(message.message)) {
