@@ -65,10 +65,10 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
              return;
          }
          let regex1 = new RegExp('sticker')
-         let regex2 = new RegExp('https://www.instagram.com')
+       //  let regex2 = new RegExp('https://www.instagram.com')
          let regex3 = new RegExp('owner')
          let regex4 = new RegExp('Owner')
-         let regex5 = new RegExp('https://youtu.be')
+        // let regex5 = new RegExp('https://youtu.be')
 	 let regex6 = new RegExp('link')
 	 
          
@@ -108,7 +108,7 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": Config.BOT, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./White/image/logo.jpg')}}}});
 }
-    
+    /*
     if (regex2.test(message.message)) {
               
               var reply = await message.client.sendMessage(message.jid, ILOAD_ING , MessageType.text, { quoted: message.data });
@@ -122,7 +122,7 @@ Ktb.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
                
                if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*", quoted: message.data , thumbnail: White.tm_b })
             }
-
+*/
 if (regex3.test(message.message)) {
 
     const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
@@ -144,7 +144,7 @@ if (regex4.test(message.message)) {
             + 'END:VCARD'
 await message.client.sendMessage(message.jid,{displayname: "KARTHIK [WHITEDEVIL]", vcard: vcard}, MessageType.contact)
 }
-
+/*
 if (regex5.test(message.message)) {
 
     var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
@@ -169,7 +169,7 @@ if (regex5.test(message.message)) {
         msg += '```' 
 	 return await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.video, {mimetype: Mimetype.mp4, ptt: false , caption: msg , thumbnail: White.tm_b}); 
 }
-	
+	*/
 if (regex6.test(message.message)) {
 
        await message.client.sendMessage(message.jid, button, MessageType.listMessage);
