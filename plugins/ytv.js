@@ -1,6 +1,6 @@
 /* Coded by rashi
 Re-coded by KTB 
-
+*/
 
 const Asena = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
@@ -39,4 +39,4 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
         msg += '```' 
 	 return await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.video, {mimetype: Mimetype.mp4, ptt: false , caption: msg , thumbnail: White.tm_b}); 
 });
-    */
+    
