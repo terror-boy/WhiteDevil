@@ -185,7 +185,7 @@ Asena.addCommand({pattern: 'inshot', fromMe: false, dontAddCommandList: false}, 
    }));
 
 Asena.addCommand({pattern: 'alight', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-      await message.sendMessage('💎 *ALIGHT MOTION MOD* 💎\npremium unlocked.\n👉https://bit.ly/3cHUBdg\n pass 3456');
+      await message.sendMessage('💎 *ALIGHT MOTION MOD* 💎\npremium unlocked.\n👉https://alightmotionmodapk.com/apk/?=https://cs.advanced.host/v1/AUTH_90454b1b346b4ae0b9667c7d8261e9e8/Mafia/Video%20Editors/Alight/Alight%20Motion%20MOD%20v3.10.2%20by%20ANIK.apk');
    }));
 
 Asena.addCommand({pattern: 'capcut', fromMe: false, dontAddCommandList: false}, (async (message, match) => {
