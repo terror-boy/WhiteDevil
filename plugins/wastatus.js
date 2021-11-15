@@ -25,6 +25,9 @@ const Config = require('../config');
 
     Ktb.addCommand({pattern: 'snd$', fromMe: true, desc: 'Download status from wa'}, (async (message, match) => {    
 
+        if (!message.jid.includes('status')) {
+        return;
+    }
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,'reply to a status', MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,'*Downloading Status* \n\n ',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
