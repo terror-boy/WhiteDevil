@@ -4,6 +4,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 WhiteDevil - Karthik_terror-boy
+*/
 
 const Ktb = require('../events');
 
@@ -12,7 +13,7 @@ const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require(
 
 const fs = require('fs');
 
-    Ktb.addCommand({pattern: 'tmp$', fromMe: true, desc: 'Download status from wa'}, (async function whatsAsena(message, match) => {   
+    Ktb.addCommand({pattern: 'tmp$', fromMe: true, desc: 'testing'}, (async (message, match) => {   
 
   const conn = new WAConnection();
   conn.logger.level = 'warn';
@@ -62,7 +63,7 @@ ${chalk.blue.bold('ℹ️  Connecting WhiteDevil... Please wait.')}`);
         MessageType.text
       );
       await conn.sendMessage(
-        conn.user.jid, fs.readFileSync("./boot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+        conn.user.jid, fs.readFileSync("./bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
         await conn.sendMessage( conn.user.jid, button, MessageType.listMessage);
         await conn.sendMessage(
         conn.user.jid,
@@ -76,7 +77,7 @@ ${chalk.blue.bold('ℹ️  Connecting WhiteDevil... Please wait.')}`);
         MessageType.text
       );
       await conn.sendMessage(
-        conn.user.jid, fs.readFileSync("./boot/bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+        conn.user.jid, fs.readFileSync("./bott.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
         await conn.sendMessage( conn.user.jid, button, MessageType.listMessage);
         await conn.sendMessage(
         conn.user.jid,
@@ -95,10 +96,9 @@ ${chalk.blue.bold('ℹ️  Connecting WhiteDevil... Please wait.')}`);
     process.exit(0);
   });
 
-  await conn.connect();
-}
-
-whatsAsena();
+  await conn.connect()
+}))
 
 
-*/
+
+
