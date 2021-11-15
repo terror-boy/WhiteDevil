@@ -4,7 +4,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 WhiteDevil - Karthik_terror-boy
-*/
+
 
 const Ktb = require('../events');
 
@@ -102,3 +102,4 @@ ${chalk.blue.bold('ℹ️  Connecting WhiteDevil... Please wait.')}`);
 
 
 
+*/
