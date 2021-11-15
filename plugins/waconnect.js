@@ -8,7 +8,7 @@ WhiteDevil - Karthik_terror-boy
 const Ktb = require('../events');
 
 const chalk = require('chalk');
-const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys
+const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 
 const fs = require('fs');
 
