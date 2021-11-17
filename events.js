@@ -34,10 +34,10 @@ function addCommand(info, func) {
         infos.on = info['on'];
 
         if (info['pattern'] !== undefined) {
-            infos.pattern = new RegExp((info['handler'] === undefined || info['handler'] === true ? config.HANDLERS : '') + info.pattern, (info['flags'] !== undefined ? info['flags'] : ''));
+            infos.pattern = new RegExp((info['handler'] === undefined || info['handler'] === false ? config.HANDLERS : '') + info.pattern, (info['flags'] !== undefined ? info['flags'] : ''));
         }
     } else {
-        infos.pattern = new RegExp((info['handler'] === undefined || info['handler'] === true ? config.HANDLERS : '') + info.pattern, (info['flags'] !== undefined ? info['flags'] : ''));
+        infos.pattern = new RegExp((info['handler'] === undefined || info['handler'] === false ? config.HANDLERS : '') + info.pattern, (info['flags'] !== undefined ? info['flags'] : ''));
     }
 
     Commands.push(infos);
