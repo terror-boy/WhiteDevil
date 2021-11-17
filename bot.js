@@ -71,10 +71,9 @@ async function whatsAsena () {
     });
     
     
-    const conn = new WAConnection();
-    const res = await axios("https://gitlab.com/terror-boy/version.sh/-/raw/main/version.sh")
-    conn.version = res.data.version
+        const conn = new WAConnection();
     const Session = new StringSession();
+
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
 
