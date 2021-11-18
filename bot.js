@@ -405,6 +405,17 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     return;
                 }
              }
+//callblock
+
+    }else if (msg.messageStubType === 40 || msg.messageStubType === 41) {
+  if (config.CB == 'true') {
+
+     await message.client.sendMessage(msg.key.remoteJid, '*Anti-Call is active*\n\n*YOUR BLOCKED*', MessageType.text);
+     await message.client.blockUser(msg.key.remoteJid, "add");
+    
+  }
+  return;
+  }
 
         events.commands.map(
             async (command) =>  {
