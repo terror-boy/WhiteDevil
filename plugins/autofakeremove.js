@@ -21,6 +21,7 @@ const toPDF = require("custom-soffice-to-pdf");
 const Asena = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const got = require('got');
+const ffmpeg = require('fluent-ffmpeg');
 const Config = require('../config');
 
 
@@ -30,7 +31,11 @@ Asena.addCommand({pattern: 'topdf ?(.*)', fromMe: false, desc: 'convert img-pdf'
 if (!message.reply_message)
       return await message.sendMessage('reply to image');
     if (message.reply_message.audio || message.reply_message.video || message.reply_message.sticker || message.reply_message.pdf) return message.sendMessage('NOT_SUPPORTED');
-    toPDF(await message.reply_message.downloadAndSaveMediaMessage()).then(
+       ffmpeg(location)
+                .save('st.png')
+                .on('end', async () => {
+                  
+    toPDF('st.png').then(
       async (pdfBuffer) => {
         return await message.sendMessage(
           pdfBuffer,
