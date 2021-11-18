@@ -42,9 +42,9 @@ const Language = require('../language');
 const Lang = Language.getString('sticker');
 
 const rows = [
- {title: 'Whitedevil bot support group:-', description: "\n\n*https://chat.whatsapp.com/KDT4Q5F4zq99ubruR5T9k1*", rowId:"wd1"},
- {title: 'Password in heroku:-', description: "\n\n• whitedevil\n• Whitedevil\n\n\n```you can take any one```", rowId:"wd2"},
- {title: 'All bot support group:-', description: "\n\n*https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf*", rowId:"wd3"}
+ {title: 'Whitedevil bot support group:-', description: "\n\n*https://chat.whatsapp.com/KDT4Q5F4zq99ubruR5T9k1*", rowId:"https://chat.whatsapp.com/KDT4Q5F4zq99ubruR5T9k1"},
+ {title: 'Password in heroku:-', description: "\n\n• whitedevil\n• Whitedevil\n\n\n```you can take any one```", rowId:"\n\n• whitedevil\n• Whitedevil\n\n\n```you can take any one```"},
+ {title: 'All bot support group:-', description: "\n\n*https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf*", rowId:"\n\n*https://chat.whatsapp.com/CY7wJC070o04yxfTuT1yPf*"}
 ]
 
 const sections = [{title: "WhiteDevil Menu", rows: rows}]
