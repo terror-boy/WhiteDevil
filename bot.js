@@ -405,6 +405,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     return;
                 }
              }
+/*
 //callblock
 
     }else if (msg.messageStubType === 40 || msg.messageStubType === 41) {
@@ -416,6 +417,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
   }
   return;
   }
+*/
 
         events.commands.map(
             async (command) =>  {
