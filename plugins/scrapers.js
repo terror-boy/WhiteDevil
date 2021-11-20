@@ -1058,7 +1058,7 @@ else if (config.WORKTYPE == 'public') {
         
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
-      const array = ['oi bro']
+      let array = ['oi bro']
 
       if (match[1] === array ) return await message.client.sendMessage(message.jid,"*ᴛʜɪꜱ ɪꜱ ʙʟᴏᴄᴋᴇᴅ ʙʏ ᴏᴡɴᴇʀ.*\n\n *_ʀᴇᴀꜱᴏɴ_: ᴛᴏxɪᴄ ᴄᴏɴᴛᴇɴᴛ 🔞*", MessageType.text, {quoted: message.data});
         gis(match[1], async (error, result) => {
