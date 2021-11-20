@@ -30,7 +30,7 @@ const fs = require('fs');
     conn.on('connecting', () => {
     })
     conn.on('open', () => {
-    	await conn.sendMessage(
+    	conn.sendMessage(
       conn.user.jid,
       'WHITE;;;' +
       Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
