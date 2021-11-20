@@ -1055,7 +1055,12 @@ else if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
+        
+
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
+      const array = ['oi bro']
+
+      if (match[1] === array ) return await message.client.sendMessage(message.jid,"*ᴛʜɪꜱ ɪꜱ ʙʟᴏᴄᴋᴇᴅ ʙʏ ᴏᴡɴᴇʀ.*\n\n *_ʀᴇᴀꜱᴏɴ_: ᴛᴏxɪᴄ ᴄᴏɴᴛᴇɴᴛ 🔞*", MessageType.text, {quoted: message.data});
         gis(match[1], async (error, result) => {
             for (var i = 0; i < (result.length < 8 ? result.length : 8); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
@@ -1114,18 +1119,7 @@ else if (config.WORKTYPE == 'public') {
           )
       },
     )
-        Asena.addCommand({ pattern: 'number ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
-
-
-const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
-            + 'VERSION:3.0\n' 
-            + 'FN:Config.LIYANAME\n' // full name
-            + 'ORG:script SAIDALI;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=Config.SAID_NUMBER:+91 8606759500\n' // WhatsApp ID + phone number
-            + 'END:VCARD'
-await message.client.sendMessage(message.jid,{displayname: "Config.LIYANAME", vcard: vcard}, MessageType.contact)
-}))
-
+        
     Asena.addCommand({pattern: 'lyric ?(.*)', fromMe: false, desc: Slang.LY_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text);
