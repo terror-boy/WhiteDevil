@@ -31,7 +31,16 @@ Asena.addCommand({pattern: 'topdf ?(.*)', fromMe: false, desc: 'convert img-pdf'
 if (!message.reply_message)
       return await message.sendMessage('reply to image');
     if (message.reply_message.audio || message.reply_message.video || message.reply_message.sticker || message.reply_message.pdf) return message.sendMessage('NOT_SUPPORTED');
-       ffmpeg(location)
+     
+   var location = await message.client.downloadAndSaveMediaMessage({
+            key: {
+                remoteJid: message.reply_message.jid,
+                id: message.reply_message.id
+            },
+            message: message.reply_message.data.quotedMessage
+        });
+   
+      ffmpeg(location)
                 .save('st.png')
                 .on('end', async () => {
                   
