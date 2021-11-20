@@ -40,5 +40,8 @@ const fs = require('fs');
     );
 
 
-
+    process.exit(0);
+  });
+  await conn.connect()
+}))
 
