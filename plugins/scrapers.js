@@ -1055,7 +1055,7 @@ else if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
-        let array = ['oi bro','hoo']
+        let array = ['sunny leone','nude','porn','fuck','mia','sex']
    
       if (array.includes(match[1])) return await message.client.sendMessage(message.jid,"*ᴛʜɪꜱ ɪꜱ ʙʟᴏᴄᴋᴇᴅ ʙʏ ᴏᴡɴᴇʀ.*\n\n *_ʀᴇᴀꜱᴏɴ_: ᴛᴏxɪᴄ ᴄᴏɴᴛᴇɴᴛ 🔞*", MessageType.text, {quoted: message.data});
         gis(match[1], async (error, result) => {
