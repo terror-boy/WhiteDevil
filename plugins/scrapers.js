@@ -130,7 +130,7 @@ if (config.LANG == 'RU') {
 }
 
 
-let td = Config.WORKTYPE == 'public' ? false : true
+let td = config.WORKTYPE == 'public' ? false : true
 
     Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: td}, (async (message, match) => {
 
