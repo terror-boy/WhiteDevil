@@ -209,7 +209,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if (!!message.mention && message.mention[0] == '919778042644@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./White/video/Whitedevil.mp4'), MessageType.video, { mimetype: Mimetype.mp4Video, quoted : message.data, ptt: true})
         }
-const array = ['Whitedevil','pubg','life','Free fire','ff','Manchester United','Manju','Manju warrier','Manchester','bot','Bot']
+const array = ['Whitedevil','pubg','life','Free fire','ff','Manchester United','Manju','Manju warrier','Manchester']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
