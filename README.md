@@ -110,7 +110,7 @@ the user is responsible.
 
 ### Simple Method
 
-[![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@farooqbot/WhatsAsenaDuplicated)
+[![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@farooqbot/WhiteDevil-1)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/farooqbot/WhatsAsenaDuplicated)
 
