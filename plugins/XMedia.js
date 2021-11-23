@@ -57,8 +57,8 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'px2mp4', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
 
-        if (!message.reply_message.video) return await message.sendMessage('●▬▬ *Farooq 𝘽𝙊𝙏* ▬▬● *Need Video!*');
-        var downloading = await message.client.sendMessage(message.jid,'●▬▬ *Farooq 𝘽𝙊𝙏* ▬▬● ```Editing..```',MessageType.text);
+        if (!message.reply_message.video) return await message.sendMessage('●▬▬ *Farooq Bot* ▬▬● *Need Video!*');
+        var downloading = await message.client.sendMessage(message.jid,'●▬▬ *Farooq Bot* ▬▬● ```Editing..```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
