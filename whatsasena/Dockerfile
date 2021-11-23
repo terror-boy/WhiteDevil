@@ -1,10 +1,9 @@
-FROM KTBwhitedevil:latest
+FROM fusuf/whatsasena:latest
 
 RUN git clone https://github.com/farooqbot/WhiteDevil /root/whitedevil
-WORKDIR /root/whitedevil/ 
-ENV KL=Kerala/India
+WORKDIR /root/whitedevil/
+ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
 RUN yarn install --no-audit
-RUN git clone https://github.com/terror-boy/White
 
-CMD ["node","white", "bot.js"]
+CMD ["node", "bot.js"]
