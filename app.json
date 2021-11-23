@@ -1,15 +1,15 @@
 {
     "name": "Farooq Bot Created by Muhammed Farooq",
     "description": "Farooq Bot- Whatsapp UserBot",
-    "logo": "Farooq Bot.jpg",
+    "logo": "https://i.imgur.com/Farooq Bot.jpg",
     "keywords": ["whatsapp", "userbot", "White", "WhatsAsena", "bot", "whitedevil", "ai","terror-boy"],
     "repository": "https://www.github.com/terror-boy/WhiteDevil",
     "website":   "https://www.github.com/terror-boy/WhiteDevil",
     "success_url": "https://www.github.com/terror-boy",
     "stack": "container",
     "env": {
-        "WHITE_SESSION": {
-            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours White Session.",
+        "Farooq_SESSION": {
+            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Farooq Session.",
             "required": true
         },
         "SUDO": {
