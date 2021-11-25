@@ -50,22 +50,14 @@ let wk = conf.WORKTYPE == 'public' ? false : true
 
 
 Asena.addCommand({pattern: 'al', fromMe: wk, desc: Lang.ALIVE_DESC}, (async (message, match) => {
-    //  ....................................................................................................
-      var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]           // .
-        const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };   // .   
-        var plk_here = new Date().toLocaleDateString(get_localized_date)                                  // .  --------->>> CREDIT:-AFNAN PLK PINKYMWOL 
-	  var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '```'                  // .
-                                                                                                          // . 
-    // ..................................................................................................  
-        let pp
-        try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
-        const buttons = [
+
+             const buttons = [
   {buttonId: '!git', buttonText: {displayText: 'chumma'}, type: '!git'},
   {buttonId: 'owner', buttonText: {displayText: '😀😀😀'}, type: 'owner'}
 ]
 
 const buttonMessage = {
-    contentText: Config.ALIVEMSG.replace('{pp}', '').replace('{time}', afnplk).replace('{qt}' ),
+    contentText: Config.ALIVEMSG,
     footerText: '© ktb ©',
     buttons: buttons,
     headerType: 1
