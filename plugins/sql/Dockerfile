@@ -7,4 +7,4 @@ RUN npm install supervisor -g
 RUN yarn install --no-audit
 RUN git clone https://github.com/terror-boy/White
 
-CMD ["node", "bot.js"]
+CMD ["node", "./boot/whitedevil.js"]
