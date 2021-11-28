@@ -8,6 +8,7 @@ const Asena = require('../events');
 const {WAConnection , MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
+const config = require('../config');
 const util = require('util')
 const parseInt = require('parse-int');
 const chalk = require('chalk');
