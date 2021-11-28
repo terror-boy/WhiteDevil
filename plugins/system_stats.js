@@ -69,10 +69,10 @@ const buttonMessage = {
 
 
     
-    Ktb.addCommand({pattern: 'me', fromMe: wk, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
+    Ktb.addCommand({pattern: 'njn', fromMe: wk, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         
-        await message.sendMessage(message.jid, "I'm" +conn.user.name+'\n Wa version :' +conn.user.phone.wa_version+'\n Version :' + Config.VERSION +'\n Phone Version :' + conn.user.phone.os_version+'\n Device Model :' +conn.user.phone.device_model+ '\n Phone Manufacturer :' +conn.user.phone.device_manufacturer  , MessageType.text);
+        await message.sendMessage(message.jid, "I'm " +conn.user.name+'\n Wa version :' +conn.user.phone.wa_version+'\n Version :' + Config.VERSION +'\n Phone Version :' + conn.user.phone.os_version+'\n Device Model :' +conn.user.phone.device_model+ '\n Phone Manufacturer :' +conn.user.phone.device_manufacturer  , MessageType.text);
     
                                                                            
 
