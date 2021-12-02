@@ -57,7 +57,7 @@
     "got": "^11.8.2",
     "heroku-client": "^3.1.0",
     "jimp": "^0.16.0",
-    "js-ffmpeg": "^0.0.26",
+    "js-ffmpeg": "^0.0.33",
     "jsdom": "^16.5.1",
     "langs": "^2.0.0",
     "languagedetect": "^2.0.0",
@@ -75,6 +75,6 @@
     "translatte": "^3.0.0",
     "wikijs": "^6.0.1",
     "yt-search": "^2.7.4",
-    "ytdl-core": "^4.8.3"
+    "ytdl-core": "^4.9.1"
   }
 }
