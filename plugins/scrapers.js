@@ -376,7 +376,7 @@ let td = config.WORKTYPE == 'public' ? false : true
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image,{mimetype: Mimetype.jpg , caption:'*'+ match[1] +'*', 
+                    await message.client.sendMessage(message.jid,image, MessageType.image,{mimetype: Mimetype.jpg , caption:'```TITTLE:``` *' +match[1] +'*', 
 thumbnail: White.tm_b});
                 });
             }
