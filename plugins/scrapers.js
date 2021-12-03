@@ -7,6 +7,7 @@ WhatsAsena - Yusuf Usta
 const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
+const White = require('../white');
 const config = require('../config');
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
@@ -375,7 +376,8 @@ let td = config.WORKTYPE == 'public' ? false : true
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image);
+                    await message.client.sendMessage(message.jid,image, MessageType.image,{mimetype: Mimetype.jpg , caption:'*'+ match[1] +'*', 
+thumbnail: White.tm_b});
                 });
             }
 
