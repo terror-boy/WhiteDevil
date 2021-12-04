@@ -61,7 +61,7 @@ const buttonMessage = {
     contentText: 'hi',
     footerText: '© ktb ©',
     buttons: buttons,
-    headerType: 1
+    headerType: 2
 }
 
    await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage)})); 
