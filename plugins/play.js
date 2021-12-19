@@ -31,7 +31,7 @@ const Axios = require('axios')
 
 Asena.addCommand({pattern: 'play ?(.*)', fromMe: false, desc: 'play song' , dontAddCommandList: true }, async (message, match) => {
 	
-	await message.client.sendMessage(message.jid, '*SEARCHING YOU DATA*' , MessageType.text, { quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: message.data ,orderTitle: `THIS IS NEW?`,thumbnail: fs.readFileSync('./White/image/logo.jpg') , sellerJid: '0@s.whatsapp.net'}}}});
+	await message.client.sendMessage(message.jid, '*SEARCHING YOU DATA*' , MessageType.text, { quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,orderTitle: `THIS IS NEW?`,thumbnail: fs.readFileSync('./White/image/logo.jpg') , message: { quoted: message.data } , sellerJid: '0@s.whatsapp.net'}}}});
 	
 	const {data} = await axios(`https://zenzapi.xyz/api/play/playmp3?query=${match[1]}&apikey=whitedevil-terrorboy`)
 	
