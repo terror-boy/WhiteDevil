@@ -46,7 +46,7 @@ var MSG = '*WEBSITE          _https://whitedevil-bot.yolasite.com/_* \n\n *Githu
         contentText: MSG,
         footerText: '© *ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ-ᴛᴇʀʀᴏʀ-ʙᴏʏ* © \n\n *owner- type owner* \n\n',
         buttons: buttons,
-        headerType: 4,
+        headerType: 5,
         videoMessage: media.message.videoMessage    
     }
     await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttonsMessage);
