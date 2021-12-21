@@ -44,7 +44,7 @@ var MSG = '*WEBSITE          _https://whitedevil-bot.yolasite.com/_* \n\n *Githu
     ]
     const buttonMessage = {
         contentText: MSG,
-        footerText: '© *ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ-ᴛᴇʀʀᴏʀ-ʙᴏʏ* © \n\n *owner- type owner* \n\n',
+        footerText: '© ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ-ᴛᴇʀʀᴏʀ-ʙᴏʏ © \n\n owner- type owner \n\n',
         buttons: buttons,
         headerType: 5,
         videoMessage: media.message.videoMessage    
