@@ -242,9 +242,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
                         await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message, thumbnail: White.tm_b }); });
-                        await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("./boot/gby.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption":'*<<< GOOD BYE BGM >>>*', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./White/image/logo.jpg')}}}});
-                    }
-                    return;
+                        await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("./boot/gby.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});                    }
+            }
+            return;
                 } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
                     // welcome
                     var gb = await getMessage(msg.key.remoteJid);
@@ -254,10 +254,10 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
                         await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message ,thumbnail: White.tm_b}); });
         
-                        await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
+                        await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("./boot/wel.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                     }
                     return;
-                }
+                
             }
             else if (config.WELCOME == 'gif' || config.WELCOME == 'Gif' || config.WELCOME == 'GIF' || config.WELCOME == 'GIf' ) {
             if (msg.messageStubType === 32 || msg.messageStubType === 28) {
@@ -291,7 +291,18 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
   }
   return;
   }
-
+if (msg.messageStubType === 'GROUP_CHANGE_DESCRIPTION'){
+            
+            await conn.sendMessage(msg.key.remoteJid,'*GROUP_CHANGE_DESCRIPTION*', MessageType.text);
+}
+        if (msg.messageStubType === 'GROUP_CHANGE_SUBJECT'){
+             await conn.sendMessage(msg.key.remoteJid,'*GROUP_CHANGE_SUBJECT*', MessageType.text);
+        }
+        if (msg.messageStubType === 'GROUP_CHANGE_ICON'){
+            await conn.sendMessage(msg.key.remoteJid,'*GROUP_CHANGE_ICON*', MessageType.text);
+        }
+    return;
+  
 
         events.commands.map(
             async (command) =>  {
