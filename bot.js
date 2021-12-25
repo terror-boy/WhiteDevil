@@ -241,21 +241,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         let pp
                         try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                            
- 
-
-const buttons = [
-        {buttonId: BY, buttonText: {displayText: BY }, type: 1},
-        {buttonId: BYE, buttonText: {displayText: BYE }, type: 1}
-    ]
-    const bM = {
-        contentText: gb.message,
-        footerText: '© ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ-ᴛᴇʀʀᴏʀ-ʙᴏʏ © ',
-        buttons: buttons,
-        headerType: 4,
-        imageMessage: res.data.message    
-    }
-                        await conn.sendMessage(msg.key.remoteJid, bM, MessageType.buttonsMessage ) });
+                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message, thumbnail: White.tm_b }); });
                         await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("./boot/gby.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption":'*<<< GOOD BYE BGM >>>*', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./White/image/logo.jpg')}}}});
                     }
                     return;
@@ -266,18 +252,7 @@ const buttons = [
                        let pp
                         try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                         await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-const buttons = [
-        {buttonId: WEL, buttonText: {displayText: WEL }, type: 1},
-        {buttonId: WL, buttonText: {displayText: WL }, type: 1}
-    ]
-    const bM = {
-        contentText: gb.message,
-        footerText: '© ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋᴀʀᴛʜɪᴋ-ᴛᴇʀʀᴏʀ-ʙᴏʏ © ',
-        buttons: buttons,
-        headerType: 4,
-                imageMessage: res.data.message   
-    }
-                        await conn.sendMessage(msg.key.remoteJid, bM, MessageType.buttonsMessage ) });
+                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message ,thumbnail: White.tm_b}); });
         
                         await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("./White/bot/wl.mp3"), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true});
                     }
