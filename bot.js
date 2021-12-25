@@ -291,17 +291,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
   }
   return;
   }
-if (msg.messageStubType === 'GROUP_CHANGE_DESCRIPTION'){
-            
-            await conn.sendMessage(msg.key.remoteJid,'*GROUP_CHANGE_DESCRIPTION*', MessageType.text);
-}
-        if (msg.messageStubType === 'GROUP_CHANGE_SUBJECT'){
-             await conn.sendMessage(msg.key.remoteJid,'*GROUP_CHANGE_SUBJECT*', MessageType.text);
-        }
-        if (msg.messageStubType === 'GROUP_CHANGE_ICON'){
-            await conn.sendMessage(msg.key.remoteJid,'*GROUP_CHANGE_ICON*', MessageType.text);
-        }
-    return;
+
   
 
         events.commands.map(
