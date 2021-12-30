@@ -540,7 +540,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                 }
             }
         )
-    });
+    }});
     
     try {
         await conn.connect();
