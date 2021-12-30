@@ -90,7 +90,7 @@ https://user-images.githubusercontent.com/85664936/140607887-14df4918-2548-4bcc-
 
 
   
-[![SETUP](https://www.linkpicture.com/q/318848_website-logo-png.png)](https://whitedevil-bot.yolasite.com)
+[![SETUP](https://www.linkpicture.com/q/pngaaa.com-2705636.png)](https://whitedevil-bot.yolasite.com)
   
   
 [![SETUP](https://www.linkpicture.com/q/Daco_561272.png)](https://whitedevil-bot.yolasite.com)
