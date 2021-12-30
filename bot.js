@@ -19,7 +19,7 @@ const { DataTypes } = require('sequelize');
 const googleTTS = require('google-translate-tts');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
-const White = require('../white');
+const White = require('./white');
 const got = require('got');
 
 // Sql
