@@ -42,7 +42,7 @@ options.linkPreview = {
                 }
             }
         }
-var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { options});
+var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted:  options});
 
         const {data} = await axios(`https://api.zeks.me/api/ytplaymp4?apikey=ApiKannappi&q=${match[1]}`)
 	
@@ -53,7 +53,7 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
 
         if(!status) return await message.sendMessage('*NO RESULT FOUND🥲*')
 
-	reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { options});
+	reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted:  options});
 
         let msg = '```'
         msg +=  `TITLE :${result.title}\n\n`
