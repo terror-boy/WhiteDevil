@@ -26,7 +26,7 @@ const axios = require('axios')
 const Axios = require('axios')
 
 
-const buff1 = await getBuffer(url1)
+
 
 
 
