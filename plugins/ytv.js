@@ -30,19 +30,7 @@ options.linkPreview = {
                sourceUrl: "https://github.com/terror-boy/WhiteDevil",
                 }
 
-	options.quoted = {
-            key: {
-                fromMe: false,
-                participant: "0@s.whatsapp.net",
-                remoteJid: "status@broadcast"
-            },
-            message: {
-                "imageMessage": {
-                    "jpegThumbnail": Buffer.from(ig.data),
-                    "caption": "ιтѕ мє  WhiteDevil"
-                }
-            }
-        }
+	
 var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, options);
 
         const {data} = await axios(`https://api.zeks.me/api/ytplaymp4?apikey=ApiKannappi&q=${match[1]}`)
