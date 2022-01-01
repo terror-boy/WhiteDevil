@@ -13,14 +13,15 @@ const UPLOAD_ING = "*✅️ DOWNLOADING COMPLETED* \n\n *UPLOADING IN PROCESS...
 const axios = require('axios')
 const Axios = require('axios')
 
-const options = {}
+
 
 const conf = require('../config');
 let wk = conf.WORKTYPE == 'public' ? false : true
 
 Asena.addCommand({pattern: 'ytv ?(.*)', fromMe: wk, desc: 'video downloading links from youtube'}, async (message, match) => {
 	
-const ig = await Axios.get('https://avatars.githubusercontent.com/u/85664936?s=120&v=4', {responseType: 'arraybuffer'})	
+const ig = await Axios.get('https://avatars.githubusercontent.com/u/85664936?s=120&v=4', {responseType: 'arraybuffer'})
+const options = {}
 options.linkPreview = {
                head: "WhiteDevil",
                body: "© TERROR-BOY ©",
@@ -42,7 +43,7 @@ options.linkPreview = {
                 }
             }
         }
-var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted:  options});
+var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, options);
 
         const {data} = await axios(`https://api.zeks.me/api/ytplaymp4?apikey=ApiKannappi&q=${match[1]}`)
 	
@@ -53,7 +54,7 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
 
         if(!status) return await message.sendMessage('*NO RESULT FOUND🥲*')
 
-	reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted:  options});
+	reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, options);
 
         let msg = '```'
         msg +=  `TITLE :${result.title}\n\n`
