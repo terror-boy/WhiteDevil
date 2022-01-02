@@ -31,7 +31,7 @@ var VER = '🧬 Version'
       var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]           // .
         const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };   // .   
         var plk_here = new Date().toLocaleDateString(get_localized_date)                                  // .  --------->>> CREDIT:-AFNAN PLK PINKYMWOL 
-	  var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '```'                  // .
+	  var afnplk = '*⏱ Time :' + plk_say + '*\n\n *📅 Date :' + plk_here + '*'                  // .
                                                                                                           // . 
     // ..................................................................................................  
 var MSG = config.ALIVEMSG.replace('{time}', afnplk).replace('{qt}' )
