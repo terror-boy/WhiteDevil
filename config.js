@@ -21,7 +21,7 @@ module.exports = {
     SESSION: process.env.WHITE_SESSION === undefined ? '' : process.env.WHITE_SESSION,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     AFN: process.env.ALL_CAPTION === undefined ? '*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*' : process.env.ALL_CAPTION,
-    CALLB: process.env.CALLB === undefined ? 'true' : process.env.CALLB,
+    CALL_BLOCK: process.env.CALL_BLOCK === undefined ? 'true' : process.env.CALL_BLOCK,
     JID: process.env.VERIFIED === undefined ? '0@s.whatsapp.net' : process.env.VERIFIED,
     SKV: process.env.V_HEADER === undefined ? '*broadcast*' : process.env.V_HEADER,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
