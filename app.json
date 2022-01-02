@@ -26,8 +26,8 @@
             "required": false,
             "value": "*ᴍᴀᴅᴇ ʙʏ ᴡʜɪᴛᴇ ᴅᴇᴠɪʟ*"
         },
-        "CB": {
-            "description": "THIS IS ANTI-CALL BLOCKING SYSTEM BY RAASHII.....IT WILL BLOCK WHEN SOME CALL U ...IF YOU NEED IT TURN ON => (true) else to TURN OFF =>(false).",
+        "CALL_BLOCK": {
+            "description": "THIS IS ANTI-CALL BLOCKING SYSTEM ...IT WILL BLOCK WHEN SOME CALL U ...IF YOU NEED IT TURN ON => (true) else to TURN OFF =>(false).",
             "required": true,
             "value": "true"
         },
