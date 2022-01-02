@@ -346,8 +346,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     }else if (msg.messageStubType === 45 ||msg.messageStubType === 40 ||msg.messageStubType === 46 || msg.messageStubType === 41) {
   if (config.CALL_BLOCK == 'true') {
   
-     await message.client.sendMessage(msg.key.remoteJid, '*Anti-Call is active*\n\n*YOUR BLOCKED*', MessageType.text);
-      await conn.blockUser(msg.key.remoteJid, "add");
+           await conn.blockUser(msg.key.remoteJid, "add");
     
   }
   return;
