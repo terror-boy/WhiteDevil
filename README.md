@@ -1,4 +1,6 @@
-
+<p align="center">
+<a href="https://terror-boy.github.io"><img title="HH" src="https://img.shields.io/badge/THIS IS NOT MAINTAINING FOR FEW DAY-WILL BACK SOON-green.svg"</a>
+<p>
 <div align="center">
   <img border-radius: 15px src="https://avatars.githubusercontent.com/u/85664936?v=4"  width="500" height="500"/>
   <p align="center">
@@ -42,14 +44,14 @@ Project created by <a href="https://github.com/terror-boy">Karthik_terror-boy</a
 <a href="https://github.com/terror-boy/WhiteDevil/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/terror-boy/WhiteDevil?color=blue&style=flat-square"></a>
 <a href="https://github.com/terror-boy/WhiteDevil/network/members"><img title="Forks" src="https://img.shields.io/github/forks/terror-boy/WhiteDevil?color=blue&style=flat-square"></a>
 <a href="https://github.com/terror-boy/WhiteDevil/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/terror-boy/WhiteDevil?label=Watchers&color=blue&style=flat-square"></a>
-<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-black.svg"</a>
+
 </p>
   
   #### TOTAL REPO VIEWS📍
 ![Visitor Count](https://profile-counter.glitch.me/terror-boy/count.svg)
   
 ### TOTAL WEBSITE VISIT
-  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwhitedevil-bot.yolasite.com&count_bg=%2379C83D&title_bg=%23030303&icon=webauthn.svg&icon_color=%23FFFAFA&title=WEBSITE+VISITORS&edge_flat=false)](https://whitedevil-bot.yolasite.com)
+  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://terror-boy.github.io&count_bg=%2379C83D&title_bg=%23030303&icon=webauthn.svg&icon_color=%23FFFAFA&title=WEBSITE+VISITORS&edge_flat=false)](https://terror-boy.github.io)
 
 ## 📢 Guide
   
